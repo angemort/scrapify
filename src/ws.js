@@ -12,6 +12,7 @@ const ServiceLoader = require('./serviceLoader');
 function initializeWebSocket(server) {
     const io = socketIo(server, {
         path: '/ws',
+        transports: ['websocket'],
         cors: {
             origin: process.env.ALLOWED_ORIGINS?.split(',') || ["http://localhost:3000"],
             methods: ["GET", "POST"],
