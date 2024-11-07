@@ -118,7 +118,7 @@ app.get('/', (req, res) => {
                         const date = new Date(parts[0]+'Z').toLocaleString('en-US', { hour: '2-digit', minute: '2-digit' });
                         const message = parts[1];
                         return `<div class="log-line"><div><span class="log-date">${date}</span> - ${message}</div></div>`;
-                    }).join('')}
+                    }).reverse().join('')}
                 </div>
             </div>
         </body>
