@@ -19,17 +19,17 @@ async function interceptAndRetrieveComments(context, page, platformUrl) {
         
         route.continue({ url: url.toString() });
 
-        logToFile(`Requête modifiée : ${JSON.stringify(variables)} ${url.toString()}`);
+        logToFile(`Modified request: ${JSON.stringify(variables)} ${url.toString()}`);
 
         // Intercepter la réponse réseau et extraire les commentaires
         const response = await request.response();
         if (response && response.url().includes('TweetDetail')) {
             try {
                 const jsonResponse = await response.json();
-                logToFile('Analyse des commentaires récents...');
+                logToFile('Analyzing recent comments...');
 
                 if (!jsonResponse.data || !jsonResponse.data.threaded_conversation_with_injections_v2) {
-                    logToFile("La clé 'threaded_conversation_with_injections_v2' est absente de la réponse JSON.");
+                    logToFile("The 'threaded_conversation_with_injections_v2' key is missing from the JSON response.");
                     return [];
                 }
 
@@ -90,9 +90,10 @@ async function interceptAndRetrieveComments(context, page, platformUrl) {
                     }
                 }
 
-                logToFile(`Commentaires récents extraits : ${JSON.stringify(comments)}`);
+                logToFile(`Extracted recent comments: ${JSON.stringify(comments)}`);
             } catch (error) {
-                logToFile(`Erreur lors de l'analyse de la réponse JSON : ${error.message}`);
+                logToFile(`Error during JSON response analysis: ${error.message}`);
+                throw error;
             }
         }
     });
@@ -110,22 +111,32 @@ async function interceptAndRetrieveComments(context, page, platformUrl) {
 
 // Fonction pour obtenir uniquement les commentaires d'un utilisateur cible (userTarget) dans l'ordre récent
 async function getUserComments(context, page, platformUrl, userTarget) {
-    const targetUser = userTarget.startsWith('@') ? userTarget.slice(1) : userTarget;
-    const comments = await interceptAndRetrieveComments(context, page, platformUrl);
-    const userComments = comments.filter(comment => comment.user.username === targetUser);
-    logToFile(`Commentaires récents de ${userTarget} : ${JSON.stringify(userComments)}`);
-    return {
-        has_commented: userComments.length > 0,
-        comments_count: userComments.length,
-        comments: userComments
-    };
+    try {
+        const targetUser = userTarget.startsWith('@') ? userTarget.slice(1) : userTarget;
+        const comments = await interceptAndRetrieveComments(context, page, platformUrl);
+        const userComments = comments.filter(comment => comment.user.username === targetUser);
+        logToFile(`Recent comments from ${userTarget}: ${JSON.stringify(userComments)}`);
+        return {
+            has_commented: userComments.length > 0,
+            comments_count: userComments.length,
+            comments: userComments
+        };
+    } catch (error) {
+        logToFile(`Error during user comments extraction: ${error.message}`);
+        throw error;
+    }
 }
 
 // Fonction pour obtenir tous les commentaires récents sans filtrage par utilisateur
 async function getRecentComments(context, page, platformUrl) {
-    const comments = await interceptAndRetrieveComments(context, page, platformUrl);
-    logToFile(`Tous les commentaires récents : ${JSON.stringify(comments)}`);
-    return comments;
+    try {
+        const comments = await interceptAndRetrieveComments(context, page, platformUrl);
+        logToFile(`All recent comments: ${JSON.stringify(comments)}`);
+        return comments;
+    } catch (error) {
+        logToFile(`Error during recent comments extraction: ${error.message}`);
+        throw error;
+    }
 }
 
 module.exports = { getUserComments, getRecentComments };

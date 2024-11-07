@@ -5,7 +5,14 @@ const { initializeWebSocket } = require('./src/ws');
 const { logToFile } = require('./src/utils/logger');
 const { validateRequest } = require('./src/utils/validator');
 const ServiceLoader = require('./src/serviceLoader');
-const { loadStats, saveStats } = require('./src/utils/statsManager');
+const { 
+    loadStats, 
+    loadLogs, 
+    incrementSuccessCount,
+    incrementErrorCount,
+    incrementPostRequestCount,
+    incrementWebSocketRequestCount 
+} = require('./src/utils/statsManager');
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -16,10 +23,10 @@ const PORT = 3000;
 
 // Charger les compteurs depuis le fichier JSON
 const stats = loadStats();
+const logs = loadLogs();
 
 initializeWebSocket(server, () => {
-    stats.webSocketRequestCount++;
-    saveStats(stats); // Sauvegarder les changements
+    incrementWebSocketRequestCount();
 });
 
 app.use(express.json());
@@ -51,6 +58,11 @@ app.get('/', (req, res) => {
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
                     min-width: 300px;
                 }
+                code {
+                    white-space: pre-wrap;
+                    font-size: 12px;
+                    font-family: monospace;
+                }
                 h1 {
                     margin-top: 0;
                     text-align: center;
@@ -72,11 +84,14 @@ app.get('/', (req, res) => {
         </head>
         <body>
             <div class="card">
-                <h1>📊 Statistiques d'utilisation</h1>
-                <p>🔄 Nombre de requêtes POST : ${stats.postRequestCount}</p>
-                <p>🌐 Nombre de requêtes WebSocket : ${stats.webSocketRequestCount}</p>
-                <p>✅ Nombre de requêtes réussies : ${stats.successCount}</p>
-                <p>❌ Nombre de requêtes en erreur : ${stats.errorCount}</p>
+                <h1>📊 Usage Statistics</h1>
+                <p>🔄 POST requests count: ${stats.postRequestCount}</p>
+                <p>🌐 WebSocket requests count: ${stats.webSocketRequestCount}</p>
+                <p>✅ Successful requests count: ${stats.successCount}</p>
+                <p>❌ Error requests count: ${stats.errorCount}</p>
+                <code>
+                    ${logs}
+                </code>
             </div>
         </body>
         </html>
@@ -89,8 +104,8 @@ app.get('/', (req, res) => {
 })();
 
 app.post('/scrape', validateRequest, async (req, res) => {
-    stats.postRequestCount++; // Incrémenter le compteur POST
-    saveStats(stats); // Sauvegarder les changements
+    incrementPostRequestCount();
+    
     try {
         const sanitizedData = {
             url: encodeURI(req.body.url.trim()),
@@ -99,11 +114,12 @@ app.post('/scrape', validateRequest, async (req, res) => {
             action: req.body.action
         };
 
-        logToFile(`Scraping manuel démarré pour ${sanitizedData.url}`);
+        logToFile(`Manual scraping started for ${sanitizedData.url}`);
         
         const service = ServiceLoader.getService(sanitizedData.platform);
         if (!service) {
-            throw new Error(`Plateforme non supportée: ${sanitizedData.platform}`);
+            incrementErrorCount();
+            throw new Error(`Unsupported platform: ${sanitizedData.platform}`);
         }
 
         const result = await service.scrape(
@@ -112,16 +128,16 @@ app.post('/scrape', validateRequest, async (req, res) => {
             sanitizedData.userTarget
         );
 
-        stats.successCount++;
-        saveStats(stats);
+        incrementSuccessCount();
         
         res.json({
             success: true,
             data: result
         });
     } catch (error) {
-        stats.errorCount++;
-        saveStats(stats);
+        incrementErrorCount();
+        logToFile(`Error during scraping: ${error.message}`);
+        
         res.status(500).json({
             success: false,
             error: error.message
@@ -130,5 +146,5 @@ app.post('/scrape', validateRequest, async (req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`Serveur API de scraping écoutant sur le port ${PORT}`);
+    console.log(`API de scraping listening on port ${PORT}`);
 });

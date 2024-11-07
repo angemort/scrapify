@@ -68,6 +68,7 @@ module.exports = {
             logToFile(`Erreur de connexion : ${error}`);
             // DEBUG screenshot
             await page.screenshot({ path: debugScreenshotPath });
+            throw error;
         }
     },
     initializeTwitterSession: async (context, page) => {

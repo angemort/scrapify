@@ -35,7 +35,7 @@ const { verifyRetweet } = require('./actions/verifyRetweet');
  * const result = await scrape('https://x.com/user', 'getMetrics');
  */
 async function scrape(platformUrl, action, userTarget=null) {
-    logToFile(`Démarrage de l'agent pour ${action}...`);
+    logToFile(`Starting agent for ${action}...`);
     let browser;
     try {
         browser = await chromium.launch({ headless: true, slowMo: 2800 });
@@ -48,7 +48,7 @@ async function scrape(platformUrl, action, userTarget=null) {
 
         // Detect action
         const actionTarget = await detectAction(platformUrl); // post or profile
-        logToFile(`Cible détectée : ${actionTarget}`);
+        logToFile(`Detected target: ${actionTarget}`);
 
         let result;
         // For scraping Post Twitter
@@ -72,13 +72,13 @@ async function scrape(platformUrl, action, userTarget=null) {
             }
         }
 
-        logToFile(`Agent terminé avec le résultat : ${JSON.stringify(result)}`);
+        logToFile(`Agent completed successfully`);
         return result;
     } catch (error) {
-        logToFile(`Erreur de l'agent : ${error.message}`);
+        logToFile(`Agent error: ${error.message}`);
     } finally {
         if (browser) {
-            logToFile('Fermeture du navigateur...');
+            logToFile('Closing browser...');
             await browser.close();
         }
     }

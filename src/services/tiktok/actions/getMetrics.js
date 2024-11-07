@@ -26,8 +26,8 @@ async function getPostMetrics(page, platformUrl) {
         });
 
         if (!postInfo) {
-            logToFile('Erreur : Impossible de trouver les données de profil dans le HTML.');
-            return {};
+            logToFile('Error: Unable to find post data in the HTML.');
+            throw new Error('Unable to find post data in the HTML.');
         }
 
         // Traiter les données récupérées avec vos fonctions en Node.js
@@ -48,8 +48,8 @@ async function getPostMetrics(page, platformUrl) {
 
         return post;
     } catch (error) {
-        logToFile(`Erreur lors de l'extraction des métriques depuis le HTML: ${error}`);
-        return {};
+        logToFile(`Error extracting post metrics: ${error}`);
+        throw error;
     }
 }
 
@@ -79,8 +79,8 @@ async function getProfileMetrics(page, platformUrl) {
         });
 
         if (!userInfo) {
-            logToFile('Erreur : Impossible de trouver les données de profil dans le HTML.');
-            return {};
+            logToFile('Error: Unable to find profile data in the HTML.');
+            throw new Error('Unable to find profile data in the HTML.');
         }
 
         // Traiter les données récupérées avec vos fonctions en Node.js
@@ -93,8 +93,8 @@ async function getProfileMetrics(page, platformUrl) {
         };
 
     } catch (error) {
-        logToFile(`Erreur lors de l'extraction du profil depuis le HTML: ${error}`);
-        return {};
+        logToFile(`Error extracting profile metrics: ${error}`);
+        throw error;
     }
 }
 

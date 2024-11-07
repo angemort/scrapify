@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const statsFilePath = path.join(__dirname, '../../data/stats.json');
+const logsFilePath = path.join(__dirname, '../../logs/scraping.log');
 
 // Fonction pour initialiser le fichier avec des valeurs par défaut
 function initializeStatsFile() {
@@ -23,4 +24,44 @@ function saveStats(stats) {
     fs.writeFileSync(statsFilePath, JSON.stringify(stats, null, 2), 'utf-8');
 }
 
-module.exports = { loadStats, saveStats };
+// Charger les logs depuis le fichier
+function loadLogs() {
+    if (fs.existsSync(logsFilePath)) {
+        return fs.readFileSync(logsFilePath, 'utf-8');
+    }
+    return '';
+}
+
+function incrementSuccessCount() {
+    const stats = loadStats();
+    stats.successCount++;
+    saveStats(stats);
+}
+
+function incrementErrorCount() {
+    const stats = loadStats();
+    stats.errorCount++;
+    saveStats(stats);
+}
+
+function incrementPostRequestCount() {
+    const stats = loadStats();
+    stats.postRequestCount++;
+    saveStats(stats);
+}
+
+function incrementWebSocketRequestCount() {
+    const stats = loadStats();
+    stats.webSocketRequestCount++;
+    saveStats(stats);
+}
+
+module.exports = { 
+    loadStats, 
+    saveStats, 
+    loadLogs,
+    incrementSuccessCount,
+    incrementErrorCount,
+    incrementPostRequestCount,
+    incrementWebSocketRequestCount 
+};

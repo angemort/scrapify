@@ -38,7 +38,6 @@ async function getPostMetrics(context, page, platformUrl) {
     let tweetData = null;
 
     try {
-            // Configurer l'interception de la requête TweetDetail
         await context.route('**/TweetDetail*', async route => {
             const request = route.request();
             if (request.method() === 'GET') {
@@ -46,40 +45,46 @@ async function getPostMetrics(context, page, platformUrl) {
                 const response = await request.response();
                 if (response.url().includes('TweetDetail')) {
                     const jsonResponse = await response.json();
-                    logToFile('Analyse TweetDetail...');
+                    
+                    const tweetEntry = jsonResponse.data?.threaded_conversation_with_injections_v2
+                        ?.instructions?.[0]?.entries?.[0]?.content?.itemContent?.tweet_results?.result;
 
-                    // Extraction du tweet et de l'utilisateur
-                    const tweetEntry = jsonResponse.data.threaded_conversation_with_injections_v2.instructions[0].entries[0].content.itemContent.tweet_results.result;
+                    if (!tweetEntry) {
+                        logToFile('No tweet data found');
+                        return;
+                    }
 
-                    // Informations utilisateur
-                    const user = userSegment(tweetEntry);
-
-                    // Médias du tweet
-                    const medias = mediaSegment(tweetEntry);
-
-                    // Informations du post
-                    const post = {
-                        content: tweetEntry.legacy.full_text,
-                        lang: tweetEntry.legacy.lang,
-                        created_at: tweetEntry.legacy.created_at,
-                        conversation_id: tweetEntry.legacy.conversation_id_str,
-                        medias: medias,
-                        link: tweetEntry.note_tweet?.note_tweet_results?.result?.entity_set?.urls[0]?.expanded_url || null
+                    const user = userSegment(tweetEntry) || {
+                        username: 'unknown',
+                        name: 'unknown',
+                        certified: false
                     };
 
-                    // Extraction des hashtags, mentions, et URLs
-                    const hashtags = tweetEntry.legacy.entities?.hashtags.map(tag => tag.text) || [];
-                    const user_mentions = tweetEntry.legacy.entities?.user_mentions.map(mention => ({
-                        name: mention.name,
-                        screen_name: mention.screen_name,
-                        id: mention.id_str
+                    const medias = mediaSegment(tweetEntry) || [];
+                    const metrics = metricsSegment(tweetEntry) || {
+                        likes: 0,
+                        retweets: 0,
+                        replies: 0,
+                        views: 0
+                    };
+
+                    const post = {
+                        content: tweetEntry.legacy?.full_text || '',
+                        lang: tweetEntry.legacy?.lang || 'unknown',
+                        created_at: tweetEntry.legacy?.created_at || null,
+                        conversation_id: tweetEntry.legacy?.conversation_id_str || null,
+                        medias: medias,
+                        link: tweetEntry.note_tweet?.note_tweet_results?.result?.entity_set?.urls?.[0]?.expanded_url || null
+                    };
+
+                    const hashtags = tweetEntry.legacy?.entities?.hashtags?.map(tag => tag.text) || [];
+                    const user_mentions = tweetEntry.legacy?.entities?.user_mentions?.map(mention => ({
+                        name: mention.name || 'unknown',
+                        screen_name: mention.screen_name || 'unknown',
+                        id: mention.id_str || 'unknown'
                     })) || [];
-                    const urls = tweetEntry.legacy.entities?.urls.map(url => url.expanded_url) || [];
+                    const urls = tweetEntry.legacy?.entities?.urls?.map(url => url.expanded_url) || [];
 
-                    // Structure des métriques
-                    const metrics = metricsSegment(tweetEntry);
-
-                    // Regrouper toutes les données
                     tweetData = {
                         user,
                         post,
@@ -89,100 +94,135 @@ async function getPostMetrics(context, page, platformUrl) {
                         urls
                     };
 
-                    logToFile(`Données extraites : ${JSON.stringify(tweetData)}`);
+                    if (hasMinimalUsefulData(tweetData)) {
+                        logToFile(`Extracted data (partial or complete): ${JSON.stringify(tweetData)}`);
+                    } else {
+                        logToFile('Insufficient data extracted');
+                        tweetData = null;
+                    }
                 }
             } else {
                 route.continue();
             }
         });
 
-        // Naviguer à la page du tweet pour déclencher les requêtes réseau
-        await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
-        await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
-    } catch (error) {
-        logToFile(`Erreur lors de l'extraction des données du post : ${error}`);
-    }
+        await page.goto(platformUrl, { waitUntil: 'networkidle0' });
+        await page.waitForTimeout(3000);
+        await page.close();
 
-    return tweetData;
+        if (!tweetData) {
+            throw new Error('Unable to extract useful data from the post.');
+        }
+
+        return tweetData;
+
+    } catch (error) {
+        logToFile(`Critical error during data extraction: ${error.message}`);
+        throw error;
+    }
 }
 
-// Get metrics from the profile page
-// @param {Page} page - The page object
-// @returns {Object} - The metrics object
+function hasMinimalUsefulData(data) {
+    return !!(
+        data &&
+        (
+            (data.post && data.post.content) ||
+            (data.metrics && (data.metrics.likes !== undefined || data.metrics.retweets !== undefined)) ||
+            (data.user && data.user.username)
+        )
+    );
+}
+
 async function getProfileMetrics(context, page, platformUrl) {
     let profileData = null;
 
-    // Configurer l'interception de la requête UserByScreenName
-    await context.route('**/UserByScreenName*', async route => {
-        const request = route.request();
-        if (request.method() === 'GET') {
-            route.continue();
-            const response = await request.response();
-            if (response.url().includes('UserByScreenName')) {
-                const jsonResponse = await response.json();
-                logToFile('Analyse UserByScreenName...');
+    try {
+        await context.route('**/UserByScreenName*', async route => {
+            const request = route.request();
+            if (request.method() === 'GET') {
+                route.continue();
+                const response = await request.response();
+                if (response.url().includes('UserByScreenName')) {
+                    const jsonResponse = await response.json();
+                    
+                    const userResult = jsonResponse.data?.user?.result;
+                    const legacy = userResult?.legacy;
 
-                // Extraire les données du profil de l'utilisateur
-                const userResult = jsonResponse.data.user.result;
-                const legacy = userResult.legacy;
+                    if (!userResult) {
+                        logToFile('No profile data found');
+                        return;
+                    }
 
-                // Informations de base de l'utilisateur
-                const user = {
-                    username: legacy.screen_name,
-                    name: legacy.name,
-                    certified: userResult.is_blue_verified,
-                    is_identity_verified: userResult?.verification_info?.is_identity_verified || null,
-                    avatar: legacy.profile_image_url_https,
-                    cover: legacy.profile_banner_url || null,
-                    bio: legacy.description,
-                    location: legacy.location || null,
-                    joined: legacy.created_at,
-                    birthdate: legacy.birthdate || null,
-                };
+                    const user = {
+                        username: legacy?.screen_name || 'unknown',
+                        name: legacy?.name || 'unknown',
+                        certified: userResult.is_blue_verified || false,
+                        is_identity_verified: userResult?.verification_info?.is_identity_verified || false,
+                        avatar: legacy?.profile_image_url_https || null,
+                        cover: legacy?.profile_banner_url || null,
+                        bio: legacy?.description || '',
+                        location: legacy?.location || null,
+                        joined: legacy?.created_at || null,
+                        birthdate: legacy?.birthdate || null,
+                    };
 
-                // Liens et informations associées
-                const website = legacy.entities?.url?.urls[0] || {};
-                const websiteData = {
-                    name: website.display_url || null,
-                    url: website.expanded_url || null
-                };
+                    const metrics = {
+                        followers: legacy?.followers_count || 0,
+                        following: legacy?.friends_count || 0,
+                        tweet_count: legacy?.statuses_count || 0,
+                        likes_count: legacy?.favourites_count || 0,
+                        media_count: legacy?.media_count || 0
+                    };
 
-                // Statistiques du profil
-                const metrics = {
-                    followers: legacy.followers_count || 'Non disponible',
-                    following: legacy.friends_count || 'Non disponible',
-                    tweet_count: legacy.statuses_count || 'Non disponible',
-                    likes_count: legacy.favourites_count || 'Non disponible',
-                    media_count: legacy.media_count || 'Non disponible'
-                };
+                    profileData = {
+                        user,
+                        website: {
+                            name: legacy?.entities?.url?.urls[0]?.display_url || null,
+                            url: legacy?.entities?.url?.urls[0]?.expanded_url || null
+                        },
+                        metrics,
+                        professional: userResult.professional?.professional_type || null,
+                        categories: userResult.professional?.category || [],
+                        pinned_tweet_ids: legacy?.pinned_tweet_ids_str || [],
+                        highlights: userResult.highlights_info?.highlighted_tweets || 0,
+                        can_highlight_tweets: userResult.highlights_info?.can_highlight_tweets || false,
+                    };
 
-                // Compte professionnel
-                const professional = userResult.professional?.professional_type || null;
-                const categories = userResult.professional?.category || [];
-
-                profileData = {
-                    user,
-                    website: websiteData,
-                    metrics,
-                    professional,
-                    categories,
-                    pinned_tweet_ids: legacy.pinned_tweet_ids_str.map(id => id) || null,
-                    highlights: userResult.highlights_info?.highlighted_tweets || 0,
-                    can_highlight_tweets: userResult.highlights_info?.can_highlight_tweets || false,
-                };
-
-                logToFile(`Données extraites : ${JSON.stringify(profileData)}`);
+                    if (hasMinimalProfileData(profileData)) {
+                        logToFile(`Extracted profile data: ${JSON.stringify(profileData)}`);
+                    } else {
+                        logToFile('Insufficient profile data');
+                        profileData = null;
+                    }
+                }
+            } else {
+                route.continue();
             }
-        } else {
-            route.continue();
+        });
+
+        await page.goto(platformUrl, { waitUntil: 'networkidle0' });
+        await page.waitForTimeout(3000);
+
+        if (!profileData) {
+            throw new Error('Unable to extract useful data from the profile.');
         }
-    });
 
-    // Naviguer vers la page de profil pour déclencher les requêtes réseau
-    await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
+        return profileData;
 
-    return profileData;
+    } catch (error) {
+        logToFile(`Erreur critique lors de l'extraction du profil: ${error.message}`);
+        throw error;
+    }
+}
+
+function hasMinimalProfileData(data) {
+    return !!(
+        data &&
+        (
+            (data.user && (data.user.username || data.user.name)) ||
+            (data.metrics && (data.metrics.followers !== undefined || data.metrics.tweet_count !== undefined))
+        )
+    );
 }
 
 module.exports = { getPostMetrics, getProfileMetrics };
