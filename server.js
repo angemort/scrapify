@@ -90,7 +90,7 @@ app.get('/', (req, res) => {
                 <p>✅ Successful requests count: ${stats.successCount}</p>
                 <p>❌ Error requests count: ${stats.errorCount}</p>
                 <code>
-                    ${logs}
+                    ${JSON.stringify(logs, null, 2)}
                 </code>
             </div>
         </body>
