@@ -38,7 +38,7 @@ async function scrape(platformUrl, action, userTarget=null) {
     logToFile(`Démarrage de l'agent pour ${action}...`);
     let browser;
     try {
-        browser = await chromium.launch({ headless: true, slowMo: 2500 });
+        browser = await chromium.launch({ headless: true, slowMo: 2800 });
         const context = await browser.newContext({
             proxy: getProxy(),
             storageState: path.join(__dirname, '../../../data/twitter-state.json')

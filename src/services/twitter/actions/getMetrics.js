@@ -101,7 +101,6 @@ async function getPostMetrics(context, page, platformUrl) {
         await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
     } catch (error) {
         logToFile(`Erreur lors de l'extraction des données du post : ${error}`);
-        throw error;
     }
 
     return tweetData;

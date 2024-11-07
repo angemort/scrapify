@@ -32,7 +32,7 @@ async function scrape(platformUrl, action, userTarget=null) {
     logToFile(`Démarrage du scraping pour ${platformUrl} avec l'action ${action}...`);
     let browser;
     try {
-        browser = await chromium.launch({ headless: false, slowMo: 5500 });
+        browser = await chromium.launch({ headless: true, slowMo: 2500 });
         const context = await browser.newContext({
             proxy: getProxy(),
             storageState: path.join(__dirname, '../../../data/tiktok-state.json'),
