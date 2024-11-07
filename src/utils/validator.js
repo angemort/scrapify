@@ -1,60 +1,66 @@
+// src/utils/validator.js
+
 function validateRequest(req, res, next) {
-    const { platform, action, url, userTarget } = req.body;
+  const { platform, action, url, userTarget } = req.body;
+  const validationResult = validateData({ platform, action, url, userTarget });
   
-    if (!platform || !action) {
-      return res.status(400).json({
-        success: false,
-        error: 'Les paramètres "platform" et "action" sont requis.',
-      });
-    }
-  
-    // Définir les paramètres requis en fonction de l'action
-    const actionRequirements = {
-      verifyRetweet: ['url', 'userTarget'],
-      checkUserComment: ['url', 'userTarget'],
-      getMetrics: ['url'],
-      getRecentComments: ['url'],
-      getProfileMetrics: ['url'],
-    };
+  if (!validationResult.success) {
+    return res.status(400).json(validationResult);
+  }
 
-    // Définir les fonctions possibles pour chaque platform
-    const platformRequirements = {
-        verifyRetweet: ['twitter'],
-        checkUserComment: ['twitter'],
-        getMetrics: ['tiktok', 'twitter'],
-        getRecentComments: ['twitter'],
-        getProfileMetrics: ['tiktok', 'twitter'],
-    };
-
-    // Vérifier si l'action est autorisée pour la plateforme spécifiée
-    const allowedPlatforms = platformRequirements[action];
-    if (!allowedPlatforms || !allowedPlatforms.includes(platform)) {
-        return res.status(400).json({
-            success: false,
-            error: `L'action "${action}" n'est pas supportée pour la plateforme "${platform}".`,
-        });
-    }
-  
-    const requiredParams = actionRequirements[action];
-  
-    if (!requiredParams) {
-      return res.status(400).json({
-        success: false,
-        error: `Action non supportée: ${action}`,
-      });
-    }
-  
-    // Vérifier que les paramètres requis sont présents
-    for (const param of requiredParams) {
-      if (!req.body[param]) {
-        return res.status(400).json({
-          success: false,
-          error: `Le paramètre "${param}" est requis pour l'action "${action}".`,
-        });
-      }
-    }
-  
-    next();
+  next();
 }
 
-module.exports = { validateRequest };
+function validateWebSocketData(data) {
+  const { platform, action, url, userTarget } = data;
+  const validationResult = validateData({ platform, action, url, userTarget });
+  
+  if (!validationResult.success) {
+    throw new Error(validationResult.error);
+  }
+}
+
+function validateData({ platform, action, url, userTarget }) {
+  if (!platform || !action) {
+    return { success: false, error: 'Les paramètres "platform" et "action" sont requis.' };
+  }
+
+  const actionRequirements = {
+    verifyRetweet: ['url', 'userTarget'],
+    checkUserComment: ['url', 'userTarget'],
+    getMetrics: ['url'],
+    getRecentComments: ['url'],
+    getProfileMetrics: ['url'],
+  };
+
+  const platformRequirements = {
+    verifyRetweet: ['twitter'],
+    checkUserComment: ['twitter'],
+    getMetrics: ['tiktok', 'twitter'],
+    getRecentComments: ['twitter'],
+    getProfileMetrics: ['tiktok', 'twitter'],
+  };
+
+  const allowedPlatforms = platformRequirements[action];
+  if (!allowedPlatforms || !allowedPlatforms.includes(platform)) {
+    return {
+      success: false,
+      error: `L'action "${action}" n'est pas supportée pour la plateforme "${platform}".`,
+    };
+  }
+
+  const requiredParams = actionRequirements[action];
+  if (!requiredParams) {
+    return { success: false, error: `Action non supportée: ${action}` };
+  }
+
+  for (const param of requiredParams) {
+    if (!data[param]) {
+      return { success: false, error: `Le paramètre "${param}" est requis pour l'action "${action}".` };
+    }
+  }
+
+  return { success: true };
+}
+
+module.exports = { validateRequest, validateWebSocketData };
