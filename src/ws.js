@@ -53,9 +53,9 @@ function initializeWebSocket(server) {
 
                 const sanitizedData = {
                     url: encodeURI(taskData.url.trim()),
-                    userTarget: taskData.userTarget?.trim() || '',
+                    userTarget: taskData.userTarget?.trim() || null,
                     platform: taskData.platform.toLowerCase(),
-                    action: taskData.action.toLowerCase()
+                    action: taskData.action
                 };
 
                 logToFile(`Starting scraping for ${sanitizedData.url}`);
