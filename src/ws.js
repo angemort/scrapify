@@ -1,31 +1,40 @@
-const socketIo = require('socket.io');
+const WebSocket = require('ws');
 const { logToFile } = require('./utils/logger');
 const { checkRateLimit } = require('./utils/rateLimit');
 const { validateWebSocketData } = require('./utils/validator');
 const ServiceLoader = require('./serviceLoader');
+const { 
+    incrementSuccessCount,
+    incrementErrorCount,
+} = require('./utils/statsManager');
 
 /**
  * Configure et initialise les WebSockets
  * @param {Object} server - Instance du serveur HTTP
- * @returns {Object} - Instance de Socket.IO
+ * @returns {Object} - Instance de WebSocket.Server
  */
 function initializeWebSocket(server) {
-    const io = socketIo(server, {
-        path: '/ws',
-        transports: ['websocket'],
-        cors: {
-            origin: process.env.ALLOWED_ORIGINS?.split(',') || ["http://localhost:3000"],
-            methods: ["GET", "POST"],
-            credentials: true
-        }
+    const wss = new WebSocket.Server({ 
+        server,
+        path: '/ws'
     });
 
-    io.on('connection', (socket) => {
+    wss.on('connection', (ws) => {
         console.log('New client connected');
 
-        socket.on('get-scraping', async (taskData) => {
+        ws.on('message', async (message) => {
             try {
-                if (!checkRateLimit(socket)) {
+                const taskData = JSON.parse(message);
+                
+                if (!checkRateLimit(ws)) {
+                    ws.send(JSON.stringify({
+                        type: 'error',
+                        payload: {
+                            success: false,
+                            error: 'Too many requests. Please try again later.'
+                        }
+                    }));
+                    incrementErrorCount();
                     throw new Error('Too many requests. Please try again later.');
                 }
 
@@ -51,28 +60,35 @@ function initializeWebSocket(server) {
                     sanitizedData.userTarget
                 );
                 
-                socket.emit('scraping-completed', {
-                    success: true,
-                    data: result,
-                    taskData: sanitizedData
-                });
-                
+                ws.send(JSON.stringify({
+                    type: 'scraping-completed',
+                    payload: {
+                        success: true,
+                        data: result,
+                        taskData: sanitizedData
+                    }
+                }));
+                incrementSuccessCount();
             } catch (error) {
-                socket.emit('scraping-error', {
-                    success: false,
-                    error: error.message,
-                    taskData
-                });
+                ws.send(JSON.stringify({
+                    type: 'scraping-error',
+                    payload: {
+                        success: false,
+                        error: error.message,
+                        taskData: JSON.parse(message)
+                    }
+                }));
                 logToFile(`Scraping error: ${error.message}`);
+                incrementErrorCount();
             }
         });
 
-        socket.on('disconnect', () => {
+        ws.on('close', () => {
             console.log('Client disconnected');
         });
     });
 
-    return io;
+    return wss;
 }
 
 module.exports = { initializeWebSocket };

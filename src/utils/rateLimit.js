@@ -5,7 +5,7 @@ const MAX_REQUESTS = 10;
 
 const checkRateLimit = (socket) => {
     const now = Date.now();
-    const clientIP = socket.handshake.address;
+    const clientIP = socket._socket.remoteAddress;
     
     if (!socketRateLimit.has(clientIP)) {
         socketRateLimit.set(clientIP, [{timestamp: now}]);

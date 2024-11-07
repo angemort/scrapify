@@ -21,7 +21,7 @@
     "node-cron": "^3.0.3",
     "opencv-wasm": "^4.3.0-10",
     "playwright": "^1.48.2",
-    "socket.io": "^4.8.1"
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "docdash": "^2.0.2",
