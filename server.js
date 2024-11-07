@@ -80,6 +80,12 @@ app.get('/', (req, res) => {
                 p:hover {
                     transform: translateX(5px);
                 }
+                .log-line {
+                    margin: 0.2rem 0;
+                    padding: 0.5rem;
+                    background-color: #444;
+                    border-radius: 5px;
+                }
             </style>
         </head>
         <body>
@@ -89,9 +95,9 @@ app.get('/', (req, res) => {
                 <p>🌐 WebSocket requests count: ${stats.webSocketRequestCount}</p>
                 <p>✅ Successful requests count: ${stats.successCount}</p>
                 <p>❌ Error requests count: ${stats.errorCount}</p>
-                <code>
-                    ${JSON.stringify(logs, null, 2)}
-                </code>
+                <div>
+                    ${logs.split('\n').map(line => `<div class="log-line">${line}</div>`).join('')}
+                </div>
             </div>
         </body>
         </html>
