@@ -1,5 +1,3 @@
-// src/utils/validator.js
-
 function validateRequest(req, res, next) {
   const { platform, action, url, userTarget } = req.body;
   const validationResult = validateData({ platform, action, url, userTarget });
@@ -55,7 +53,7 @@ function validateData({ platform, action, url, userTarget }) {
   }
 
   for (const param of requiredParams) {
-    if (!data[param]) {
+    if (!eval(param)) {  // Utilisez `eval` pour accéder directement aux variables dans le contexte
       return { success: false, error: `Le paramètre "${param}" est requis pour l'action "${action}".` };
     }
   }
