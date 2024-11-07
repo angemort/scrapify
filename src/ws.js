@@ -23,8 +23,9 @@ function initializeWebSocket(server) {
         console.log('New client connected');
 
         ws.on('message', async (message) => {
+            let parsedMessage;
             try {
-                const parsedMessage = JSON.parse(message);
+                parsedMessage = JSON.parse(message);
                 console.log("Received message from client:", parsedMessage);
 
                 // Vérifiez que le message contient le type et le payload attendus
@@ -92,7 +93,7 @@ function initializeWebSocket(server) {
                     payload: {
                         success: false,
                         error: error.message,
-                        taskData: parsedMessage.payload || null
+                        taskData: parsedMessage ? parsedMessage.payload : null
                     }
                 }));
                 logToFile(`Scraping error: ${error.message}`);
