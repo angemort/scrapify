@@ -1,0 +1,29 @@
+{
+  "name": "scrapping-sociaux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "doc": "jsdoc -c jsdoc.json",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "agentql": "^0.0.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "express": "^4.21.1",
+    "jpeg-js": "^0.4.4",
+    "node-cron": "^3.0.3",
+    "opencv-wasm": "^4.3.0-10",
+    "playwright": "^1.48.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "docdash": "^2.0.2",
+    "jsdoc": "^4.0.4"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "cookies": [
+    {
+      "name": "guest_id",
+      "value": "v1%3A173051184830294802",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1764726248.74766,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "guest_id",
+      "value": "173051184830294802",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1762047848.893152,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "night_mode",
+      "value": "2",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1762047863.06162,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "gt",
+      "value": "1852527079071404046",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1730520849.152341,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "kdt",
+      "value": "XKMevYhhx7WkqFhIl1sa1tMsQ88ABdTr9NBaOmDt",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1764726262.102157,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth_token",
+      "value": "99877d4b4db1d641dcd7a7bcf5506d73bce688cb",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1764726262.102289,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ct0",
+      "value": "31c04aac8204b40d36af16317138a54a304d7cb833883ce5326e3b9794f9c60514a0e71cb600b92901dc68688f1a7252569605f221568719dad228eb0d76f287da3f2ac981ff5d80fcac35b1aa50ef15",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1764726262.358899,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "att",
+      "value": "1-Y2t2aPBKB3dcYV2ErFRkI0EbuXgIIub5EZzGxjBE",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1730598262.569046,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lang",
+      "value": "en",
+      "domain": "x.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "twid",
+      "value": "u%3D1852492996731981824",
+      "domain": ".x.com",
+      "path": "/",
+      "expires": 1762047862.581005,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

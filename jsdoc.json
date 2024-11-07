@@ -1,0 +1,52 @@
+{
+    "tags": {
+      "allowUnknownTags": false
+    },
+    "source": {
+      "include": ["src/services/"],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules/|docs)"
+    },
+    "opts": {
+      "readme": "./README.md",
+      "destination": "./docs/",
+      "encoding": "utf8",
+      "template": "./docs/jsdoc-theme",
+      "recurse": true,
+      "verbose": true
+    },
+    "plugins": [
+        "plugins/markdown",
+        "plugins/summarize"
+    ],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "docdash": {
+        "static": false,
+        "search": true,
+        "collapse": true,
+        "shortenTypes": true,
+        "sectionOrder": [
+             "Classes",
+             "Modules",
+             "Externals",
+             "Events",
+             "Namespaces",
+             "Mixins",
+             "Tutorials",
+             "Interfaces",
+             "Global"
+        ],
+        "menu": {
+            "Github": {        
+                "href":"https://github.com/AngeMort/scrapping-sociaux", 
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"github_link"
+            }
+        }
+    }
+}
+  

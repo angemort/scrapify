@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/AngeMort/scrapping-sociaux" target="_blank" class="menu-item" id="github_link" >Github</a></h2><h3>Modules</h3><ul><li><a href="module-TikTokService.html">TikTokService</a><ul class='methods'></ul></li><li><a href="module-TwitterService.html">TwitterService</a><ul class='methods'></ul></li></ul><h3>Interfaces</h3><ul><li><a href="module-TikTokService.AuthorInfo.html">TikTokService.AuthorInfo</a></li><li><a href="module-TikTokService.MetricsInfo.html">TikTokService.MetricsInfo</a></li><li><a href="module-TikTokService.MusicInfo.html">TikTokService.MusicInfo</a></li><li><a href="module-TikTokService.html#.VideoPostInfo">TikTokService.VideoPostInfo</a></li><li><a href="module-TwitterService.html#.MediaInfo">TwitterService.MediaInfo</a></li><li><a href="module-TwitterService.html#.MetricsInfo">TwitterService.MetricsInfo</a></li><li><a href="module-TwitterService.html#.UserInfo">TwitterService.UserInfo</a></li><li><a href="module-TwitterService.html#.VideoInfo">TwitterService.VideoInfo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>🤖 Scraping Social API</h1>
+<p>API de scraping pour les réseaux sociaux permettant de récupérer et vérifier des informations depuis Twitter et TikTok.</p>
+<h2>📋 Fonctionnalités</h2>
+<ul>
+<li>Scraping synchrone via REST API</li>
+<li>Scraping asynchrone via WebSocket</li>
+<li>Support de Twitter et TikTok</li>
+<li>Rate limiting intégré</li>
+<li>Logging des opérations</li>
+<li>Validation des données</li>
+</ul>
+<h2>🚀 Installation</h2>
+<pre class="prettyprint source lang-bash"><code># Cloner le repository
+git clone https://github.com/AngeMort/scrapping-sociaux.git
+
+# Installer les dépendances
+cd scrapping-sociaux
+npm install
+</code></pre>
+<h2>⚙️ Configuration</h2>
+<p>Créez un fichier <code>.env</code> à la racine du projet :</p>
+<pre class="prettyprint source lang-env"><code>PORT=3000
+ALLOWED_ORIGINS=http://localhost:8080
+</code></pre>
+<h2>🔧 Utilisation</h2>
+<h3>Démarrer le serveur</h3>
+<pre class="prettyprint source lang-bash"><code># Démarrer le serveur
+npm run start (ou node server.js)
+</code></pre>
+<h3>Exemple générateur de documentation</h3>
+<pre class="prettyprint source lang-bash"><code># Générer la documentation
+npm run doc (ou jsdoc -c jsdoc.json)
+</code></pre>
+<h3>Exemple d'utilisation REST API</h3>
+<pre class="prettyprint source lang-javascript"><code>const response = await fetch('http://localhost:3000/scrape', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        url: 'https://twitter.com/username/status/123456789',
+        userTarget: 'username',
+        platform: 'twitter',
+        action: 'getMetrics'
+    })
+});
+</code></pre>
+<h3>Exemple d'utilisation WebSocket</h3>
+<pre class="prettyprint source lang-javascript"><code>const socket = new WebSocket('ws://localhost:3000');
+
+socket.emit('get-scraping', {
+    url: 'https://twitter.com/username/status/123456789',
+    userTarget: 'username',
+    platform: 'twitter',
+    action: 'getMetrics'
+});
+</code></pre>
+<h2>📚 Documentation API</h2>
+<p>Cette API vous permet d'exécuter différentes actions de scraping sur des plateformes telles que Twitter et TikTok.</p>
+<h2>Endpoint <code>/scrape</code></h2>
+<p>Le endpoint <code>/scrape</code> permet d'exécuter une action de scraping sur une plateforme donnée.</p>
+<h3><strong>Méthode HTTP</strong></h3>
+<ul>
+<li><strong>GET</strong></li>
+</ul>
+<h3><strong>Paramètres</strong></h3>
+<ul>
+<li><strong><code>url</code></strong> <em>(string, obligatoire)</em> : L'URL du profil ou du post ciblé.</li>
+<li><strong><code>platform</code></strong> <em>(string, obligatoire)</em> : La plateforme cible. Valeurs possibles :
+<ul>
+<li><code>twitter</code></li>
+<li><code>tiktok</code></li>
+<li><em>(ajoutez d'autres plateformes si disponibles)</em></li>
+</ul>
+</li>
+<li><strong><code>action</code></strong> <em>(string, obligatoire)</em> : L'action du service à exécuter. Actions possibles :
+<ul>
+<li><code>getMetrics</code></li>
+<li><code>verifyRetweet</code></li>
+<li><code>checkUserComment</code></li>
+<li><em>(ajoutez d'autres actions si disponibles)</em></li>
+</ul>
+</li>
+<li><strong><code>userTarget</code></strong> <em>(string, optionnel)</em> : Le nom d'utilisateur ciblé, requis pour certaines actions.</li>
+</ul>
+<h3><strong>Exemples d'utilisation</strong></h3>
+<h4><strong>Exemple 1 : Récupérer les informations d'un post ou d'un profil Twitter (action getMetrics)</strong></h4>
+<ul>
+<li>URL : https://x.com/user/status/1234567890 (adresse de la page du post)</li>
+<li>ou URL : https://x.com/username (adresse de la page du profil)</li>
+</ul>
+<pre class="prettyprint source lang-http"><code>GET /scrape?platform=twitter&action=getMetrics&url=https://x.com/user/status/1234567890
+</code></pre>
+<h4><strong>Exemple 2 : Vérifier un retweet sur Twitter (action verifyRetweet)</strong></h4>
+<ul>
+<li>URL : https://x.com/user/status/1234567890 (adresse de la page du post)</li>
+<li>UserTarget : @KnightsonBase (l'utilisateur ciblé)</li>
+</ul>
+<pre class="prettyprint source lang-http"><code>GET /scrape?platform=twitter&action=verifyRetweet&url=https://x.com/user/status/1234567890&userTarget=@KnightsonBase
+</code></pre>
+<h4><strong>Exemple 3 : Vérifier si un utilisateur a commenté un post Twitter (action checkUserComment)</strong></h4>
+<ul>
+<li>URL : https://x.com/user/status/1234567890 (adresse de la page du post)</li>
+<li>UserTarget : @KnightsonBase (l'utilisateur ciblé)</li>
+</ul>
+<pre class="prettyprint source lang-http"><code>GET /scrape?platform=twitter&action=checkUserComment&url=https://x.com/user/status/1234567890&userTarget=@KnightsonBase
+</code></pre>
+<h2>🛠️ Technologies utilisées</h2>
+<ul>
+<li>Node.js</li>
+<li>Express.js</li>
+<li>Socket.IO</li>
+<li>Joi (validation)</li>
+<li>Winston (logging)</li>
+<li>JSDoc (documentation)</li>
+</ul>
+<h2>🔒 Limitations</h2>
+<ul>
+<li>Rate limit : 10 requêtes/minute/IP</li>
+<li>Taille max username : 50 caractères</li>
+<li>Plateformes supportées : Twitter, LinkedIn</li>
+</ul>
+<h2>🤝 Contribution</h2>
+<ol>
+<li>Fork le projet</li>
+<li>Créez votre branche (<code>git checkout -b feature/AmazingFeature</code>)</li>
+<li>Committez vos changements (<code>git commit -m 'Add: Amazing Feature'</code>)</li>
+<li>Push vers la branche (<code>git push origin feature/AmazingFeature</code>)</li>
+<li>Ouvrez une Pull Request</li>
+</ol>
+<h2>📝 License</h2>
+<p>Ce projet est sous licence MIT - voir le fichier <a href="LICENSE.md">LICENSE.md</a> pour plus de détails.</p>
+<h2>✨ Auteurs</h2>
+<ul>
+<li><strong>Ange Mort</strong> - <em>Travail initial</em> - <a href="https://github.com/AngeMort">Ange Mort</a></li>
+</ul>
+<h2>📮 Contact</h2>
+<ul>
+<li>Email : angemort@protonmail.com</li>
+<li>Twitter : <a href="https://twitter.com/AngeM0rt">@AngeM0rt</a></li>
+<li>Discord : Ange Mort</li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> for <a href="https://github.com/angemort">Scraping Social</a>.</p>
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

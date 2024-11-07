@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>tiktok/service.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/AngeMort/scrapping-sociaux" target="_blank" class="menu-item" id="github_link" >Github</a></h2><h3>Modules</h3><ul><li><a href="module-TikTokService.html">TikTokService</a><ul class='methods'></ul></li><li><a href="module-TwitterService.html">TwitterService</a><ul class='methods'></ul></li></ul><h3>Interfaces</h3><ul><li><a href="module-TikTokService.AuthorInfo.html">TikTokService.AuthorInfo</a></li><li><a href="module-TikTokService.MetricsInfo.html">TikTokService.MetricsInfo</a></li><li><a href="module-TikTokService.MusicInfo.html">TikTokService.MusicInfo</a></li><li><a href="module-TikTokService.html#.VideoPostInfo">TikTokService.VideoPostInfo</a></li><li><a href="module-TwitterService.html#.MediaInfo">TwitterService.MediaInfo</a></li><li><a href="module-TwitterService.html#.MetricsInfo">TwitterService.MetricsInfo</a></li><li><a href="module-TwitterService.html#.UserInfo">TwitterService.UserInfo</a></li><li><a href="module-TwitterService.html#.VideoInfo">TwitterService.VideoInfo</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">tiktok/service.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const { chromium } = require('playwright');
+const path = require('path');
+
+const { getProxy } = require('../../utils/proxy');
+const { logToFile } = require('../../utils/logger');
+const { initializeTiktokSession, detectAction } = require('./actions/login');
+const { getPostMetrics, getProfileMetrics } = require('./actions/getMetrics');
+
+/**
+ * @module TikTokService
+ * @description Module pour les actions de scraping sur Tiktok.
+ */
+
+/**
+ * Exécute une action de scraping sur Tiktok.
+ *
+ * @function scrape
+ * @memberof module:TikTokService
+ * @static
+ *
+ * @param {string} platformUrl - URL de la plateforme cible (post ou profil).
+ * @param {string} action - Action à effectuer (ex: 'getMetrics', 'getProfileMetrics').
+ * @returns {Promise&lt;MetricsPostResult|MetricsProfileResult>} Résultat de l'action de scraping.
+ *
+ * @example
+ * // Exemple d'utilisation pour 'getMetrics'
+ * const result = await scrape('https://tiktok.com/user/1234567890', 'getMetrics');
+ * -- OR --
+ * const result = await scrape('https://tiktok.com/user', 'getMetrics');
+ */
+async function scrape(platformUrl, action, userTarget=null) {
+    logToFile(`Démarrage du scraping pour ${platformUrl} avec l'action ${action}...`);
+    let browser;
+    try {
+        browser = await chromium.launch({ headless: false, slowMo: 5500 });
+        const context = await browser.newContext({
+            // proxy: getProxy(),
+            storageState: path.join(__dirname, '../../../data/tiktok-state.json'),
+            userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.141 Safari/537.36'
+        });
+        const page = await context.newPage();
+        // await initializeTiktokSession(context, page);
+
+        // Detect action
+        const actionTarget = await detectAction(platformUrl); // post or profile
+        logToFile(`Action détectée : ${actionTarget} ${platformUrl}`);
+        // await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
+
+        let result;
+        // For scraping Post Tiktok
+        if (actionTarget === 'post') {
+            logToFile(`Scraping post ${platformUrl}`);
+            if (action === 'getMetrics') {
+                result = await getPostMetrics(page, platformUrl);
+             } //else if (action === 'downloadComments') {
+            //     result = await downloadComments(page);
+            // } else if (action === 'checkUserComment' &amp;&amp; userTarget) {
+            //     result = await checkUserComment(page, userTarget);
+            // }
+        } 
+        // For scraping Profile Tiktok
+        else if (actionTarget === 'profile') {
+            logToFile(`Scraping profile ${platformUrl}`);
+            if (action === 'getMetrics') {
+                result = await getProfileMetrics(page, platformUrl);
+            }
+        }
+
+        logToFile(`Scraping terminé avec le résultat : ${JSON.stringify(result)}`);
+        return result;
+    } catch (error) {
+        logToFile(`Erreur de scraping : ${error.message}`);
+    } finally {
+        if (browser) {
+            logToFile('Fermeture du navigateur...');
+            await browser.close();
+        }
+    }
+}
+
+module.exports = { scrape };
+
+/**
+ * @typedef {Object} MetricsPostResult
+ * @memberof module:TikTokService
+ * @property {string} id - Identifiant du post.
+ * @property {string} content - Contenu du post.
+ * @property {string} createdAt - Date de création du post.
+ * @property {AuthorPostInfo} author - Informations sur l'auteur du post.
+ * @property {MetricsPostInfo} stats - Informations sur les métriques du post.
+ * @property {VideoInfo} video - Informations sur la vidéo du post.
+ * @property {MusicInfo} music - Informations sur la musique du post.
+ */
+
+/**
+ * @typedef {Object} MetricsProfileResult
+ * @memberof module:TikTokService
+ * @property {AuthorProfileInfo} user - Informations sur l'auteur du profil.
+ * @property {MetricsProfileInfo} stats - Informations sur les métriques du profil.
+ */
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> for <a href="https://github.com/angemort">Scraping Social</a>.</p>
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

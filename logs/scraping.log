@@ -1,0 +1,1519 @@
+2024-11-06T02:10:52.720Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T02:10:52.721Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T02:10:53.016Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T02:10:53.016Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T02:11:01.137Z - Attente de l'affichage du CAPTCHA
+2024-11-06T02:11:01.156Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:11:01.162Z - Images CAPTCHA trouvées : contour=https://p16-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/c13e7a53d22e45298a03c9514a02e390~tplv-447w7jt563-2.jpeg, centre=https://p16-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/fa7c92dab2d849a29493b1e562c2317a~tplv-447w7jt563-2.jpeg
+2024-11-06T02:11:01.278Z - Contour Image Buffer Length: 9183
+2024-11-06T02:11:01.278Z - Center Image Buffer Length: 8019
+2024-11-06T02:11:01.308Z - Images décodées avec succès.
+2024-11-06T02:11:01.310Z - Matrices OpenCV créées avec succès.
+2024-11-06T02:11:01.311Z - Calcul de l'angle de rotation...
+2024-11-06T02:11:01.312Z - Erreur lors de la rotation du CAPTCHA : undefined
+2024-11-06T02:11:01.316Z - Erreur lors de l'extraction du profil depuis le HTML: Error: page.evaluate: ReferenceError: authorSegment is not defined
+    at eval (eval at evaluate (:234:30), <anonymous>:10:23)
+    at UtilityScript.evaluate (<anonymous>:236:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2024-11-06T02:11:01.316Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:11:01.316Z - Fermeture du navigateur...
+2024-11-06T02:15:49.957Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:15:49.958Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:15:50.215Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:15:50.215Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:15:50.215Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:15:58.253Z - Attente de l'affichage du CAPTCHA
+2024-11-06T02:15:58.273Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:15:58.279Z - Images CAPTCHA trouvées : contour=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/ded47cd8c0cf4e62a4391aa58be39f0b~tplv-447w7jt563-2.jpeg, centre=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/6e7500efd10448218d8e8454a3b7283c~tplv-447w7jt563-2.jpeg
+2024-11-06T02:15:58.410Z - Contour Image Buffer Length: 15564
+2024-11-06T02:15:58.410Z - Center Image Buffer Length: 5997
+2024-11-06T02:15:58.439Z - Images décodées avec succès.
+2024-11-06T02:15:58.440Z - Matrices OpenCV créées avec succès.
+2024-11-06T02:15:58.442Z - Calcul de l'angle de rotation...
+2024-11-06T02:15:58.443Z - Erreur lors du calcul de l'angle de rotation : undefined
+2024-11-06T02:15:58.443Z - Angle de rotation calculé : 0°
+2024-11-06T02:16:20.003Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:16:28.538Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:16:28.538Z - Fermeture du navigateur...
+2024-11-06T02:17:39.685Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:17:39.686Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:17:39.971Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:17:39.971Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:17:39.972Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:17:48.097Z - Attente de l'affichage du CAPTCHA
+2024-11-06T02:17:48.117Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:17:48.123Z - Images CAPTCHA trouvées : contour=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/3f381775d912455f99da6d9cc1b6c628~tplv-447w7jt563-2.jpeg, centre=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/54c5aa60e36d4eb087ef271161ff813c~tplv-447w7jt563-2.jpeg
+2024-11-06T02:17:48.249Z - Contour Image Buffer Length: 11015
+2024-11-06T02:17:48.250Z - Center Image Buffer Length: 8321
+2024-11-06T02:17:48.278Z - Images décodées avec succès.
+2024-11-06T02:17:48.279Z - Matrices OpenCV créées avec succès.
+2024-11-06T02:17:48.280Z - Calcul de l'angle de rotation...
+2024-11-06T02:17:48.281Z - Erreur lors du calcul de l'angle de rotation : undefined
+2024-11-06T02:17:48.281Z - Angle de rotation calculé : 0°
+2024-11-06T02:18:09.836Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:18:18.388Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:18:18.388Z - Fermeture du navigateur...
+2024-11-06T02:18:40.142Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:18:40.143Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:18:40.400Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:18:40.401Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:18:40.401Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:18:48.649Z - Attente de l'affichage du CAPTCHA
+2024-11-06T02:18:48.669Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:18:48.675Z - Images CAPTCHA trouvées : contour=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/8e15f1fa62414319a951bd8cfb201e7a~tplv-447w7jt563-2.jpeg, centre=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/d100af687a8146b085fa11ca43860769~tplv-447w7jt563-2.jpeg
+2024-11-06T02:18:48.816Z - Contour Image Buffer Length: 10937
+2024-11-06T02:18:48.817Z - Center Image Buffer Length: 6230
+2024-11-06T02:18:48.845Z - Images décodées avec succès.
+2024-11-06T02:18:48.846Z - Matrices OpenCV créées avec succès.
+2024-11-06T02:18:48.847Z - Calcul de l'angle de rotation...
+2024-11-06T02:18:48.848Z - Erreur lors du calcul de l'angle de rotation : 6492104
+2024-11-06T02:18:48.848Z - Angle de rotation calculé : 0°
+2024-11-06T02:19:10.390Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:19:18.937Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:19:18.938Z - Fermeture du navigateur...
+2024-11-06T02:19:46.815Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:19:46.815Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:19:47.121Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:19:47.121Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:19:47.122Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:19:55.156Z - Attente de l'affichage du CAPTCHA
+2024-11-06T02:19:55.177Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:19:55.183Z - Images CAPTCHA trouvées : contour=https://p16-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/68778fd67f0f4e3595b8f9ed8f63b592~tplv-447w7jt563-2.jpeg, centre=https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/f37a93d4344945f087e71d41eecbc489~tplv-447w7jt563-2.jpeg
+2024-11-06T02:19:55.313Z - Contour Image Buffer Length: 12311
+2024-11-06T02:19:55.313Z - Center Image Buffer Length: 8624
+2024-11-06T02:19:55.343Z - Images décodées avec succès.
+2024-11-06T02:19:55.344Z - Matrices OpenCV créées avec succès.
+2024-11-06T02:19:55.345Z - Calcul de l'angle de rotation...
+2024-11-06T02:19:55.346Z - Erreur lors du calcul de l'angle de rotation : 6492104
+2024-11-06T02:19:55.346Z - Angle de rotation calculé : 0°
+2024-11-06T02:20:16.900Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:20:25.435Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:20:25.436Z - Fermeture du navigateur...
+2024-11-06T02:23:34.515Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:23:34.516Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:23:34.750Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:23:34.750Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:23:34.750Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:23:42.875Z - Erreur de scraping : byPassCaptcha is not a function
+2024-11-06T02:23:42.875Z - Fermeture du navigateur...
+2024-11-06T02:24:18.855Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:24:18.856Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:24:19.158Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:24:19.158Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:24:19.159Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:24:27.245Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:24:27.384Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:24:27.414Z - Calcul de l'angle de rotation...
+2024-11-06T02:24:27.415Z - Erreur lors du calcul de l'angle de rotation : Cannot read properties of undefined (reading '$$')
+2024-11-06T02:24:27.415Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:24:35.954Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:24:35.954Z - Fermeture du navigateur...
+2024-11-06T02:25:55.032Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:25:55.033Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:25:55.353Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:25:55.353Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:25:55.353Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:26:03.396Z - Erreur de scraping : byPassCaptcha is not a function
+2024-11-06T02:26:03.396Z - Fermeture du navigateur...
+2024-11-06T02:26:27.117Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:26:27.117Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:26:27.401Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:26:27.401Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:26:27.402Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:26:35.453Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:26:35.623Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:26:35.651Z - Calcul de l'angle de rotation...
+2024-11-06T02:26:35.651Z - Erreur lors du calcul de l'angle de rotation : Cannot read properties of undefined (reading '$$')
+2024-11-06T02:26:35.651Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:26:44.206Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:26:44.206Z - Fermeture du navigateur...
+2024-11-06T02:30:19.337Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:30:19.338Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:30:19.629Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:30:19.629Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:30:19.630Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:30:27.694Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:30:27.824Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:30:27.853Z - Calcul de l'angle de rotation...
+2024-11-06T02:30:27.862Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:30:27.862Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:30:36.412Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:30:36.412Z - Fermeture du navigateur...
+2024-11-06T02:32:21.227Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:32:21.228Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:32:21.548Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:32:21.548Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:32:21.548Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:32:29.554Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:32:29.713Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:32:29.740Z - Calcul de l'angle de rotation...
+2024-11-06T02:32:29.750Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:32:29.751Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:32:38.292Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:32:38.292Z - Fermeture du navigateur...
+2024-11-06T02:35:30.027Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:35:30.028Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:35:30.340Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:35:30.340Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:35:30.340Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:35:38.367Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:35:38.387Z - Nombre insuffisant d'images pour le CAPTCHA.
+2024-11-06T02:35:38.387Z - Erreur lors de la rotation du CAPTCHA : Impossible de récupérer les images du CAPTCHA.
+2024-11-06T02:35:46.938Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:35:46.938Z - Fermeture du navigateur...
+2024-11-06T02:36:27.928Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:36:27.929Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:36:28.207Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:36:28.207Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:36:28.208Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:36:36.296Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:36:36.445Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:36:36.487Z - Calcul de l'angle de rotation...
+2024-11-06T02:36:36.496Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:36:36.496Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:36:45.041Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:36:45.042Z - Fermeture du navigateur...
+2024-11-06T02:38:47.343Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:38:47.344Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:38:47.627Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:38:47.628Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:38:47.628Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:38:55.696Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:38:55.871Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:38:55.902Z - Calcul de l'angle de rotation...
+2024-11-06T02:38:55.910Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:38:55.910Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:39:04.449Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:39:04.450Z - Fermeture du navigateur...
+2024-11-06T02:40:15.099Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:40:15.100Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:40:15.372Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:40:15.372Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:40:15.372Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:40:23.510Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:40:23.696Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:40:23.724Z - Calcul de l'angle de rotation...
+2024-11-06T02:40:23.725Z - Type de contour : object, type de center : object
+2024-11-06T02:40:23.725Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T02:40:23.734Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:40:23.734Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:40:32.287Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:40:32.288Z - Fermeture du navigateur...
+2024-11-06T02:44:41.036Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:44:41.037Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:44:41.589Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:44:41.589Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:44:41.590Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:44:49.646Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:44:49.825Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:44:49.854Z - Calcul de l'angle de rotation...
+2024-11-06T02:44:49.854Z - Type de contour : object, type de center : object
+2024-11-06T02:44:49.854Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T02:44:49.864Z - Erreur lors du calcul de l'angle de rotation : Cannot read properties of undefined (reading 'NORM_L2')
+2024-11-06T02:44:49.864Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:44:58.403Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:44:58.403Z - Fermeture du navigateur...
+2024-11-06T02:47:13.416Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:47:13.417Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:47:13.703Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:47:13.703Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:47:13.703Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:47:21.795Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:47:21.929Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:47:21.965Z - Calcul de l'angle de rotation...
+2024-11-06T02:47:21.965Z - Type de contour : object, type de center : object
+2024-11-06T02:47:21.965Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T02:47:21.976Z - Erreur lors du calcul de l'angle de rotation : Cannot convert "[object Object]" to int
+2024-11-06T02:47:21.977Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T02:47:30.513Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:47:30.513Z - Fermeture du navigateur...
+2024-11-06T02:51:58.283Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:51:58.284Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:51:58.620Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:51:58.620Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:51:58.620Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:52:06.659Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:52:06.807Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:52:06.837Z - Calcul de l'angle de rotation...
+2024-11-06T02:52:06.837Z - Type de contour : object, type de center : object
+2024-11-06T02:52:06.838Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T02:52:06.848Z - Erreur lors du calcul de diff pour l'angle 0 : undefined
+2024-11-06T02:52:06.850Z - Erreur lors du calcul de diff pour l'angle 10 : undefined
+2024-11-06T02:52:06.850Z - Erreur lors du calcul de diff pour l'angle 20 : undefined
+2024-11-06T02:52:06.851Z - Erreur lors du calcul de diff pour l'angle 30 : undefined
+2024-11-06T02:52:06.852Z - Erreur lors du calcul de diff pour l'angle 40 : undefined
+2024-11-06T02:52:06.853Z - Erreur lors du calcul de diff pour l'angle 50 : undefined
+2024-11-06T02:52:06.853Z - Erreur lors du calcul de diff pour l'angle 60 : undefined
+2024-11-06T02:52:06.854Z - Erreur lors du calcul de diff pour l'angle 70 : undefined
+2024-11-06T02:52:06.854Z - Erreur lors du calcul de diff pour l'angle 80 : undefined
+2024-11-06T02:52:06.855Z - Erreur lors du calcul de diff pour l'angle 90 : undefined
+2024-11-06T02:52:06.855Z - Erreur lors du calcul de diff pour l'angle 100 : undefined
+2024-11-06T02:52:06.856Z - Erreur lors du calcul de diff pour l'angle 110 : undefined
+2024-11-06T02:52:06.856Z - Erreur lors du calcul de diff pour l'angle 120 : undefined
+2024-11-06T02:52:06.857Z - Erreur lors du calcul de diff pour l'angle 130 : undefined
+2024-11-06T02:52:06.857Z - Erreur lors du calcul de diff pour l'angle 140 : undefined
+2024-11-06T02:52:06.858Z - Erreur lors du calcul de diff pour l'angle 150 : undefined
+2024-11-06T02:52:06.859Z - Erreur lors du calcul de diff pour l'angle 160 : undefined
+2024-11-06T02:52:06.859Z - Erreur lors du calcul de diff pour l'angle 170 : undefined
+2024-11-06T02:52:06.860Z - Erreur lors du calcul de diff pour l'angle 180 : undefined
+2024-11-06T02:52:06.860Z - Erreur lors du calcul de diff pour l'angle 190 : undefined
+2024-11-06T02:52:06.861Z - Erreur lors du calcul de diff pour l'angle 200 : undefined
+2024-11-06T02:52:06.862Z - Erreur lors du calcul de diff pour l'angle 210 : undefined
+2024-11-06T02:52:06.862Z - Erreur lors du calcul de diff pour l'angle 220 : undefined
+2024-11-06T02:52:06.863Z - Erreur lors du calcul de diff pour l'angle 230 : undefined
+2024-11-06T02:52:06.863Z - Erreur lors du calcul de diff pour l'angle 240 : undefined
+2024-11-06T02:52:06.864Z - Erreur lors du calcul de diff pour l'angle 250 : undefined
+2024-11-06T02:52:06.865Z - Erreur lors du calcul de diff pour l'angle 260 : undefined
+2024-11-06T02:52:06.865Z - Erreur lors du calcul de diff pour l'angle 270 : undefined
+2024-11-06T02:52:06.866Z - Erreur lors du calcul de diff pour l'angle 280 : undefined
+2024-11-06T02:52:06.867Z - Erreur lors du calcul de diff pour l'angle 290 : undefined
+2024-11-06T02:52:06.867Z - Erreur lors du calcul de diff pour l'angle 300 : undefined
+2024-11-06T02:52:06.868Z - Erreur lors du calcul de diff pour l'angle 310 : undefined
+2024-11-06T02:52:06.868Z - Erreur lors du calcul de diff pour l'angle 320 : undefined
+2024-11-06T02:52:06.869Z - Erreur lors du calcul de diff pour l'angle 330 : undefined
+2024-11-06T02:52:06.869Z - Erreur lors du calcul de diff pour l'angle 340 : undefined
+2024-11-06T02:52:06.870Z - Erreur lors du calcul de diff pour l'angle 350 : undefined
+2024-11-06T02:52:06.870Z - Angle de rotation trouvé : 0° avec différence de 9007199254740991
+2024-11-06T02:52:28.435Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:52:28.435Z - Angle de rotation appliqué : 0°
+2024-11-06T02:52:36.975Z - Scraping terminé avec le résultat : {}
+2024-11-06T02:52:36.975Z - Fermeture du navigateur...
+2024-11-06T02:58:02.026Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:58:02.027Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T02:58:02.312Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:58:02.312Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:58:02.313Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T02:58:10.344Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T02:58:10.472Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T02:58:10.508Z - Calcul de l'angle de rotation...
+2024-11-06T02:58:10.508Z - Type de contour : object, type de center : object
+2024-11-06T02:58:10.509Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T02:58:10.523Z - Différence pour l'angle 0 : 28966.105019487863
+2024-11-06T02:58:10.524Z - Différence pour l'angle 10 : 27595.4308717947
+2024-11-06T02:58:10.526Z - Différence pour l'angle 20 : 27571.35965091312
+2024-11-06T02:58:10.526Z - Différence pour l'angle 30 : 27602.948809864498
+2024-11-06T02:58:10.527Z - Différence pour l'angle 40 : 27372.218434025403
+2024-11-06T02:58:10.528Z - Différence pour l'angle 50 : 27376.303494080425
+2024-11-06T02:58:10.529Z - Différence pour l'angle 60 : 27567.931424029623
+2024-11-06T02:58:10.530Z - Différence pour l'angle 70 : 27562.435469312215
+2024-11-06T02:58:10.532Z - Différence pour l'angle 80 : 27847.260260212315
+2024-11-06T02:58:10.533Z - Différence pour l'angle 90 : 29585.898127317345
+2024-11-06T02:58:10.534Z - Différence pour l'angle 100 : 28138.842424662747
+2024-11-06T02:58:10.535Z - Différence pour l'angle 110 : 28242.953669897914
+2024-11-06T02:58:10.536Z - Différence pour l'angle 120 : 28282.982409922755
+2024-11-06T02:58:10.537Z - Différence pour l'angle 130 : 28266.185451878715
+2024-11-06T02:58:10.538Z - Différence pour l'angle 140 : 27984.268795164186
+2024-11-06T02:58:10.539Z - Différence pour l'angle 150 : 28055.648201387186
+2024-11-06T02:58:10.540Z - Différence pour l'angle 160 : 27887.008695806726
+2024-11-06T02:58:10.541Z - Différence pour l'angle 170 : 27819.686105346336
+2024-11-06T02:58:10.542Z - Différence pour l'angle 180 : 29215.833104671172
+2024-11-06T02:58:10.542Z - Différence pour l'angle 190 : 27733.112627326922
+2024-11-06T02:58:10.543Z - Différence pour l'angle 200 : 27855.56666090281
+2024-11-06T02:58:10.544Z - Différence pour l'angle 210 : 27753.025240503062
+2024-11-06T02:58:10.545Z - Différence pour l'angle 220 : 27976.50669758467
+2024-11-06T02:58:10.546Z - Différence pour l'angle 230 : 27712.332489344884
+2024-11-06T02:58:10.547Z - Différence pour l'angle 240 : 27741.78027812923
+2024-11-06T02:58:10.548Z - Différence pour l'angle 250 : 27844.557475384663
+2024-11-06T02:58:10.549Z - Différence pour l'angle 260 : 28050.6888863714
+2024-11-06T02:58:10.550Z - Différence pour l'angle 270 : 29592.525441401584
+2024-11-06T02:58:10.551Z - Différence pour l'angle 280 : 28166.284135469487
+2024-11-06T02:58:10.552Z - Différence pour l'angle 290 : 28201.985231539995
+2024-11-06T02:58:10.553Z - Différence pour l'angle 300 : 28147.722501118984
+2024-11-06T02:58:10.553Z - Différence pour l'angle 310 : 28097.88689563683
+2024-11-06T02:58:10.554Z - Différence pour l'angle 320 : 27959.747996003112
+2024-11-06T02:58:10.555Z - Différence pour l'angle 330 : 28178.782443533644
+2024-11-06T02:58:10.556Z - Différence pour l'angle 340 : 28107.938255944708
+2024-11-06T02:58:10.557Z - Différence pour l'angle 350 : 27784.118089296986
+2024-11-06T02:58:10.557Z - Angle de rotation trouvé : 40° avec différence de 27372.218434025403
+2024-11-06T02:59:52.139Z - Échec de la résolution du CAPTCHA.
+2024-11-06T02:59:52.139Z - Angle de rotation appliqué : 40°
+2024-11-06T03:00:00.683Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:00:00.684Z - Fermeture du navigateur...
+2024-11-06T03:00:19.751Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:00:19.751Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:00:20.015Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:00:20.015Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:00:20.016Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:00:28.221Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:00:28.317Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:00:28.341Z - Calcul de l'angle de rotation...
+2024-11-06T03:00:28.341Z - Type de contour : object, type de center : object
+2024-11-06T03:00:28.341Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:00:28.344Z - Différence pour l'angle 0 : 33461.003332237364
+2024-11-06T03:00:28.345Z - Différence pour l'angle 10 : 30822.489857245473
+2024-11-06T03:00:28.346Z - Différence pour l'angle 20 : 31016.03372451094
+2024-11-06T03:00:28.347Z - Différence pour l'angle 30 : 31337.34795734955
+2024-11-06T03:00:28.348Z - Différence pour l'angle 40 : 31394.463460935272
+2024-11-06T03:00:28.349Z - Différence pour l'angle 50 : 31277.12386073886
+2024-11-06T03:00:28.350Z - Différence pour l'angle 60 : 31355.112055293313
+2024-11-06T03:00:28.352Z - Différence pour l'angle 70 : 31564.65488485499
+2024-11-06T03:00:28.353Z - Différence pour l'angle 80 : 31778.227137460013
+2024-11-06T03:00:28.355Z - Différence pour l'angle 90 : 34297.57737800149
+2024-11-06T03:00:28.356Z - Différence pour l'angle 100 : 31531.83134548325
+2024-11-06T03:00:28.357Z - Différence pour l'angle 110 : 31472.720568771936
+2024-11-06T03:00:28.358Z - Différence pour l'angle 120 : 31391.398200781055
+2024-11-06T03:00:28.359Z - Différence pour l'angle 130 : 31560.501786251752
+2024-11-06T03:00:28.360Z - Différence pour l'angle 140 : 31606.250900731648
+2024-11-06T03:00:28.361Z - Différence pour l'angle 150 : 31782.056006495237
+2024-11-06T03:00:28.362Z - Différence pour l'angle 160 : 31783.86165965363
+2024-11-06T03:00:28.364Z - Différence pour l'angle 170 : 31890.52528573338
+2024-11-06T03:00:28.365Z - Différence pour l'angle 180 : 34519.9232328231
+2024-11-06T03:00:28.366Z - Différence pour l'angle 190 : 32302.758860506015
+2024-11-06T03:00:28.367Z - Différence pour l'angle 200 : 32305.776975643228
+2024-11-06T03:00:28.368Z - Différence pour l'angle 210 : 32361.21618542789
+2024-11-06T03:00:28.369Z - Différence pour l'angle 220 : 32221.519750005584
+2024-11-06T03:00:28.370Z - Différence pour l'angle 230 : 32132.073944891887
+2024-11-06T03:00:28.371Z - Différence pour l'angle 240 : 31997.53565510944
+2024-11-06T03:00:28.371Z - Différence pour l'angle 250 : 32225.25106186141
+2024-11-06T03:00:28.372Z - Différence pour l'angle 260 : 32115.111038263592
+2024-11-06T03:00:28.373Z - Différence pour l'angle 270 : 34732.89050741386
+2024-11-06T03:00:28.374Z - Différence pour l'angle 280 : 32055.974918882126
+2024-11-06T03:00:28.375Z - Différence pour l'angle 290 : 32094.379492365948
+2024-11-06T03:00:28.376Z - Différence pour l'angle 300 : 32102.88535318905
+2024-11-06T03:00:28.377Z - Différence pour l'angle 310 : 31956.74495313939
+2024-11-06T03:00:28.378Z - Différence pour l'angle 320 : 31705.91596216706
+2024-11-06T03:00:28.379Z - Différence pour l'angle 330 : 31567.287846756808
+2024-11-06T03:00:28.380Z - Différence pour l'angle 340 : 31346.9765527714
+2024-11-06T03:00:28.381Z - Différence pour l'angle 350 : 31210.999263080317
+2024-11-06T03:00:28.381Z - Angle de rotation trouvé : 10° avec différence de 30822.489857245473
+2024-11-06T03:01:12.137Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:01:12.137Z - Angle de rotation appliqué : 10°
+2024-11-06T03:01:20.685Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:01:20.685Z - Fermeture du navigateur...
+2024-11-06T03:02:35.672Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:02:35.672Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:02:35.930Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:02:35.930Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:02:35.930Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:02:44.004Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:02:44.110Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:02:44.126Z - Calcul de l'angle de rotation...
+2024-11-06T03:02:44.127Z - Type de contour : object, type de center : object
+2024-11-06T03:02:44.127Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:02:44.129Z - Différence pour l'angle 0 : 22633.32779332284
+2024-11-06T03:02:44.130Z - Différence pour l'angle 10 : 21359.510902640068
+2024-11-06T03:02:44.131Z - Différence pour l'angle 20 : 21157.304246997064
+2024-11-06T03:02:44.132Z - Différence pour l'angle 30 : 21232.666554156593
+2024-11-06T03:02:44.133Z - Différence pour l'angle 40 : 21352.735117544074
+2024-11-06T03:02:44.133Z - Différence pour l'angle 50 : 21520.301833385143
+2024-11-06T03:02:44.135Z - Différence pour l'angle 60 : 21658.417509134873
+2024-11-06T03:02:44.136Z - Différence pour l'angle 70 : 21565.452047198083
+2024-11-06T03:02:44.137Z - Différence pour l'angle 80 : 21685.74778512376
+2024-11-06T03:02:44.137Z - Différence pour l'angle 90 : 23891.736249172012
+2024-11-06T03:02:44.138Z - Différence pour l'angle 100 : 22266.251570482178
+2024-11-06T03:02:44.139Z - Différence pour l'angle 110 : 22326.02492608122
+2024-11-06T03:02:44.140Z - Différence pour l'angle 120 : 22299.65923506456
+2024-11-06T03:02:44.141Z - Différence pour l'angle 130 : 22397.35486614435
+2024-11-06T03:02:44.142Z - Différence pour l'angle 140 : 22253.85335172316
+2024-11-06T03:02:44.143Z - Différence pour l'angle 150 : 22161.22927547116
+2024-11-06T03:02:44.144Z - Différence pour l'angle 160 : 21962.67253774003
+2024-11-06T03:02:44.145Z - Différence pour l'angle 170 : 21722.378806198918
+2024-11-06T03:02:44.146Z - Différence pour l'angle 180 : 23415.259319512137
+2024-11-06T03:02:44.147Z - Différence pour l'angle 190 : 21540.819622289215
+2024-11-06T03:02:44.148Z - Différence pour l'angle 200 : 21618.716289363714
+2024-11-06T03:02:44.148Z - Différence pour l'angle 210 : 21992.988769150954
+2024-11-06T03:02:44.149Z - Différence pour l'angle 220 : 22130.969657925067
+2024-11-06T03:02:44.150Z - Différence pour l'angle 230 : 22206.69489140606
+2024-11-06T03:02:44.152Z - Différence pour l'angle 240 : 22315.134236656522
+2024-11-06T03:02:44.153Z - Différence pour l'angle 250 : 22207.898032006542
+2024-11-06T03:02:44.154Z - Différence pour l'angle 260 : 22144.919056072435
+2024-11-06T03:02:44.155Z - Différence pour l'angle 270 : 23696.618661741595
+2024-11-06T03:02:44.155Z - Différence pour l'angle 280 : 22118.814864273358
+2024-11-06T03:02:44.157Z - Différence pour l'angle 290 : 21923.508318697535
+2024-11-06T03:02:44.158Z - Différence pour l'angle 300 : 21836.42282975854
+2024-11-06T03:02:44.158Z - Différence pour l'angle 310 : 21706.787072250005
+2024-11-06T03:02:44.159Z - Différence pour l'angle 320 : 21617.324880752476
+2024-11-06T03:02:44.160Z - Différence pour l'angle 330 : 21638.19987891784
+2024-11-06T03:02:44.161Z - Différence pour l'angle 340 : 21304.32376302989
+2024-11-06T03:02:44.163Z - Différence pour l'angle 350 : 21151.332842163873
+2024-11-06T03:02:44.163Z - Angle de rotation trouvé : 350° avec différence de 21151.332842163873
+2024-11-06T03:08:44.228Z - Erreur lors de la rotation du CAPTCHA : page.waitForTimeout: Target page, context or browser has been closed
+2024-11-06T03:08:44.229Z - Erreur de scraping : mouse.wheel: Target page, context or browser has been closed
+2024-11-06T03:08:44.229Z - Fermeture du navigateur...
+2024-11-06T03:25:49.536Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:25:49.537Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:25:49.843Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:25:49.843Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:25:49.844Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:25:57.929Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:25:58.077Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:25:58.104Z - Calcul de l'angle de rotation...
+2024-11-06T03:25:58.104Z - Type de contour : object, type de center : object
+2024-11-06T03:25:58.105Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:25:58.115Z - Erreur lors du calcul de l'angle de rotation : undefined
+2024-11-06T03:25:58.115Z - Erreur lors de la rotation du CAPTCHA : Échec du calcul de l'angle de rotation.
+2024-11-06T03:26:06.651Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:26:06.651Z - Fermeture du navigateur...
+2024-11-06T03:28:31.619Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:28:31.620Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:28:31.892Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:28:31.892Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:28:31.893Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:28:39.953Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:28:40.081Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:28:40.113Z - Calcul de l'angle de rotation...
+2024-11-06T03:28:40.114Z - Type de contour : object, type de center : object
+2024-11-06T03:28:40.114Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:28:40.129Z - Différence pour l'angle 0 : 18358.229081259444
+2024-11-06T03:28:40.131Z - Différence pour l'angle 10 : 17289.310570407368
+2024-11-06T03:28:40.132Z - Différence pour l'angle 20 : 17367.341506402183
+2024-11-06T03:28:40.134Z - Différence pour l'angle 30 : 17277.140938245542
+2024-11-06T03:28:40.135Z - Différence pour l'angle 40 : 17214.785069817164
+2024-11-06T03:28:40.136Z - Différence pour l'angle 50 : 17350.962653409177
+2024-11-06T03:28:40.138Z - Différence pour l'angle 60 : 17369.198743753266
+2024-11-06T03:28:40.139Z - Différence pour l'angle 70 : 17280.166781602544
+2024-11-06T03:28:40.140Z - Différence pour l'angle 80 : 17246.153513175046
+2024-11-06T03:28:40.142Z - Différence pour l'angle 90 : 18308.57381119567
+2024-11-06T03:28:40.143Z - Différence pour l'angle 100 : 17271.988767944473
+2024-11-06T03:28:40.144Z - Différence pour l'angle 110 : 17345.160621914114
+2024-11-06T03:28:40.145Z - Différence pour l'angle 120 : 17299.548664632843
+2024-11-06T03:28:40.147Z - Différence pour l'angle 130 : 17432.62114542733
+2024-11-06T03:28:40.148Z - Différence pour l'angle 140 : 17497.019603349596
+2024-11-06T03:28:40.149Z - Différence pour l'angle 150 : 17415.36987835745
+2024-11-06T03:28:40.150Z - Différence pour l'angle 160 : 17385.79031853312
+2024-11-06T03:28:40.151Z - Différence pour l'angle 170 : 17312.878876720646
+2024-11-06T03:28:40.152Z - Différence pour l'angle 180 : 18329.871112476485
+2024-11-06T03:28:40.154Z - Différence pour l'angle 190 : 17230.136128307287
+2024-11-06T03:28:40.155Z - Différence pour l'angle 200 : 17314.979728547187
+2024-11-06T03:28:40.156Z - Différence pour l'angle 210 : 17362.188168546036
+2024-11-06T03:28:40.157Z - Différence pour l'angle 220 : 17403.635080063017
+2024-11-06T03:28:40.159Z - Différence pour l'angle 230 : 17422.394468040264
+2024-11-06T03:28:40.160Z - Différence pour l'angle 240 : 17419.88335207788
+2024-11-06T03:28:40.161Z - Différence pour l'angle 250 : 17338.089542968683
+2024-11-06T03:28:40.162Z - Différence pour l'angle 260 : 17310.8233772978
+2024-11-06T03:28:40.163Z - Différence pour l'angle 270 : 18333.418257379064
+2024-11-06T03:28:40.165Z - Différence pour l'angle 280 : 17167.257090170227
+2024-11-06T03:28:40.166Z - Différence pour l'angle 290 : 17268.99861022636
+2024-11-06T03:28:40.167Z - Différence pour l'angle 300 : 17377.636922205504
+2024-11-06T03:28:40.168Z - Différence pour l'angle 310 : 17448.364651164302
+2024-11-06T03:28:40.169Z - Différence pour l'angle 320 : 17401.44123341512
+2024-11-06T03:28:40.171Z - Différence pour l'angle 330 : 17244.230252464156
+2024-11-06T03:28:40.172Z - Différence pour l'angle 340 : 17214.965088550136
+2024-11-06T03:28:40.173Z - Différence pour l'angle 350 : 17261.4022026022
+2024-11-06T03:28:40.174Z - Différence pour l'angle 270 : 18333.418257379064
+2024-11-06T03:28:40.176Z - Différence pour l'angle 271 : 17173.900255911583
+2024-11-06T03:28:40.177Z - Différence pour l'angle 272 : 17256.623684834758
+2024-11-06T03:28:40.178Z - Différence pour l'angle 273 : 17230.770238152443
+2024-11-06T03:28:40.179Z - Différence pour l'angle 274 : 17235.581655401133
+2024-11-06T03:28:40.180Z - Différence pour l'angle 275 : 17238.350124069297
+2024-11-06T03:28:40.182Z - Différence pour l'angle 276 : 17199.681828452525
+2024-11-06T03:28:40.183Z - Différence pour l'angle 277 : 17167.530340733345
+2024-11-06T03:28:40.184Z - Différence pour l'angle 278 : 17156.820859355033
+2024-11-06T03:28:40.185Z - Différence pour l'angle 279 : 17162.5484413009
+2024-11-06T03:28:40.186Z - Différence pour l'angle 280 : 17167.257090170227
+2024-11-06T03:28:40.188Z - Différence pour l'angle 281 : 17172.603617390112
+2024-11-06T03:28:40.189Z - Différence pour l'angle 282 : 17199.496097269828
+2024-11-06T03:28:40.190Z - Différence pour l'angle 283 : 17229.972460802135
+2024-11-06T03:28:40.191Z - Différence pour l'angle 284 : 17287.708986444675
+2024-11-06T03:28:40.193Z - Différence pour l'angle 285 : 17227.684725464416
+2024-11-06T03:28:40.194Z - Différence pour l'angle 286 : 17299.032371783112
+2024-11-06T03:28:40.195Z - Différence pour l'angle 287 : 17233.59695478573
+2024-11-06T03:28:40.196Z - Différence pour l'angle 288 : 17266.89236660726
+2024-11-06T03:28:40.197Z - Différence pour l'angle 289 : 17223.41020239604
+2024-11-06T03:28:40.199Z - Différence pour l'angle 290 : 17268.99861022636
+2024-11-06T03:28:40.199Z - Angle de rotation trouvé : 278° avec différence de 17156.820859355033
+2024-11-06T03:31:23.089Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:31:23.090Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:31:23.349Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:31:23.349Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:31:23.349Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:31:31.419Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:31:31.557Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:31:31.588Z - Calcul de l'angle de rotation...
+2024-11-06T03:31:31.588Z - Type de contour : object, type de center : object
+2024-11-06T03:31:31.588Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:31:31.602Z - Différence pour l'angle 0 : 17217.69366088269
+2024-11-06T03:31:31.604Z - Différence pour l'angle 10 : 15376.77391392616
+2024-11-06T03:31:31.606Z - Différence pour l'angle 20 : 15368.282597609923
+2024-11-06T03:31:31.607Z - Différence pour l'angle 30 : 15383.877502112398
+2024-11-06T03:31:31.608Z - Différence pour l'angle 40 : 15451.538402372755
+2024-11-06T03:31:31.610Z - Différence pour l'angle 50 : 15343.928636434674
+2024-11-06T03:31:31.611Z - Différence pour l'angle 60 : 15372.163055341302
+2024-11-06T03:31:31.612Z - Différence pour l'angle 70 : 15315.716372406483
+2024-11-06T03:31:31.614Z - Différence pour l'angle 80 : 15085.996387378595
+2024-11-06T03:31:31.615Z - Différence pour l'angle 90 : 16785.509375648984
+2024-11-06T03:31:31.616Z - Différence pour l'angle 100 : 14820.683418790106
+2024-11-06T03:31:31.617Z - Différence pour l'angle 110 : 15097.956815410487
+2024-11-06T03:31:31.618Z - Différence pour l'angle 120 : 15185.12844858416
+2024-11-06T03:31:31.620Z - Différence pour l'angle 130 : 15410.272028747579
+2024-11-06T03:31:31.621Z - Différence pour l'angle 140 : 15404.098253386986
+2024-11-06T03:31:31.622Z - Différence pour l'angle 150 : 15410.131212939103
+2024-11-06T03:31:31.623Z - Différence pour l'angle 160 : 15418.079549671547
+2024-11-06T03:31:31.625Z - Différence pour l'angle 170 : 15401.159664129193
+2024-11-06T03:31:31.626Z - Différence pour l'angle 180 : 17157.16104138444
+2024-11-06T03:31:31.627Z - Différence pour l'angle 190 : 15366.408428777364
+2024-11-06T03:31:31.628Z - Différence pour l'angle 200 : 15380.667248204805
+2024-11-06T03:31:31.630Z - Différence pour l'angle 210 : 15435.36996641156
+2024-11-06T03:31:31.631Z - Différence pour l'angle 220 : 15426.055036852422
+2024-11-06T03:31:31.632Z - Différence pour l'angle 230 : 15318.631662129617
+2024-11-06T03:31:31.634Z - Différence pour l'angle 240 : 15343.777240301686
+2024-11-06T03:31:31.635Z - Différence pour l'angle 250 : 15357.983168372077
+2024-11-06T03:31:31.636Z - Différence pour l'angle 260 : 15189.909216318576
+2024-11-06T03:31:31.637Z - Différence pour l'angle 270 : 16731.187196370734
+2024-11-06T03:31:31.639Z - Différence pour l'angle 280 : 14808.42189431406
+2024-11-06T03:31:31.640Z - Différence pour l'angle 290 : 15050.464511103968
+2024-11-06T03:31:31.641Z - Différence pour l'angle 300 : 15176.61708023234
+2024-11-06T03:31:31.643Z - Différence pour l'angle 310 : 15324.798595740174
+2024-11-06T03:31:31.644Z - Différence pour l'angle 320 : 15385.913752520517
+2024-11-06T03:31:31.645Z - Différence pour l'angle 330 : 15448.655281285812
+2024-11-06T03:31:31.647Z - Différence pour l'angle 340 : 15407.04910097972
+2024-11-06T03:31:31.648Z - Différence pour l'angle 350 : 15404.161775312541
+2024-11-06T03:31:31.649Z - Différence pour l'angle 270 : 16731.187196370734
+2024-11-06T03:31:31.650Z - Différence pour l'angle 271 : 14917.820182586998
+2024-11-06T03:31:31.652Z - Différence pour l'angle 272 : 14859.232079754323
+2024-11-06T03:31:31.653Z - Différence pour l'angle 273 : 14705.17606150977
+2024-11-06T03:31:31.654Z - Différence pour l'angle 274 : 14794.517599435272
+2024-11-06T03:31:31.656Z - Différence pour l'angle 275 : 14703.8029434565
+2024-11-06T03:31:31.657Z - Différence pour l'angle 276 : 14813.677936285776
+2024-11-06T03:31:31.658Z - Différence pour l'angle 277 : 14785.032803480688
+2024-11-06T03:31:31.660Z - Différence pour l'angle 278 : 14764.09211567037
+2024-11-06T03:31:31.661Z - Différence pour l'angle 279 : 14767.012358632332
+2024-11-06T03:31:31.662Z - Différence pour l'angle 280 : 14808.42189431406
+2024-11-06T03:31:31.663Z - Différence pour l'angle 281 : 14822.357740926374
+2024-11-06T03:31:31.665Z - Différence pour l'angle 282 : 14797.465086966753
+2024-11-06T03:31:31.666Z - Différence pour l'angle 283 : 14861.975205200686
+2024-11-06T03:31:31.667Z - Différence pour l'angle 284 : 14840.638328589508
+2024-11-06T03:31:31.668Z - Différence pour l'angle 285 : 14877.358401275409
+2024-11-06T03:31:31.670Z - Différence pour l'angle 286 : 14902.315893846835
+2024-11-06T03:31:31.671Z - Différence pour l'angle 287 : 14934.266369661416
+2024-11-06T03:31:31.672Z - Différence pour l'angle 288 : 15002.192973028976
+2024-11-06T03:31:31.673Z - Différence pour l'angle 289 : 15003.163966310573
+2024-11-06T03:31:31.675Z - Différence pour l'angle 290 : 15050.464511103968
+2024-11-06T03:31:31.675Z - Angle de rotation trouvé : 275° avec différence de 14703.8029434565
+2024-11-06T03:32:20.857Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:32:20.857Z - Angle de rotation appliqué : 275°
+2024-11-06T03:32:20.858Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:32:24.992Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:32:24.993Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:32:25.280Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:32:25.280Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:32:25.280Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:32:33.300Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:32:33.444Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:32:33.483Z - Calcul de l'angle de rotation...
+2024-11-06T03:32:33.483Z - Type de contour : object, type de center : object
+2024-11-06T03:32:33.484Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:32:33.502Z - Différence pour l'angle 0 : 39544.73700759685
+2024-11-06T03:32:33.503Z - Différence pour l'angle 10 : 35698.40584676016
+2024-11-06T03:32:33.505Z - Différence pour l'angle 20 : 35735.510630184086
+2024-11-06T03:32:33.507Z - Différence pour l'angle 30 : 35851.40400319073
+2024-11-06T03:32:33.508Z - Différence pour l'angle 40 : 35712.97454707463
+2024-11-06T03:32:33.510Z - Différence pour l'angle 50 : 35709.34489737945
+2024-11-06T03:32:33.512Z - Différence pour l'angle 60 : 35521.86834894809
+2024-11-06T03:32:33.513Z - Différence pour l'angle 70 : 35526.73424338353
+2024-11-06T03:32:33.514Z - Différence pour l'angle 80 : 35399.50177615498
+2024-11-06T03:32:33.515Z - Différence pour l'angle 90 : 39031.663108302215
+2024-11-06T03:32:33.517Z - Différence pour l'angle 100 : 35258.13706082611
+2024-11-06T03:32:33.518Z - Différence pour l'angle 110 : 35300.713123108435
+2024-11-06T03:32:33.520Z - Différence pour l'angle 120 : 35305.96074319463
+2024-11-06T03:32:33.521Z - Différence pour l'angle 130 : 34948.70285146503
+2024-11-06T03:32:33.522Z - Différence pour l'angle 140 : 35124.6773935363
+2024-11-06T03:32:33.524Z - Différence pour l'angle 150 : 35068.11496217041
+2024-11-06T03:32:33.525Z - Différence pour l'angle 160 : 35140.18412017786
+2024-11-06T03:32:33.527Z - Différence pour l'angle 170 : 35055.22722790426
+2024-11-06T03:32:33.528Z - Différence pour l'angle 180 : 38831.23388459347
+2024-11-06T03:32:33.529Z - Différence pour l'angle 190 : 34838.15729914543
+2024-11-06T03:32:33.530Z - Différence pour l'angle 200 : 34995.85584037058
+2024-11-06T03:32:33.532Z - Différence pour l'angle 210 : 35087.2953645618
+2024-11-06T03:32:33.533Z - Différence pour l'angle 220 : 35148.36508288828
+2024-11-06T03:32:33.534Z - Différence pour l'angle 230 : 35313.76810820392
+2024-11-06T03:32:33.535Z - Différence pour l'angle 240 : 35200.45999699436
+2024-11-06T03:32:33.537Z - Différence pour l'angle 250 : 35331.62225259406
+2024-11-06T03:32:33.539Z - Différence pour l'angle 260 : 35222.773925402296
+2024-11-06T03:32:33.540Z - Différence pour l'angle 270 : 39098.2445258096
+2024-11-06T03:32:33.541Z - Différence pour l'angle 280 : 35542.30967452734
+2024-11-06T03:32:33.543Z - Différence pour l'angle 290 : 35530.79567079803
+2024-11-06T03:32:33.544Z - Différence pour l'angle 300 : 35661.1783456464
+2024-11-06T03:32:33.546Z - Différence pour l'angle 310 : 35601.709509516535
+2024-11-06T03:32:33.547Z - Différence pour l'angle 320 : 35664.617157625566
+2024-11-06T03:32:33.548Z - Différence pour l'angle 330 : 35765.486589727814
+2024-11-06T03:32:33.549Z - Différence pour l'angle 340 : 35780.6170992061
+2024-11-06T03:32:33.551Z - Différence pour l'angle 350 : 35714.303409138476
+2024-11-06T03:32:33.553Z - Différence pour l'angle 180 : 38831.23388459347
+2024-11-06T03:32:33.554Z - Différence pour l'angle 181 : 34969.35256764128
+2024-11-06T03:32:33.556Z - Différence pour l'angle 182 : 34981.74706900729
+2024-11-06T03:32:33.557Z - Différence pour l'angle 183 : 34982.05661478467
+2024-11-06T03:32:33.558Z - Différence pour l'angle 184 : 35114.16023486821
+2024-11-06T03:32:33.560Z - Différence pour l'angle 185 : 34946.03705715428
+2024-11-06T03:32:33.561Z - Différence pour l'angle 186 : 34934.585585061686
+2024-11-06T03:32:33.562Z - Différence pour l'angle 187 : 34963.644403866136
+2024-11-06T03:32:33.564Z - Différence pour l'angle 188 : 34943.53568258369
+2024-11-06T03:32:33.565Z - Différence pour l'angle 189 : 34884.97246666536
+2024-11-06T03:32:33.566Z - Différence pour l'angle 190 : 34838.15729914543
+2024-11-06T03:32:33.568Z - Différence pour l'angle 191 : 35047.427409155156
+2024-11-06T03:32:33.569Z - Différence pour l'angle 192 : 34860.587028907015
+2024-11-06T03:32:33.570Z - Différence pour l'angle 193 : 34822.90638358608
+2024-11-06T03:32:33.571Z - Différence pour l'angle 194 : 35019.63827625865
+2024-11-06T03:32:33.573Z - Différence pour l'angle 195 : 34970.675572542204
+2024-11-06T03:32:33.574Z - Différence pour l'angle 196 : 34876.06471493021
+2024-11-06T03:32:33.575Z - Différence pour l'angle 197 : 34951.859192323376
+2024-11-06T03:32:33.577Z - Différence pour l'angle 198 : 34957.977430051644
+2024-11-06T03:32:33.578Z - Différence pour l'angle 199 : 34939.13140019368
+2024-11-06T03:32:33.579Z - Différence pour l'angle 200 : 34995.85584037058
+2024-11-06T03:32:33.579Z - Angle de rotation trouvé : 193° avec différence de 34822.90638358608
+2024-11-06T03:35:55.771Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:35:55.771Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:35:56.032Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:35:56.032Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:35:56.032Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:36:04.140Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:36:04.274Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:36:04.313Z - Calcul de l'angle de rotation...
+2024-11-06T03:36:04.314Z - Type de contour : object, type de center : object
+2024-11-06T03:36:04.314Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:36:04.333Z - Différence pour l'angle 0 : 42245.42756322866
+2024-11-06T03:36:04.335Z - Différence pour l'angle 10 : 38412.40588664032
+2024-11-06T03:36:04.337Z - Différence pour l'angle 20 : 38251.56692215366
+2024-11-06T03:36:04.338Z - Différence pour l'angle 30 : 38487.35923650777
+2024-11-06T03:36:04.339Z - Différence pour l'angle 40 : 38347.56209982585
+2024-11-06T03:36:04.341Z - Différence pour l'angle 50 : 38431.52254334975
+2024-11-06T03:36:04.343Z - Différence pour l'angle 60 : 38438.41208999144
+2024-11-06T03:36:04.344Z - Différence pour l'angle 70 : 38550.1595068036
+2024-11-06T03:36:04.345Z - Différence pour l'angle 80 : 38653.86672766387
+2024-11-06T03:36:04.347Z - Différence pour l'angle 90 : 42921.88602566294
+2024-11-06T03:36:04.348Z - Différence pour l'angle 100 : 38898.747447700676
+2024-11-06T03:36:04.349Z - Différence pour l'angle 110 : 38903.70546618921
+2024-11-06T03:36:04.351Z - Différence pour l'angle 120 : 38960.267388712826
+2024-11-06T03:36:04.352Z - Différence pour l'angle 130 : 39066.8790793429
+2024-11-06T03:36:04.353Z - Différence pour l'angle 140 : 39026.87641869382
+2024-11-06T03:36:04.355Z - Différence pour l'angle 150 : 38941.639269553096
+2024-11-06T03:36:04.356Z - Différence pour l'angle 160 : 38861.1345176643
+2024-11-06T03:36:04.357Z - Différence pour l'angle 170 : 38974.717856579795
+2024-11-06T03:36:04.359Z - Différence pour l'angle 180 : 42999.079641313256
+2024-11-06T03:36:04.360Z - Différence pour l'angle 190 : 38868.99268054165
+2024-11-06T03:36:04.361Z - Différence pour l'angle 200 : 38745.94114226676
+2024-11-06T03:36:04.362Z - Différence pour l'angle 210 : 38899.5611157761
+2024-11-06T03:36:04.364Z - Différence pour l'angle 220 : 38552.071085740645
+2024-11-06T03:36:04.365Z - Différence pour l'angle 230 : 38686.98676557791
+2024-11-06T03:36:04.366Z - Différence pour l'angle 240 : 38602.240103392964
+2024-11-06T03:36:04.368Z - Différence pour l'angle 250 : 38418.50693350797
+2024-11-06T03:36:04.370Z - Différence pour l'angle 260 : 38385.62556478662
+2024-11-06T03:36:04.371Z - Différence pour l'angle 270 : 42468.027973994744
+2024-11-06T03:36:04.372Z - Différence pour l'angle 280 : 38266.9582799574
+2024-11-06T03:36:04.374Z - Différence pour l'angle 290 : 38444.556883907506
+2024-11-06T03:36:04.375Z - Différence pour l'angle 300 : 38358.76378352149
+2024-11-06T03:36:04.377Z - Différence pour l'angle 310 : 38210.24064305275
+2024-11-06T03:36:04.378Z - Différence pour l'angle 320 : 38370.990018502256
+2024-11-06T03:36:04.379Z - Différence pour l'angle 330 : 38291.58936372321
+2024-11-06T03:36:04.381Z - Différence pour l'angle 340 : 38218.61732192833
+2024-11-06T03:36:04.382Z - Différence pour l'angle 350 : 38312.01379463105
+2024-11-06T03:36:04.383Z - Différence pour l'angle 300 : 38358.76378352149
+2024-11-06T03:36:04.384Z - Différence pour l'angle 301 : 38254.555990103974
+2024-11-06T03:36:04.385Z - Différence pour l'angle 302 : 38281.98005589575
+2024-11-06T03:36:04.387Z - Différence pour l'angle 303 : 38291.18705394232
+2024-11-06T03:36:04.389Z - Différence pour l'angle 304 : 38372.296230483786
+2024-11-06T03:36:04.390Z - Différence pour l'angle 305 : 38278.25599475504
+2024-11-06T03:36:04.391Z - Différence pour l'angle 306 : 38351.53800045051
+2024-11-06T03:36:04.393Z - Différence pour l'angle 307 : 38219.16613428399
+2024-11-06T03:36:04.394Z - Différence pour l'angle 308 : 38310.708620436664
+2024-11-06T03:36:04.395Z - Différence pour l'angle 309 : 38318.90588208385
+2024-11-06T03:36:04.396Z - Différence pour l'angle 310 : 38210.24064305275
+2024-11-06T03:36:04.398Z - Différence pour l'angle 311 : 38352.28458644934
+2024-11-06T03:36:04.399Z - Différence pour l'angle 312 : 38403.16683556188
+2024-11-06T03:36:04.400Z - Différence pour l'angle 313 : 38355.07499666765
+2024-11-06T03:36:04.401Z - Différence pour l'angle 314 : 38444.60103837729
+2024-11-06T03:36:04.402Z - Différence pour l'angle 315 : 38495.870259029085
+2024-11-06T03:36:04.403Z - Différence pour l'angle 316 : 38420.18239155041
+2024-11-06T03:36:04.405Z - Différence pour l'angle 317 : 38449.431166143404
+2024-11-06T03:36:04.406Z - Différence pour l'angle 318 : 38354.62228988835
+2024-11-06T03:36:04.407Z - Différence pour l'angle 319 : 38314.23031981721
+2024-11-06T03:36:04.409Z - Différence pour l'angle 320 : 38370.990018502256
+2024-11-06T03:36:04.409Z - Angle de rotation trouvé : 310° avec différence de 38210.24064305275
+2024-11-06T03:36:04.420Z - Erreur lors de la rotation du CAPTCHA : Cannot read properties of null (reading 'boundingBox')
+2024-11-06T03:36:12.960Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:36:12.960Z - Fermeture du navigateur...
+2024-11-06T03:40:51.037Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:40:51.038Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:40:51.328Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:40:51.329Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:40:51.329Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:40:59.339Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:40:59.483Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:40:59.527Z - Calcul de l'angle de rotation...
+2024-11-06T03:40:59.528Z - Type de contour : object, type de center : object
+2024-11-06T03:40:59.528Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:40:59.545Z - Différence pour l'angle 0 : 35103.970929226794
+2024-11-06T03:40:59.547Z - Différence pour l'angle 10 : 30756.55198490234
+2024-11-06T03:40:59.549Z - Différence pour l'angle 20 : 30709.65865977673
+2024-11-06T03:40:59.550Z - Différence pour l'angle 30 : 30715.22995193101
+2024-11-06T03:40:59.551Z - Différence pour l'angle 40 : 30736.441807730444
+2024-11-06T03:40:59.553Z - Différence pour l'angle 50 : 30938.22053706386
+2024-11-06T03:40:59.554Z - Différence pour l'angle 60 : 30919.15325490011
+2024-11-06T03:40:59.555Z - Différence pour l'angle 70 : 30959.76962123588
+2024-11-06T03:40:59.557Z - Différence pour l'angle 80 : 30641.166035253944
+2024-11-06T03:40:59.558Z - Différence pour l'angle 90 : 34763.337368555396
+2024-11-06T03:40:59.559Z - Différence pour l'angle 100 : 29747.418291340848
+2024-11-06T03:40:59.560Z - Différence pour l'angle 110 : 29533.057088625283
+2024-11-06T03:40:59.562Z - Différence pour l'angle 120 : 29695.693930265377
+2024-11-06T03:40:59.563Z - Différence pour l'angle 130 : 29745.348880119058
+2024-11-06T03:40:59.564Z - Différence pour l'angle 140 : 30012.161684890343
+2024-11-06T03:40:59.565Z - Différence pour l'angle 150 : 30391.42652130696
+2024-11-06T03:40:59.567Z - Différence pour l'angle 160 : 30553.56352375284
+2024-11-06T03:40:59.568Z - Différence pour l'angle 170 : 30687.50929938759
+2024-11-06T03:40:59.569Z - Différence pour l'angle 180 : 34998.22745511549
+2024-11-06T03:40:59.570Z - Différence pour l'angle 190 : 30285.726572099935
+2024-11-06T03:40:59.572Z - Différence pour l'angle 200 : 30162.234930455666
+2024-11-06T03:40:59.574Z - Différence pour l'angle 210 : 29983.72638615821
+2024-11-06T03:40:59.575Z - Différence pour l'angle 220 : 29884.696702493067
+2024-11-06T03:40:59.576Z - Différence pour l'angle 230 : 29935.593045737376
+2024-11-06T03:40:59.577Z - Différence pour l'angle 240 : 30109.8966952728
+2024-11-06T03:40:59.579Z - Différence pour l'angle 250 : 30326.125700458342
+2024-11-06T03:40:59.580Z - Différence pour l'angle 260 : 30222.415422993578
+2024-11-06T03:40:59.581Z - Différence pour l'angle 270 : 34541.91258456891
+2024-11-06T03:40:59.583Z - Différence pour l'angle 280 : 29917.642069521455
+2024-11-06T03:40:59.584Z - Différence pour l'angle 290 : 29679.512394916463
+2024-11-06T03:40:59.585Z - Différence pour l'angle 300 : 29703.910668462493
+2024-11-06T03:40:59.586Z - Différence pour l'angle 310 : 29757.13383375489
+2024-11-06T03:40:59.588Z - Différence pour l'angle 320 : 29993.168888932025
+2024-11-06T03:40:59.590Z - Différence pour l'angle 330 : 30228.036439702795
+2024-11-06T03:40:59.591Z - Différence pour l'angle 340 : 30691.30218807928
+2024-11-06T03:40:59.592Z - Différence pour l'angle 350 : 30745.75500780555
+2024-11-06T03:40:59.593Z - Différence pour l'angle 100 : 29747.418291340848
+2024-11-06T03:40:59.594Z - Différence pour l'angle 101 : 29649.33208353942
+2024-11-06T03:40:59.596Z - Différence pour l'angle 102 : 29645.328282884642
+2024-11-06T03:40:59.597Z - Différence pour l'angle 103 : 29632.792207282797
+2024-11-06T03:40:59.598Z - Différence pour l'angle 104 : 29597.49268096877
+2024-11-06T03:40:59.600Z - Différence pour l'angle 105 : 29552.39853209888
+2024-11-06T03:40:59.601Z - Différence pour l'angle 106 : 29567.69110025333
+2024-11-06T03:40:59.602Z - Différence pour l'angle 107 : 29522.559678998026
+2024-11-06T03:40:59.603Z - Différence pour l'angle 108 : 29547.72248414419
+2024-11-06T03:40:59.605Z - Différence pour l'angle 109 : 29565.441278627994
+2024-11-06T03:40:59.606Z - Différence pour l'angle 110 : 29533.057088625283
+2024-11-06T03:40:59.607Z - Différence pour l'angle 111 : 29594.083952709196
+2024-11-06T03:40:59.608Z - Différence pour l'angle 112 : 29493.851986473383
+2024-11-06T03:40:59.609Z - Différence pour l'angle 113 : 29547.308303803242
+2024-11-06T03:40:59.611Z - Différence pour l'angle 114 : 29484.146367158064
+2024-11-06T03:40:59.612Z - Différence pour l'angle 115 : 29652.37614424854
+2024-11-06T03:40:59.613Z - Différence pour l'angle 116 : 29566.831855983488
+2024-11-06T03:40:59.614Z - Différence pour l'angle 117 : 29576.070276492108
+2024-11-06T03:40:59.616Z - Différence pour l'angle 118 : 29663.247361002133
+2024-11-06T03:40:59.617Z - Différence pour l'angle 119 : 29701.811981763
+2024-11-06T03:40:59.618Z - Différence pour l'angle 120 : 29695.693930265377
+2024-11-06T03:40:59.618Z - Angle de rotation trouvé : 114° avec différence de 29484.146367158064
+2024-11-06T03:43:17.236Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:43:17.236Z - Angle de rotation appliqué : 114°
+2024-11-06T03:43:17.236Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:43:25.782Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:43:25.782Z - Fermeture du navigateur...
+2024-11-06T03:45:10.469Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:10.470Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:45:10.798Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:10.798Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:10.799Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:18.856Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:45:18.997Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:45:19.029Z - Calcul de l'angle de rotation...
+2024-11-06T03:45:19.029Z - Type de contour : object, type de center : object
+2024-11-06T03:45:19.029Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:45:19.044Z - Différence pour l'angle 0 : 18616.74649341286
+2024-11-06T03:45:19.046Z - Différence pour l'angle 10 : 17090.962962922833
+2024-11-06T03:45:19.047Z - Différence pour l'angle 20 : 17104.14759641649
+2024-11-06T03:45:19.048Z - Différence pour l'angle 30 : 17122.881503999262
+2024-11-06T03:45:19.050Z - Différence pour l'angle 40 : 17005.769256343567
+2024-11-06T03:45:19.051Z - Différence pour l'angle 50 : 16987.84586108551
+2024-11-06T03:45:19.052Z - Différence pour l'angle 60 : 16924.91754780507
+2024-11-06T03:45:19.053Z - Différence pour l'angle 70 : 16940.283262094526
+2024-11-06T03:45:19.055Z - Différence pour l'angle 80 : 16926.965646565248
+2024-11-06T03:45:19.056Z - Différence pour l'angle 90 : 18388.311504866346
+2024-11-06T03:45:19.057Z - Différence pour l'angle 100 : 16869.816240848624
+2024-11-06T03:45:19.059Z - Différence pour l'angle 110 : 16984.580565913308
+2024-11-06T03:45:19.060Z - Différence pour l'angle 120 : 17121.120991336986
+2024-11-06T03:45:19.061Z - Différence pour l'angle 130 : 17029.011216156974
+2024-11-06T03:45:19.062Z - Différence pour l'angle 140 : 17085.773204628462
+2024-11-06T03:45:19.063Z - Différence pour l'angle 150 : 17168.264356072807
+2024-11-06T03:45:19.065Z - Différence pour l'angle 160 : 17156.214763169643
+2024-11-06T03:45:19.066Z - Différence pour l'angle 170 : 17070.057557020715
+2024-11-06T03:45:19.067Z - Différence pour l'angle 180 : 18700.386359645086
+2024-11-06T03:45:19.068Z - Différence pour l'angle 190 : 17092.584239956228
+2024-11-06T03:45:19.070Z - Différence pour l'angle 200 : 17004.499639801226
+2024-11-06T03:45:19.071Z - Différence pour l'angle 210 : 17054.53828164222
+2024-11-06T03:45:19.072Z - Différence pour l'angle 220 : 17093.24773119491
+2024-11-06T03:45:19.073Z - Différence pour l'angle 230 : 17117.660967550444
+2024-11-06T03:45:19.075Z - Différence pour l'angle 240 : 17126.847462390735
+2024-11-06T03:45:19.076Z - Différence pour l'angle 250 : 17009.290255622072
+2024-11-06T03:45:19.077Z - Différence pour l'angle 260 : 17062.34151574748
+2024-11-06T03:45:19.078Z - Différence pour l'angle 270 : 18714.289994546947
+2024-11-06T03:45:19.080Z - Différence pour l'angle 280 : 17152.558992756738
+2024-11-06T03:45:19.081Z - Différence pour l'angle 290 : 17146.513668964897
+2024-11-06T03:45:19.082Z - Différence pour l'angle 300 : 17095.19865342313
+2024-11-06T03:45:19.083Z - Différence pour l'angle 310 : 17151.2107735868
+2024-11-06T03:45:19.084Z - Différence pour l'angle 320 : 17151.758160608493
+2024-11-06T03:45:19.086Z - Différence pour l'angle 330 : 17160.53242181023
+2024-11-06T03:45:19.087Z - Différence pour l'angle 340 : 17114.82018602591
+2024-11-06T03:45:19.088Z - Différence pour l'angle 350 : 17088.15595668532
+2024-11-06T03:45:19.089Z - Différence pour l'angle 90 : 18388.311504866346
+2024-11-06T03:45:19.091Z - Différence pour l'angle 91 : 16689.358016412734
+2024-11-06T03:45:19.092Z - Différence pour l'angle 92 : 16677.218083361506
+2024-11-06T03:45:19.093Z - Différence pour l'angle 93 : 16729.920531789743
+2024-11-06T03:45:19.094Z - Différence pour l'angle 94 : 16771.516210527898
+2024-11-06T03:45:19.096Z - Différence pour l'angle 95 : 16733.12759169666
+2024-11-06T03:45:19.097Z - Différence pour l'angle 96 : 16769.72331316173
+2024-11-06T03:45:19.098Z - Différence pour l'angle 97 : 16921.545496791954
+2024-11-06T03:45:19.099Z - Différence pour l'angle 98 : 16871.88415678581
+2024-11-06T03:45:19.101Z - Différence pour l'angle 99 : 16847.260786252464
+2024-11-06T03:45:19.102Z - Différence pour l'angle 100 : 16869.816240848624
+2024-11-06T03:45:19.103Z - Différence pour l'angle 101 : 16855.27484201904
+2024-11-06T03:45:19.104Z - Différence pour l'angle 102 : 16909.801270269265
+2024-11-06T03:45:19.105Z - Différence pour l'angle 103 : 16927.647060356616
+2024-11-06T03:45:19.107Z - Différence pour l'angle 104 : 16986.51986134888
+2024-11-06T03:45:19.108Z - Différence pour l'angle 105 : 16986.55850959811
+2024-11-06T03:45:19.109Z - Différence pour l'angle 106 : 16962.969492397257
+2024-11-06T03:45:19.110Z - Différence pour l'angle 107 : 16929.016539657583
+2024-11-06T03:45:19.111Z - Différence pour l'angle 108 : 16898.21250902
+2024-11-06T03:45:19.113Z - Différence pour l'angle 109 : 16966.06940337095
+2024-11-06T03:45:19.114Z - Différence pour l'angle 110 : 16984.580565913308
+2024-11-06T03:45:19.114Z - Angle de rotation trouvé : 92° avec différence de 16677.218083361506
+2024-11-06T03:45:19.127Z - Impossible de trouver le chemin du slider.
+2024-11-06T03:45:19.128Z - Angle de rotation appliqué : 92°
+2024-11-06T03:45:19.128Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:45:27.664Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:45:27.664Z - Fermeture du navigateur...
+2024-11-06T03:45:52.191Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:52.191Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:45:52.451Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:52.451Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:45:52.452Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:46:00.529Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:46:00.672Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:46:00.693Z - Calcul de l'angle de rotation...
+2024-11-06T03:46:00.693Z - Type de contour : object, type de center : object
+2024-11-06T03:46:00.693Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:46:00.697Z - Différence pour l'angle 0 : 26194.346718328365
+2024-11-06T03:46:00.699Z - Différence pour l'angle 10 : 23337.05377720161
+2024-11-06T03:46:00.700Z - Différence pour l'angle 20 : 23290.088428342217
+2024-11-06T03:46:00.701Z - Différence pour l'angle 30 : 23229.316563342967
+2024-11-06T03:46:00.703Z - Différence pour l'angle 40 : 23279.266461811032
+2024-11-06T03:46:00.704Z - Différence pour l'angle 50 : 23100.15590856477
+2024-11-06T03:46:00.705Z - Différence pour l'angle 60 : 22954.08432066067
+2024-11-06T03:46:00.706Z - Différence pour l'angle 70 : 22900.31761788469
+2024-11-06T03:46:00.707Z - Différence pour l'angle 80 : 22808.044567652003
+2024-11-06T03:46:00.709Z - Différence pour l'angle 90 : 26024.99567723307
+2024-11-06T03:46:00.710Z - Différence pour l'angle 100 : 23189.293283754898
+2024-11-06T03:46:00.711Z - Différence pour l'angle 110 : 23112.225855594264
+2024-11-06T03:46:00.712Z - Différence pour l'angle 120 : 23184.463828175973
+2024-11-06T03:46:00.714Z - Différence pour l'angle 130 : 23405.88861803798
+2024-11-06T03:46:00.715Z - Différence pour l'angle 140 : 23401.434656875208
+2024-11-06T03:46:00.717Z - Différence pour l'angle 150 : 23311.052528789856
+2024-11-06T03:46:00.719Z - Différence pour l'angle 160 : 23240.10617445626
+2024-11-06T03:46:00.720Z - Différence pour l'angle 170 : 23321.540300760582
+2024-11-06T03:46:00.722Z - Différence pour l'angle 180 : 26293.455459486493
+2024-11-06T03:46:00.724Z - Différence pour l'angle 190 : 23398.517794937354
+2024-11-06T03:46:00.725Z - Différence pour l'angle 200 : 23403.386058431803
+2024-11-06T03:46:00.726Z - Différence pour l'angle 210 : 23189.94517026722
+2024-11-06T03:46:00.727Z - Différence pour l'angle 220 : 23166.388194969022
+2024-11-06T03:46:00.728Z - Différence pour l'angle 230 : 23238.01779412349
+2024-11-06T03:46:00.729Z - Différence pour l'angle 240 : 23182.436627757663
+2024-11-06T03:46:00.731Z - Différence pour l'angle 250 : 23135.126215346223
+2024-11-06T03:46:00.732Z - Différence pour l'angle 260 : 23024.79185573672
+2024-11-06T03:46:00.733Z - Différence pour l'angle 270 : 25929.87659052777
+2024-11-06T03:46:00.734Z - Différence pour l'angle 280 : 23125.706994598026
+2024-11-06T03:46:00.735Z - Différence pour l'angle 290 : 22976.982003735826
+2024-11-06T03:46:00.737Z - Différence pour l'angle 300 : 22869.496802509668
+2024-11-06T03:46:00.738Z - Différence pour l'angle 310 : 22995.512692697244
+2024-11-06T03:46:00.739Z - Différence pour l'angle 320 : 23002.644347987472
+2024-11-06T03:46:00.740Z - Différence pour l'angle 330 : 23052.425360469122
+2024-11-06T03:46:00.742Z - Différence pour l'angle 340 : 23129.575525720313
+2024-11-06T03:46:00.743Z - Différence pour l'angle 350 : 23154.446700364057
+2024-11-06T03:46:00.744Z - Différence pour l'angle 70 : 22900.31761788469
+2024-11-06T03:46:00.745Z - Différence pour l'angle 71 : 22905.275898796765
+2024-11-06T03:46:00.746Z - Différence pour l'angle 72 : 22837.05447293937
+2024-11-06T03:46:00.748Z - Différence pour l'angle 73 : 22831.31005877674
+2024-11-06T03:46:00.749Z - Différence pour l'angle 74 : 22820.016914980584
+2024-11-06T03:46:00.750Z - Différence pour l'angle 75 : 22840.632872142574
+2024-11-06T03:46:00.751Z - Différence pour l'angle 76 : 22896.446187126945
+2024-11-06T03:46:00.753Z - Différence pour l'angle 77 : 22733.86194644456
+2024-11-06T03:46:00.754Z - Différence pour l'angle 78 : 22823.100665772825
+2024-11-06T03:46:00.755Z - Différence pour l'angle 79 : 22768.07143787106
+2024-11-06T03:46:00.756Z - Différence pour l'angle 80 : 22808.044567652003
+2024-11-06T03:46:00.758Z - Différence pour l'angle 81 : 22875.771724687234
+2024-11-06T03:46:00.759Z - Différence pour l'angle 82 : 22833.584256528804
+2024-11-06T03:46:00.760Z - Différence pour l'angle 83 : 22816.908160397194
+2024-11-06T03:46:00.761Z - Différence pour l'angle 84 : 22897.075926851445
+2024-11-06T03:46:00.762Z - Différence pour l'angle 85 : 22954.720342448087
+2024-11-06T03:46:00.764Z - Différence pour l'angle 86 : 22932.16372259713
+2024-11-06T03:46:00.765Z - Différence pour l'angle 87 : 22968.3405582554
+2024-11-06T03:46:00.767Z - Différence pour l'angle 88 : 22883.22818135588
+2024-11-06T03:46:00.769Z - Différence pour l'angle 89 : 22914.21170365675
+2024-11-06T03:46:00.771Z - Différence pour l'angle 90 : 26024.99567723307
+2024-11-06T03:46:00.771Z - Angle de rotation trouvé : 77° avec différence de 22733.86194644456
+2024-11-06T03:46:00.794Z - Impossible de trouver le chemin du slider.
+2024-11-06T03:46:00.795Z - Angle de rotation appliqué : 77°
+2024-11-06T03:46:00.795Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:46:09.334Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:46:09.334Z - Fermeture du navigateur...
+2024-11-06T03:49:07.927Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:49:07.928Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:49:08.238Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:49:08.239Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:49:08.239Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:49:16.314Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:49:16.455Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:49:16.484Z - Calcul de l'angle de rotation...
+2024-11-06T03:49:16.485Z - Type de contour : object, type de center : object
+2024-11-06T03:49:16.485Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:49:16.498Z - Différence pour l'angle 0 : 21545.613822771447
+2024-11-06T03:49:16.500Z - Différence pour l'angle 10 : 18971.59906280965
+2024-11-06T03:49:16.503Z - Différence pour l'angle 20 : 18856.834013163505
+2024-11-06T03:49:16.504Z - Différence pour l'angle 30 : 19061.58369601015
+2024-11-06T03:49:16.505Z - Différence pour l'angle 40 : 18985.42472529914
+2024-11-06T03:49:16.506Z - Différence pour l'angle 50 : 19073.907753787633
+2024-11-06T03:49:16.508Z - Différence pour l'angle 60 : 19122.948386689746
+2024-11-06T03:49:16.509Z - Différence pour l'angle 70 : 19043.709171272283
+2024-11-06T03:49:16.510Z - Différence pour l'angle 80 : 19081.057910923075
+2024-11-06T03:49:16.511Z - Différence pour l'angle 90 : 21764.813920638055
+2024-11-06T03:49:16.513Z - Différence pour l'angle 100 : 19005.526538351944
+2024-11-06T03:49:16.514Z - Différence pour l'angle 110 : 19020.121135260943
+2024-11-06T03:49:16.515Z - Différence pour l'angle 120 : 19107.536916096746
+2024-11-06T03:49:16.516Z - Différence pour l'angle 130 : 19093.58578161787
+2024-11-06T03:49:16.518Z - Différence pour l'angle 140 : 19056.020597176106
+2024-11-06T03:49:16.519Z - Différence pour l'angle 150 : 19064.427214054977
+2024-11-06T03:49:16.520Z - Différence pour l'angle 160 : 19106.076075426896
+2024-11-06T03:49:16.522Z - Différence pour l'angle 170 : 19115.51780622225
+2024-11-06T03:49:16.523Z - Différence pour l'angle 180 : 21806.600491594283
+2024-11-06T03:49:16.524Z - Différence pour l'angle 190 : 19100.227040535407
+2024-11-06T03:49:16.525Z - Différence pour l'angle 200 : 19126.563753063434
+2024-11-06T03:49:16.526Z - Différence pour l'angle 210 : 19183.46770007967
+2024-11-06T03:49:16.528Z - Différence pour l'angle 220 : 19204.328105924455
+2024-11-06T03:49:16.529Z - Différence pour l'angle 230 : 19114.804968923956
+2024-11-06T03:49:16.530Z - Différence pour l'angle 240 : 19120.912922766005
+2024-11-06T03:49:16.531Z - Différence pour l'angle 250 : 19093.854718207112
+2024-11-06T03:49:16.532Z - Différence pour l'angle 260 : 19017.31794970048
+2024-11-06T03:49:16.534Z - Différence pour l'angle 270 : 21755.849213487392
+2024-11-06T03:49:16.535Z - Différence pour l'angle 280 : 19062.1343768215
+2024-11-06T03:49:16.536Z - Différence pour l'angle 290 : 19057.11804024942
+2024-11-06T03:49:16.537Z - Différence pour l'angle 300 : 19178.67448495855
+2024-11-06T03:49:16.539Z - Différence pour l'angle 310 : 19167.474951072716
+2024-11-06T03:49:16.540Z - Différence pour l'angle 320 : 19121.98470347678
+2024-11-06T03:49:16.541Z - Différence pour l'angle 330 : 19128.864864387535
+2024-11-06T03:49:16.542Z - Différence pour l'angle 340 : 19043.051016053072
+2024-11-06T03:49:16.543Z - Différence pour l'angle 350 : 19038.72963198963
+2024-11-06T03:49:16.545Z - Différence pour l'angle 10 : 18971.59906280965
+2024-11-06T03:49:16.546Z - Différence pour l'angle 11 : 18927.359958536214
+2024-11-06T03:49:16.547Z - Différence pour l'angle 12 : 18900.302404988128
+2024-11-06T03:49:16.548Z - Différence pour l'angle 13 : 18928.975619404235
+2024-11-06T03:49:16.549Z - Différence pour l'angle 14 : 18908.19541891822
+2024-11-06T03:49:16.551Z - Différence pour l'angle 15 : 18919.735648258935
+2024-11-06T03:49:16.552Z - Différence pour l'angle 16 : 18899.957486724674
+2024-11-06T03:49:16.553Z - Différence pour l'angle 17 : 18855.297796640603
+2024-11-06T03:49:16.554Z - Différence pour l'angle 18 : 18863.759646475566
+2024-11-06T03:49:16.555Z - Différence pour l'angle 19 : 18870.111817368757
+2024-11-06T03:49:16.557Z - Différence pour l'angle 20 : 18856.834013163505
+2024-11-06T03:49:16.558Z - Différence pour l'angle 21 : 18858.668802436718
+2024-11-06T03:49:16.559Z - Différence pour l'angle 22 : 18940.638954375325
+2024-11-06T03:49:16.560Z - Différence pour l'angle 23 : 18933.120292228643
+2024-11-06T03:49:16.561Z - Différence pour l'angle 24 : 18956.795087777893
+2024-11-06T03:49:16.563Z - Différence pour l'angle 25 : 18919.404483228325
+2024-11-06T03:49:16.564Z - Différence pour l'angle 26 : 18959.946228826706
+2024-11-06T03:49:16.565Z - Différence pour l'angle 27 : 18984.517191648567
+2024-11-06T03:49:16.567Z - Différence pour l'angle 28 : 18985.151145039643
+2024-11-06T03:49:16.568Z - Différence pour l'angle 29 : 18992.61638110979
+2024-11-06T03:49:16.569Z - Différence pour l'angle 30 : 19061.58369601015
+2024-11-06T03:49:16.569Z - Angle de rotation trouvé : 17° avec différence de 18855.297796640603
+2024-11-06T03:50:11.425Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:50:11.426Z - Angle de rotation appliqué : 17°
+2024-11-06T03:50:11.426Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:50:19.957Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:50:19.957Z - Fermeture du navigateur...
+2024-11-06T03:50:27.730Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:50:27.731Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:50:28.024Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:50:28.024Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:50:28.025Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:50:36.051Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:50:36.196Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:50:36.227Z - Calcul de l'angle de rotation...
+2024-11-06T03:50:36.227Z - Type de contour : object, type de center : object
+2024-11-06T03:50:36.227Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:50:36.243Z - Différence pour l'angle 0 : 24165.875216925207
+2024-11-06T03:50:36.245Z - Différence pour l'angle 10 : 22411.552913620242
+2024-11-06T03:50:36.246Z - Différence pour l'angle 20 : 22433.612147846365
+2024-11-06T03:50:36.247Z - Différence pour l'angle 30 : 22464.712751335148
+2024-11-06T03:50:36.248Z - Différence pour l'angle 40 : 22444.727064502255
+2024-11-06T03:50:36.250Z - Différence pour l'angle 50 : 22569.115312745424
+2024-11-06T03:50:36.251Z - Différence pour l'angle 60 : 22442.08410553708
+2024-11-06T03:50:36.252Z - Différence pour l'angle 70 : 22533.320793882114
+2024-11-06T03:50:36.254Z - Différence pour l'angle 80 : 22566.26612889248
+2024-11-06T03:50:36.255Z - Différence pour l'angle 90 : 24321.439616108255
+2024-11-06T03:50:36.256Z - Différence pour l'angle 100 : 22530.40953910958
+2024-11-06T03:50:36.258Z - Différence pour l'angle 110 : 22701.432223540436
+2024-11-06T03:50:36.259Z - Différence pour l'angle 120 : 22671.587968203727
+2024-11-06T03:50:36.260Z - Différence pour l'angle 130 : 22718.397478695544
+2024-11-06T03:50:36.261Z - Différence pour l'angle 140 : 22697.29199706432
+2024-11-06T03:50:36.262Z - Différence pour l'angle 150 : 22560.100376549744
+2024-11-06T03:50:36.264Z - Différence pour l'angle 160 : 22554.863178481042
+2024-11-06T03:50:36.265Z - Différence pour l'angle 170 : 22424.984481599982
+2024-11-06T03:50:36.266Z - Différence pour l'angle 180 : 24165.875216925207
+2024-11-06T03:50:36.267Z - Différence pour l'angle 190 : 22183.311565228487
+2024-11-06T03:50:36.269Z - Différence pour l'angle 200 : 22304.377193725897
+2024-11-06T03:50:36.270Z - Différence pour l'angle 210 : 22146.760936985796
+2024-11-06T03:50:36.271Z - Différence pour l'angle 220 : 22079.86034829025
+2024-11-06T03:50:36.273Z - Différence pour l'angle 230 : 22158.503537017114
+2024-11-06T03:50:36.274Z - Différence pour l'angle 240 : 21893.13894808143
+2024-11-06T03:50:36.275Z - Différence pour l'angle 250 : 22000.331474775558
+2024-11-06T03:50:36.277Z - Différence pour l'angle 260 : 22076.54714850128
+2024-11-06T03:50:36.278Z - Différence pour l'angle 270 : 23865.329978862643
+2024-11-06T03:50:36.279Z - Différence pour l'angle 280 : 22154.417685870238
+2024-11-06T03:50:36.280Z - Différence pour l'angle 290 : 22024.625422467463
+2024-11-06T03:50:36.282Z - Différence pour l'angle 300 : 22151.79769228674
+2024-11-06T03:50:36.283Z - Différence pour l'angle 310 : 22198.855668705088
+2024-11-06T03:50:36.284Z - Différence pour l'angle 320 : 22177.558522073614
+2024-11-06T03:50:36.286Z - Différence pour l'angle 330 : 22331.767149063686
+2024-11-06T03:50:36.287Z - Différence pour l'angle 340 : 22353.367531537613
+2024-11-06T03:50:36.289Z - Différence pour l'angle 350 : 22417.467341338986
+2024-11-06T03:50:36.291Z - Différence pour l'angle 230 : 22158.503537017114
+2024-11-06T03:50:36.293Z - Différence pour l'angle 231 : 22078.288339452403
+2024-11-06T03:50:36.295Z - Différence pour l'angle 232 : 22011.645917559188
+2024-11-06T03:50:36.296Z - Différence pour l'angle 233 : 21928.090272524874
+2024-11-06T03:50:36.297Z - Différence pour l'angle 234 : 21941.601035475967
+2024-11-06T03:50:36.298Z - Différence pour l'angle 235 : 21940.677200123064
+2024-11-06T03:50:36.299Z - Différence pour l'angle 236 : 21996.873232348273
+2024-11-06T03:50:36.301Z - Différence pour l'angle 237 : 21945.284664364688
+2024-11-06T03:50:36.302Z - Différence pour l'angle 238 : 21876.76594014755
+2024-11-06T03:50:36.303Z - Différence pour l'angle 239 : 21840.554800645517
+2024-11-06T03:50:36.305Z - Différence pour l'angle 240 : 21893.13894808143
+2024-11-06T03:50:36.306Z - Différence pour l'angle 241 : 21892.85079655
+2024-11-06T03:50:36.307Z - Différence pour l'angle 242 : 21966.986502476848
+2024-11-06T03:50:36.308Z - Différence pour l'angle 243 : 21940.422694196208
+2024-11-06T03:50:36.309Z - Différence pour l'angle 244 : 21942.47613648013
+2024-11-06T03:50:36.311Z - Différence pour l'angle 245 : 22019.28734087459
+2024-11-06T03:50:36.312Z - Différence pour l'angle 246 : 21968.809344158824
+2024-11-06T03:50:36.313Z - Différence pour l'angle 247 : 21990.485101516064
+2024-11-06T03:50:36.314Z - Différence pour l'angle 248 : 22021.78160367594
+2024-11-06T03:50:36.315Z - Différence pour l'angle 249 : 22020.956882024904
+2024-11-06T03:50:36.317Z - Différence pour l'angle 250 : 22000.331474775558
+2024-11-06T03:50:36.317Z - Angle de rotation trouvé : 239° avec différence de 21840.554800645517
+2024-11-06T03:51:58.630Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:51:58.631Z - Angle de rotation appliqué : 239°
+2024-11-06T03:51:58.631Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:52:07.164Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:52:07.164Z - Fermeture du navigateur...
+2024-11-06T03:53:34.768Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:53:34.768Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T03:53:35.043Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:53:35.043Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:53:35.044Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T03:53:43.055Z - Tentative de capture des images du CAPTCHA...
+2024-11-06T03:53:43.200Z - Images CAPTCHA téléchargées avec succès.
+2024-11-06T03:53:43.231Z - Calcul de l'angle de rotation...
+2024-11-06T03:53:43.231Z - Type de contour : object, type de center : object
+2024-11-06T03:53:43.232Z - Contour dimensions : 347x347, Center dimensions : 211x211
+2024-11-06T03:53:43.246Z - Différence pour l'angle 0 : 13608.497345408861
+2024-11-06T03:53:43.248Z - Différence pour l'angle 10 : 12760.45340103556
+2024-11-06T03:53:43.249Z - Différence pour l'angle 20 : 12889.866484956312
+2024-11-06T03:53:43.251Z - Différence pour l'angle 30 : 12924.256342242674
+2024-11-06T03:53:43.252Z - Différence pour l'angle 40 : 12832.533888519445
+2024-11-06T03:53:43.253Z - Différence pour l'angle 50 : 12860.473552711814
+2024-11-06T03:53:43.255Z - Différence pour l'angle 60 : 12962.570154101384
+2024-11-06T03:53:43.256Z - Différence pour l'angle 70 : 12846.233066545228
+2024-11-06T03:53:43.258Z - Différence pour l'angle 80 : 12873.66719315052
+2024-11-06T03:53:43.259Z - Différence pour l'angle 90 : 13698.983538934559
+2024-11-06T03:53:43.260Z - Différence pour l'angle 100 : 12825.297033597311
+2024-11-06T03:53:43.262Z - Différence pour l'angle 110 : 12905.85301326495
+2024-11-06T03:53:43.263Z - Différence pour l'angle 120 : 12905.873662794007
+2024-11-06T03:53:43.264Z - Différence pour l'angle 130 : 12878.604349850957
+2024-11-06T03:53:43.265Z - Différence pour l'angle 140 : 12904.691976176728
+2024-11-06T03:53:43.267Z - Différence pour l'angle 150 : 12939.93520076511
+2024-11-06T03:53:43.268Z - Différence pour l'angle 160 : 12847.164083952535
+2024-11-06T03:53:43.269Z - Différence pour l'angle 170 : 12844.188024160967
+2024-11-06T03:53:43.270Z - Différence pour l'angle 180 : 13656.196395775802
+2024-11-06T03:53:43.272Z - Différence pour l'angle 190 : 12813.585485725687
+2024-11-06T03:53:43.273Z - Différence pour l'angle 200 : 12913.220434887651
+2024-11-06T03:53:43.274Z - Différence pour l'angle 210 : 12941.0453209932
+2024-11-06T03:53:43.275Z - Différence pour l'angle 220 : 12858.969826545204
+2024-11-06T03:53:43.277Z - Différence pour l'angle 230 : 12886.868316235717
+2024-11-06T03:53:43.278Z - Différence pour l'angle 240 : 12942.17794654362
+2024-11-06T03:53:43.279Z - Différence pour l'angle 250 : 12868.168711980737
+2024-11-06T03:53:43.280Z - Différence pour l'angle 260 : 12853.85288541922
+2024-11-06T03:53:43.282Z - Différence pour l'angle 270 : 13656.196395775802
+2024-11-06T03:53:43.283Z - Différence pour l'angle 280 : 12835.475955335665
+2024-11-06T03:53:43.284Z - Différence pour l'angle 290 : 12904.523896680574
+2024-11-06T03:53:43.285Z - Différence pour l'angle 300 : 12877.904526746577
+2024-11-06T03:53:43.286Z - Différence pour l'angle 310 : 12838.717225642133
+2024-11-06T03:53:43.288Z - Différence pour l'angle 320 : 12894.121916594398
+2024-11-06T03:53:43.289Z - Différence pour l'angle 330 : 12955.445071474773
+2024-11-06T03:53:43.290Z - Différence pour l'angle 340 : 12890.190844203975
+2024-11-06T03:53:43.291Z - Différence pour l'angle 350 : 12867.967982552645
+2024-11-06T03:53:43.293Z - Différence pour l'angle 0 : 13608.497345408861
+2024-11-06T03:53:43.294Z - Différence pour l'angle 1 : 12792.848040995406
+2024-11-06T03:53:43.295Z - Différence pour l'angle 2 : 12738.490805429032
+2024-11-06T03:53:43.296Z - Différence pour l'angle 3 : 12755.631854204636
+2024-11-06T03:53:43.297Z - Différence pour l'angle 4 : 12746.095990537651
+2024-11-06T03:53:43.299Z - Différence pour l'angle 5 : 12840.269000297463
+2024-11-06T03:53:43.300Z - Différence pour l'angle 6 : 12785.742254558396
+2024-11-06T03:53:43.301Z - Différence pour l'angle 7 : 12817.789161942086
+2024-11-06T03:53:43.302Z - Différence pour l'angle 8 : 12783.592570165869
+2024-11-06T03:53:43.304Z - Différence pour l'angle 9 : 12765.433208473576
+2024-11-06T03:53:43.305Z - Différence pour l'angle 10 : 12760.45340103556
+2024-11-06T03:53:43.306Z - Différence pour l'angle 11 : 12736.275201172437
+2024-11-06T03:53:43.308Z - Différence pour l'angle 12 : 12819.14513530446
+2024-11-06T03:53:43.309Z - Différence pour l'angle 13 : 12877.338234278077
+2024-11-06T03:53:43.310Z - Différence pour l'angle 14 : 12861.615061880837
+2024-11-06T03:53:43.311Z - Différence pour l'angle 15 : 12820.429555986024
+2024-11-06T03:53:43.312Z - Différence pour l'angle 16 : 12791.905213845199
+2024-11-06T03:53:43.314Z - Différence pour l'angle 17 : 12828.306162545388
+2024-11-06T03:53:43.315Z - Différence pour l'angle 18 : 12850.912730230488
+2024-11-06T03:53:43.316Z - Différence pour l'angle 19 : 12904.367671451399
+2024-11-06T03:53:43.317Z - Différence pour l'angle 20 : 12889.866484956312
+2024-11-06T03:53:43.317Z - Angle de rotation trouvé : 11° avec différence de 12736.275201172437
+2024-11-06T03:54:38.052Z - Échec de la résolution du CAPTCHA.
+2024-11-06T03:54:38.052Z - Angle de rotation appliqué : 11°
+2024-11-06T03:54:38.053Z - Erreur lors de la rotation du CAPTCHA : Mat instance already deleted
+2024-11-06T03:54:46.587Z - Scraping terminé avec le résultat : {}
+2024-11-06T03:54:46.587Z - Fermeture du navigateur...
+2024-11-06T11:24:38.457Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:24:38.458Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T11:24:39.039Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:24:39.039Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:24:39.039Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:24:58.898Z - Scraping terminé avec le résultat : {}
+2024-11-06T11:24:58.898Z - Fermeture du navigateur...
+2024-11-06T11:26:46.509Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:26:46.510Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:26:46.751Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:26:46.751Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:26:56.232Z - Erreur lors de l'extraction du profil depuis le HTML: Error: page.evaluate: ReferenceError: authorSegment is not defined
+    at eval (eval at evaluate (:234:30), <anonymous>:10:23)
+    at UtilityScript.evaluate (<anonymous>:236:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2024-11-06T11:26:56.232Z - Scraping terminé avec le résultat : {}
+2024-11-06T11:26:56.232Z - Fermeture du navigateur...
+2024-11-06T11:36:32.674Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:36:32.675Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:36:32.954Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:36:32.954Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:36:43.410Z - Scraping terminé avec le résultat : {"user":{"verified":false,"avatarThumb":"","signature":""},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":219}}
+2024-11-06T11:36:43.410Z - Fermeture du navigateur...
+2024-11-06T11:37:55.986Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:37:55.987Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:37:56.298Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:37:56.298Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:38:07.721Z - Données de profil trouvées ! {"user":{"id":"6827460491678761989","shortId":"","uniqueId":"justt__zizouu","nickname":"Justt__zizouu","avatarLarger":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=11005&refresh_token=e75bd4999325734aaa696a13f72c9f79&x-expires=1731063600&x-signature=znHfc2w%2FDQ%2FrDmjBLpcDO%2Fgww4A%3D&shp=a5d48078&shcp=81f88b70","avatarMedium":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_720x720.jpeg?lk3s=a5d48078&nonce=68250&refresh_token=87cfa28fb1ca41a5c5c050c011761396&x-expires=1731063600&x-signature=svx8Kx8b3QIPJ0ngiLgb%2FUVSIEk%3D&shp=a5d48078&shcp=81f88b70","avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=63760&refresh_token=0094063782e82e2e7663e283824a3e64&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","createTime":1591920803,"verified":true,"secUid":"MS4wLjABAAAAuJJ8avKNNZor6va12gfClO57hcB_jHrB9XQyjQeMq8Z3TmUY03DTKom27jLIUsGd","ftc":false,"relation":0,"openFavorite":false,"bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"commentSetting":0,"commerceUserInfo":{"commerceUser":false},"duetSetting":0,"stitchSetting":3,"privateAccount":false,"secret":false,"isADVirtual":false,"roomId":"","uniqueIdModifyTime":0,"ttSeller":false,"region":"FR","downloadSetting":3,"profileTab":{"showMusicTab":false,"showQuestionTab":true,"showPlayListTab":false},"followingVisibility":2,"recommendReason":"","nowInvitationCardUrl":"","nickNameModifyTime":0,"isEmbedBanned":false,"canExpPlaylist":true,"profileEmbedPermission":1,"language":"fr","eventList":[],"suggestAccountBind":false,"isOrganization":0},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"diggCount":0,"friendCount":218},"itemList":[]}
+2024-11-06T11:38:07.722Z - Scraping terminé avec le résultat : {"user":{"verified":false,"avatarThumb":"","signature":""},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":218}}
+2024-11-06T11:38:07.722Z - Fermeture du navigateur...
+2024-11-06T11:39:13.623Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:39:13.624Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:39:13.888Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:39:13.888Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:39:23.908Z - Données de profil trouvées ! {"user":{"id":"6827460491678761989","shortId":"","uniqueId":"justt__zizouu","nickname":"Justt__zizouu","avatarLarger":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=24046&refresh_token=805f17f83891db84399a0349fdf8b1e8&x-expires=1731063600&x-signature=znHfc2w%2FDQ%2FrDmjBLpcDO%2Fgww4A%3D&shp=a5d48078&shcp=81f88b70","avatarMedium":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_720x720.jpeg?lk3s=a5d48078&nonce=6449&refresh_token=32afb7084935c0a0387d3013904d794e&x-expires=1731063600&x-signature=svx8Kx8b3QIPJ0ngiLgb%2FUVSIEk%3D&shp=a5d48078&shcp=81f88b70","avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=65787&refresh_token=c2b8717f38f1c773f47276651d762046&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","createTime":1591920803,"verified":true,"secUid":"MS4wLjABAAAAuJJ8avKNNZor6va12gfClO57hcB_jHrB9XQyjQeMq8Z3TmUY03DTKom27jLIUsGd","ftc":false,"relation":0,"openFavorite":false,"bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"commentSetting":0,"commerceUserInfo":{"commerceUser":false},"duetSetting":0,"stitchSetting":3,"privateAccount":false,"secret":false,"isADVirtual":false,"roomId":"","uniqueIdModifyTime":0,"ttSeller":false,"region":"FR","downloadSetting":3,"profileTab":{"showMusicTab":false,"showQuestionTab":true,"showPlayListTab":false},"followingVisibility":2,"recommendReason":"","nowInvitationCardUrl":"","nickNameModifyTime":0,"isEmbedBanned":false,"canExpPlaylist":true,"profileEmbedPermission":1,"language":"fr","eventList":[],"suggestAccountBind":false,"isOrganization":0},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"diggCount":0,"friendCount":218},"itemList":[]}
+2024-11-06T11:39:23.908Z - Scraping terminé avec le résultat : {"user":{"uid":"6827460491678761989","nickname":"Justt__zizouu","uniqueId":"justt__zizouu","verified":true,"avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=65787&refresh_token=c2b8717f38f1c773f47276651d762046&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"region":"FR","language":"fr"},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":218}}
+2024-11-06T11:39:23.908Z - Fermeture du navigateur...
+2024-11-06T11:40:02.058Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:02.059Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:40:02.342Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:02.342Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:12.781Z - Scraping terminé avec le résultat : {"user":{"uid":"6827460491678761989","nickname":"Justt__zizouu","uniqueId":"justt__zizouu","verified":true,"avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=25083&refresh_token=e5661b977ed488f1f39dd87cab2c8ada&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"region":"FR","language":"fr"},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":218}}
+2024-11-06T11:40:12.782Z - Fermeture du navigateur...
+2024-11-06T11:40:34.938Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:34.939Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T11:40:35.197Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:35.197Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T11:40:43.158Z - Scraping terminé avec le résultat : {"user":{"uid":"6827460491678761989","nickname":"Justt__zizouu","uniqueId":"justt__zizouu","verified":true,"avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=34557&refresh_token=0d5ac0b4a201decdf9cec69cc63eac2d&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"region":"FR","language":"fr"},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":219}}
+2024-11-06T11:40:43.158Z - Fermeture du navigateur...
+2024-11-06T11:41:19.424Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:41:19.424Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T11:41:19.678Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:41:19.678Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:41:19.679Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:41:36.542Z - Scraping terminé avec le résultat : {}
+2024-11-06T11:41:36.542Z - Fermeture du navigateur...
+2024-11-06T11:42:08.463Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:42:08.464Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T11:42:08.760Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:42:08.760Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:42:08.760Z - Chargement de la page https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:42:09.240Z - URL : https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:42:09.304Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/runtime.49eb133556f94c30cc78.js
+2024-11-06T11:42:09.305Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-rxjs.6ec4b58d87c28c3ebb5c.js
+2024-11-06T11:42:09.308Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.828/index.js
+2024-11-06T11:42:09.318Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-react.4a02190a90b5e3f0e6d9.js
+2024-11-06T11:42:09.319Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-byted-tiktok-icons.a6a00e4093cf14c460dc.js
+2024-11-06T11:42:09.320Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok-infra/csp/sdk-pre/slardar.web.pre.js
+2024-11-06T11:42:09.324Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/tux-h5-icons.d01d3ed1d94771482102.js
+2024-11-06T11:42:09.324Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-sigi.daa65d6a2a032fe7d1b2.js
+2024-11-06T11:42:09.340Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-focus-lock.26c70dff77d287e97cac.js
+2024-11-06T11:42:09.341Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-xg-helper.1731ab49b2fefb076dda.js
+2024-11-06T11:42:09.343Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-xgplayer.ab00b64b39ae3017476c.js
+2024-11-06T11:42:09.344Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-74d9c565.63785d3c2e41681a1069.js
+2024-11-06T11:42:09.349Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js?bid=tiktok_webapp&globalName=SlardarClient
+2024-11-06T11:42:09.352Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/vendor.bf7775afbc80f053f293.js
+2024-11-06T11:42:09.367Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-byted-web-privacy-sdk.6671849aa3f85a7591d4.js
+2024-11-06T11:42:09.369Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-596046b7.d2aefd0d70729593139d.js
+2024-11-06T11:42:09.369Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9877.f40517560f92d02dbfd5.js
+2024-11-06T11:42:09.370Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-dp-byted-tea-sdk-oversea.9ab187d0e75cca16e8f5.js
+2024-11-06T11:42:09.370Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.828/core.js?globalName=__PNS_RUNTIME__
+2024-11-06T11:42:09.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/3806.2f491b4e55c1e38d8ac6.js
+2024-11-06T11:42:09.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-596046b7.c4074043099909cbf11e.js
+2024-11-06T11:42:09.383Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/crypto-js.11f3040943717c02bd25.js
+2024-11-06T11:42:09.384Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/7095.a97c7204fec9ccd68dc9.js
+2024-11-06T11:42:09.384Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/video.12280a42ee99000f65f9.js
+2024-11-06T11:42:09.384Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9569.bd326feab98a7d740db8.js
+2024-11-06T11:42:09.385Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-lottie.cb3fdc850e41a2c46f7a.js
+2024-11-06T11:42:09.385Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-d801507b.fdadb163877f1365fbf2.js
+2024-11-06T11:42:09.392Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.828/devtools.js?globalName=__PNS_RUNTIME__&__PNS_SW_CACHE__=1&__PNS_SW_CACHE_KEY__=to-json-schema
+2024-11-06T11:42:09.407Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/webapp-desktop-islands.9711308f05e8096d3280.js
+2024-11-06T11:42:09.760Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8c38d0bc3eca55cfff39.css
+2024-11-06T11:42:09.761Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/a235bacbec5238e7c811.css
+2024-11-06T11:42:09.774Z - URL : https://p16-sign-useast2a.tiktokcdn.com/obj/tos-useast2a-p-0037-euttp/26968b22ec0148f6ba38fe5f8b47d8c9_1729622011?lk3s=81f88b70&x-expires=1731063600&x-signature=kSAD%2BR6f9jp4r%2FweRKRQ36Soaz8%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:09.776Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9ba6b3da175369e04c8c.css
+2024-11-06T11:42:09.799Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2?_default_font=1&v=2
+2024-11-06T11:42:09.800Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/playback1.mp4
+2024-11-06T11:42:09.804Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.14.0.js
+2024-11-06T11:42:09.877Z - URL : https://libraweb.tiktokw.eu/service/2/abtest_config/
+2024-11-06T11:42:09.878Z - URL : https://www.tiktok.com/ttwid/check/
+2024-11-06T11:42:09.883Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/f0af786e1ae603429b27.gif
+2024-11-06T11:42:09.886Z - URL : https://p16-sign-useast2a.tiktokcdn.com/obj/tos-useast2a-p-0037-euttp/26968b22ec0148f6ba38fe5f8b47d8c9_1729622011?lk3s=81f88b70&x-expires=1731063600&x-signature=kSAD%2BR6f9jp4r%2FweRKRQ36Soaz8%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:09.919Z - URL : https://www.tiktok.com/api/policy/notice/?region=FR&priority_region=FR&aid=1988&device_id=7434130152630289953&app_language=fr&device_platform=web_pc&scene=0
+2024-11-06T11:42:09.927Z - URL : https://v16-webapp.tiktok.com/ddac43d223867d9da4f0e4d7799bc0ad/672baaa2/video/tos/useast2a/tos-useast2a-v-0037-euttp/c247fd29cba64e74bb8b64587b465cad/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=10758&bt=5379&ds=3&ft=4b~OyMRh8Zmo0WvzCb4jVAyurpWrKsd.&mime_type=video_mp4&qs=13&rc=Mzw4anA5cml4djMzZjczM0BpMzw4anA5cml4djMzZjczM0BwZW1iMmRrc19gLS1kMWNzYSNwZW1iMmRrc19gLS1kMWNzcw%3D%3D&l=20241106114207202ACFB783180E0F4A39&btag=e00048000
+2024-11-06T11:42:09.959Z - URL : https://v16-webapp-prime.tiktok.com/video/tos/useast2a/tos-useast2a-ve-0068-euttp/okfCDiQ4diY4AAnEJz2vIFoLviIqvhpBEX8AT2/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=3576&bt=1788&cs=0&ds=6&ft=4fUEKMRh8Zmo0WvzCb4jVAyurpWrKsd.&mime_type=video_mp4&qs=0&rc=NzU0ZTQ7Z2ZmNGU1Mzw5NkBpMzw4anA5cml4djMzZjczM0AuMWFhM140NjQxLy8yMTA0YSNwZW1iMmRrc19gLS1kMWNzcw%3D%3D&btag=e00088000&expire=1730914978&l=20241106114207202ACFB783180E0F4A39&ply_type=2&policy=2&signature=4f342a6d05563b82fbc95d249ad00b68&tk=tt_chain_token
+2024-11-06T11:42:09.980Z - URL : https://mon-i18n.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1
+2024-11-06T11:42:10.001Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.044Z - URL : https://v19-webapp-prime.tiktok.com/video/tos/useast2a/tos-useast2a-ve-0068-euttp/okfCDiQ4diY4AAnEJz2vIFoLviIqvhpBEX8AT2/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=3576&bt=1788&cs=0&ds=6&ft=4fUEKMRh8Zmo0WvzCb4jVAyurpWrKsd.&mime_type=video_mp4&qs=0&rc=NzU0ZTQ7Z2ZmNGU1Mzw5NkBpMzw4anA5cml4djMzZjczM0AuMWFhM140NjQxLy8yMTA0YSNwZW1iMmRrc19gLS1kMWNzcw%3D%3D&btag=e00088000&expire=1730914978&l=20241106114207202ACFB783180E0F4A39&ply_type=2&policy=2&signature=4f342a6d05563b82fbc95d249ad00b68&tk=tt_chain_token
+2024-11-06T11:42:10.048Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.061Z - URL : https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime
+2024-11-06T11:42:10.064Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.147Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.224Z - URL : https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=73364950222b417c9c7da861dbd14214&is_play_url=1&item_id=7428669917831908641&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLjA3ZGZmNWIwMDY1ZTE4YWUwOTM5YjFmM2JlODdiMDRk&tk=tt_chain_token&vidc=useast2a&video_id=v0f044gc0000csbuvfnog65megp5h9s0
+2024-11-06T11:42:10.235Z - URL : https://v16-webapp-prime.tiktok.com/video/tos/useast2a/tos-useast2a-ve-0068-euttp/okfCDiQ4diY4AAnEJz2vIFoLviIqvhpBEX8AT2/?a=1988&bti=bGRuZHxvMXIxcm53Zm1cYF9ebWFzaHFmOg%3D%3D&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&cv=1&br=3576&bt=1788&cs=0&ds=6&ft=7S~-gD5ZNx0fQ9UNCmcbsdUS1J7qYlm6S-W~hWLrK&mime_type=video_mp4&qs=0&rc=NzU0ZTQ7Z2ZmNGU1Mzw5NkBpMzw4anA5cml4djMzZjczM0AuMWFhM140NjQxLy8yMTA0YSNwZW1iMmRrc19gLS1kMWNzcw%3D%3D&btag=e00088000&expire=1730914979&l=202411061142086A643453F1E9560F2B20&ply_type=2&policy=2&signature=ccd4fc35fd8cb5d335173fd068febc42&tk=tt_chain_token
+2024-11-06T11:42:10.270Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-b83e73d4.c4938b936e834706f98c.js
+2024-11-06T11:42:10.277Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-d3c34b00.b329ee8198e286c9baaa.js
+2024-11-06T11:42:10.295Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9058.740e8d930e6d3e4514bd.js
+2024-11-06T11:42:10.300Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/5920.74bd22ea067f6162626c.js
+2024-11-06T11:42:10.302Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9036.ca0ac3a24d2ee5a734d6.js
+2024-11-06T11:42:10.303Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/3348.a62f26d12e71f91ced93.js
+2024-11-06T11:42:10.308Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/header.island.f92fa6f6e15f397a710e.js
+2024-11-06T11:42:10.353Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-cbf8c0c2.d6899a05b3d5ead072a4.js
+2024-11-06T11:42:10.354Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-97c9ce16.0a70b660f0a4f23dc594.js
+2024-11-06T11:42:10.355Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-eacdeb18.3bc1a4810d8b47f611b0.js
+2024-11-06T11:42:10.355Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-541266a8.460260ee9d74c64e5c1b.js
+2024-11-06T11:42:10.356Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/2146.85e9f07afbc227803889.js
+2024-11-06T11:42:10.356Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-3fa494ea.6c2920461aee7468ca9b.js
+2024-11-06T11:42:10.356Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-2364e77b.ed88cca160d6efeeb493.js
+2024-11-06T11:42:10.357Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/5553.4e24faa7a23ae7e5ff54.js
+2024-11-06T11:42:10.358Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/headSideEffect.island.e6f1542fcab81c4736cb.js
+2024-11-06T11:42:10.358Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/bottomSideEffect.island.a1592c78115a84b71af4.js
+2024-11-06T11:42:10.358Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8116.824bee707806ef28cf0b.js
+2024-11-06T11:42:10.358Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/sideNav.island.c4121ac78cdc07ad09f3.js
+2024-11-06T11:42:10.358Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8199.5dc14ef1b698b7505361.js
+2024-11-06T11:42:10.359Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-120ededf.e71b2e4d1a2f5c3ce82a.js
+2024-11-06T11:42:10.359Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-829a1743.b66b5bb3ec89e82a40e7.js
+2024-11-06T11:42:10.359Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/5678.c10b287a31d9695f2008.js
+2024-11-06T11:42:10.360Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/share.eb24d3695446a1bf9eeb.js
+2024-11-06T11:42:10.360Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8958.2871102eabb490eb9f73.js
+2024-11-06T11:42:10.361Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/revamp.8f50597c0ad241148f35.js
+2024-11-06T11:42:10.361Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/video-info-side-effect.d8e2ffdc0dce1ba06051.js
+2024-11-06T11:42:10.361Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-358805d3.87593c80e6e1378d8232.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/3622.17064e0fce616a1f82f7.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-430a47bc.589eae4b3ecd89770d37.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8877.c974d88aa7d2526f1a1a.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-486ae019.9b8eef39cf91920751df.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/4523.88e28d54401c2551ee4c.js
+2024-11-06T11:42:10.363Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-882ccf53.6c8cb0aa91fa109d6b39.js
+2024-11-06T11:42:10.364Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-5e25d90a.dd722b5663e75ea4d693.js
+2024-11-06T11:42:10.364Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/video-container-side-effect.782461104d7e52d5141d.js
+2024-11-06T11:42:10.364Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/right-pane-side-effect.eea2beb720257dfab336.js
+2024-11-06T11:42:10.370Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/1252.bff9405927b4e6706aa0.js
+2024-11-06T11:42:10.370Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/photo-info-side-effect.14ba7e43387db8b09a65.js
+2024-11-06T11:42:10.370Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/photo-container-side-effect.a31e1ece6706d0cd8ae8.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-8200dcdc.e8837c4850ba4fcae886.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9130.0c83d25b83de51ba4f49.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-975150c9.24e8502fa6f89c59f023.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/photo-player-content-side-effect.f124ad3b32d7aaa7d4a8.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/1781.90380e91fcb2bca068d3.js
+2024-11-06T11:42:10.371Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/video-side-effect.68412384c9c7c5f46a31.js
+2024-11-06T11:42:10.372Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/1603.4ffecd4aa5b2beecf6fd.js
+2024-11-06T11:42:10.372Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/8130.f8e5df472522453e5654.js
+2024-11-06T11:42:10.372Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/video-player-content-side-effect.a8d9ec8c123d955c5a8c.js
+2024-11-06T11:42:10.373Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-eb873fff.c8922167c02e27f52fb6.js
+2024-11-06T11:42:10.374Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Bold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.454Z - URL : https://p16-sign-useast2a.tiktokcdn.com/obj/tos-useast2a-p-0037-euttp/26968b22ec0148f6ba38fe5f8b47d8c9_1729622011?lk3s=81f88b70&x-expires=1731063600&x-signature=kSAD%2BR6f9jp4r%2FweRKRQ36Soaz8%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:10.455Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.455Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.456Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.456Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokDisplayFont-Bold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.456Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokDisplayFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.456Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/021d2ed936cbb9f7033f.png
+2024-11-06T11:42:10.470Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.484Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=37766&refresh_token=690ca2320ecc6b65baecee0c9e4d19f5&x-expires=1731063600&x-signature=qOXBcTTiEtfBZwkhcOhAqIwD3bM%3D&shp=a5d48078&shcp=81f88b70
+2024-11-06T11:42:10.585Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/236153c11d407e0b7b69.css
+2024-11-06T11:42:10.586Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/0db421976d39704f7fb7.css
+2024-11-06T11:42:10.604Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js
+2024-11-06T11:42:10.605Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js
+2024-11-06T11:42:10.606Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/9027.367dd259515469efe00c.js
+2024-11-06T11:42:10.606Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/live-action-bar.3d58b771a2be8ce561f2.js
+2024-11-06T11:42:10.606Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/seo-expended-section.7ce1a5ea852473b8924e.js
+2024-11-06T11:42:10.606Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.606Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/action-bar.a49205b4b5d6445e1e44.js
+2024-11-06T11:42:10.607Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/user/webid
+2024-11-06T11:42:10.613Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/es-polyfill.32d483bda389a39d462f.js
+2024-11-06T11:42:10.614Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_no1a.34529143618ade7bca48.js
+2024-11-06T11:42:10.614Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_ie.0d952dfa4a633c97a467.js
+2024-11-06T11:42:10.615Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_in.3e68232c7d5778591152.js
+2024-11-06T11:42:10.615Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-account.58fb90179e0f73ade968.js
+2024-11-06T11:42:10.617Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_ttp.029348714f52a101e7dc.js
+2024-11-06T11:42:10.689Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-6499257b.97302dd05e161f083aed.js
+2024-11-06T11:42:10.690Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-b44107a0.37a9bfb5a0daf7649771.js
+2024-11-06T11:42:10.690Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-e4fa8fd6.5cba774b2ee082ed703e.js
+2024-11-06T11:42:10.690Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-6774d3e7.80b80269a8788cbebe17.js
+2024-11-06T11:42:10.690Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-f58a86dd.ce4a8f6b0fc0374eb989.js
+2024-11-06T11:42:10.690Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_va.8f2435adf05d8196eb20.js
+2024-11-06T11:42:10.691Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-39963cf5.9e0cdce430b9b7b6d899.js
+2024-11-06T11:42:10.692Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-859c9c41.642b54a77535f0be0032.js
+2024-11-06T11:42:10.692Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-19807dbb.807aa5674a33a10e5bd1.js
+2024-11-06T11:42:10.692Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-4db6e54a.dcbaf955815109fd51d3.js
+2024-11-06T11:42:10.692Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-8c5e720b.3c39072f552acdd87071.js
+2024-11-06T11:42:10.692Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-35771d4d.ca86a28ae01e3dedc5d8.js
+2024-11-06T11:42:10.693Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-756fd682.f927beb4f99982ef8254.js
+2024-11-06T11:42:10.711Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-41849d08.122621a690dee5e883aa.js
+2024-11-06T11:42:10.711Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-7ba3f7c8.3fb13ab748904e46c91c.js
+2024-11-06T11:42:10.712Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-ad93712e.3a2c2f335f039e9c1fe2.js
+2024-11-06T11:42:10.712Z - URL : https://www.tiktok.com/api/customtdk/item/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&itemId=7428669917831908641&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr
+2024-11-06T11:42:10.712Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-ab701a05.234017461f66adee9591.js
+2024-11-06T11:42:10.713Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-bric_verify_sec_sdk_build_captcha_sg.d5cd5baa763e30e754fb.js
+2024-11-06T11:42:10.713Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-8a76d5aa.52e499ba0da5e11bda05.js
+2024-11-06T11:42:10.713Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-3ff47cff.f0a670138d74197eb4da.js
+2024-11-06T11:42:10.714Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-7d767a48.9054c2c7fcd198cef0e9.js
+2024-11-06T11:42:10.714Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-42367b97.51137cbf3197694cd61a.js
+2024-11-06T11:42:10.714Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-b3aa5b76.c898be83674e88c6944f.js
+2024-11-06T11:42:10.714Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-dba34cb3.9cd6d2353b7ae1fbb291.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-811fa338.fdf0c44eb93b0ef422b6.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-7b064469.0c1200e9ba679301d415.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-58caee38.e8b0b55d78667aa79f6f.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-b1a9beb1.fd660c74e9402a68ca1a.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-6725ee71.3ec8d65933f87f9c5cb4.js
+2024-11-06T11:42:10.716Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-async-b17a692f.0ddd0e9b283f74c52e58.js
+2024-11-06T11:42:10.717Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/3000.e8d9c7e51b4138ac472f.js
+2024-11-06T11:42:10.723Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/login-modal.1a072a2d74dc3e2e66c2.js
+2024-11-06T11:42:10.724Z - URL : https://www.tiktok.com/api/ad/tiktok_web/banner/v1/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr
+2024-11-06T11:42:10.728Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.838Z - URL : https://www.tiktok.com/api/v1/web-cookie-privacy/config?locale=fr&appId=1988&theme=default&tea=1
+2024-11-06T11:42:10.839Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.839Z - URL : https://www.tiktok.com/cloudpush/app_notice_status/
+2024-11-06T11:42:10.847Z - URL : https://www.tiktok.com/api/comment/list/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&aweme_id=7428669917831908641&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=20&cursor=0&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr&msToken=&X-Bogus=DFSzswRO2bTANrAjtsCwlXJ92UIE&_signature=_02B4Z6wo00001dOKBCQAAIDD1CAxgFd3.EXTikCAABPL96
+2024-11-06T11:42:10.851Z - URL : https://www.tiktok.com/api/ba/business/suite/permission/list/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&odinId=7434130188440847393&os=windows&permissionList=001004%2C001005&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr&msToken=&X-Bogus=DFSzswROZBkANrAjtsCwlXJ92U6j&_signature=_02B4Z6wo00001dOKBCQAAIDD1CAxgFd1vrnTikCAABPL63
+2024-11-06T11:42:10.861Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/pns/tiktok-cookie-banner/1.0.0.239/default.eu-ttp.esm.js
+2024-11-06T11:42:10.907Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokDisplayFont-Bold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.908Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.908Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Bold.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.917Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-SEMIBOLD.woff2?_default_font=1&v=2
+2024-11-06T11:42:10.918Z - URL : https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime
+2024-11-06T11:42:10.918Z - URL : https://www.tiktok.com/api/share/settings/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7434130152630289953&device_platform=webapp_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&mode=1&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr
+2024-11-06T11:42:10.944Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/user/webid
+2024-11-06T11:42:10.947Z - URL : https://webcast.tiktok.com/webcast/wallet_api/fs/diamond_buy/permission_v2?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&is_fullscreen=false&is_page_visible=true&live_id=12&local_country=FR&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&source=www.tiktok.com%2F%40justt__zizouu%2Fvideo%2F7428669917831908641&tz_name=Europe%2FParis&user_id=&user_is_login=false&webcast_language=fr&msToken=&X-Bogus=DFSzswSOHFJANJF2tsCwlXJ92U1n&_signature=_02B4Z6wo00001dOKBCQAAIDD1CAxgFd0c.3TikCAABPL6c
+2024-11-06T11:42:10.948Z - URL : https://starling.tiktokv.eu/check_and_get_text/5dc26cf008d511e9b571e1bc0c9e23b5/normal/WebApp_Login?lang=fr,zh
+2024-11-06T11:42:10.963Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/user/webid
+2024-11-06T11:42:10.966Z - URL : https://www.tiktok.com/cloudpush/app_notice_status/
+2024-11-06T11:42:10.976Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:10.998Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/user/webid
+2024-11-06T11:42:11.044Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.105Z - URL : https://vcs-i18n.tiktokv.com/vc/setting?aid=1988
+2024-11-06T11:42:11.119Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/captcha.js
+2024-11-06T11:42:11.237Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.238Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.239Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.239Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.246Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/captcha.vendors.a103f169e674da1863e8.js
+2024-11-06T11:42:11.254Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.256Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/591.624b1e90dea0631faf7a.js
+2024-11-06T11:42:11.274Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.13.1.js
+2024-11-06T11:42:11.279Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/443.bc72445b8c3b37ef6912.js
+2024-11-06T11:42:11.279Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/176.13884202b46ed29f1ab9.js
+2024-11-06T11:42:11.280Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/585.4129b0f3c21b04cd76ee.js
+2024-11-06T11:42:11.286Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/814.5e169e8cb4adb988cecf.js
+2024-11-06T11:42:11.287Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/353.8f872c58ce749e54cb21.js
+2024-11-06T11:42:11.287Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/511.af1df3f4b2f3c7b47c4a.js
+2024-11-06T11:42:11.287Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/562.f75343587c5478ae08dd.js
+2024-11-06T11:42:11.288Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/51.8e9e619751ca91c3a426.js
+2024-11-06T11:42:11.288Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/551.6a81e93db6e79eba7e0e.js
+2024-11-06T11:42:11.288Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/394.57d842c7da7da6f4bff5.js
+2024-11-06T11:42:11.289Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/653.dbeff8fae87ff0b83e71.js
+2024-11-06T11:42:11.289Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/711.107986f5905f6d80baca.js
+2024-11-06T11:42:11.289Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/918.9e13fb3dc7bf6f3b43fe.js
+2024-11-06T11:42:11.289Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/bric-captcha-ttweb/core-captcha/in/2.33.7/1.0.0.498/static/js/336.8ff60b39f8fe9d050e54.js
+2024-11-06T11:42:11.401Z - URL : https://www.tiktok.com/api/related/item_list/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&clientABVersions=72804197%2C70508271%2C72287501%2C72422413%2C72700841%2C72848406%2C72854649%2C72858853%2C72864712%2C72874368%2C72894897%2C72907372%2C72925477%2C72929341%2C72945723%2C72952383%2C72961677%2C72968775%2C72973293%2C72974491%2C72991658%2C70405643%2C71057832%2C71200802&cookie_enabled=true&count=16&coverFormat=2&cursor=0&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&isNonPersonalized=false&is_fullscreen=false&is_page_visible=true&itemID=7428669917831908641&language=fr&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&webcast_language=fr
+2024-11-06T11:42:11.461Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:11.464Z - URL : https://mon-i18n.tiktokv.com/monitor_web/settings/browser-settings?bid=verify_center_va&store=1
+2024-11-06T11:42:11.475Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:11.480Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2
+2024-11-06T11:42:11.490Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/oIL867acoAuNN3tCIyefBGfE8PReQzN0RXQAIG~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=TFIM3MHwfk%2BSJoOJDWoDGHluWMY%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.491Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/osgDPESIDjPrgBCtQEfuAWAWeFwFtnDEAsbRjO~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=KiNC%2FVyrGZBeXcM%2BnhVeOZfaVmQ%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.492Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/ooZEREsDQYOBGIQFfHnRDBAgIo90cHQBr3UgeP~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=AbK0bihH%2BGZQgmj7IVHZLoY456Y%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.494Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/e3500b3ea0034713b94b6c61da6ba19e_1726431542~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=vo4Nzl4sWDuv9E7%2FB%2FBN0AwjUXk%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.495Z - URL : https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/4fd913c835304bb29d9553cbda6501b2_1725133309~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=yRaAENzjiKHJNcmVV4h3OYP%2BtdI%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.527Z - URL : https://p77-sign-va-lite.tiktokcdn.com/tos-maliva-p-0068/og4BTisf8nYnFBA2EWl5RhyDQEFEJtBjeqJcIt~tplv-photomode-zoomcover:480:480.avif?lk3s=81f88b70&x-expires=1731063600&x-signature=u88qbQFbJpYNCLXArlZNSRFg8SM%3D&shp=81f88b70&shcp=-
+2024-11-06T11:42:11.531Z - URL : https://starling-va.tiktokv.com/check_and_get_text/51a6793082fe11ea9d096543164dfa7f/normal/BDTuringEn?lang=fr,en
+2024-11-06T11:42:11.588Z - URL : https://verification-i18n.tiktok.com/captcha/get?lang=fr&app_name=&h5_sdk_version=2.33.7&h5_sdk_use_type=cdn&sdk_version=&iid=0&did=7434130152630289953&device_id=7434130152630289953&ch=web_text&aid=1988&os_type=2&mode=slide&tmp=1730893331295&platform=pc&webdriver=true&fp=verify_m35t754d_7aIm2Nhj_oco3_451w_BLEU_PsieuyAjaTry&type=verify&detail=fJx64ciz-cXTpvaC1Shd9jMzXLC6vEvLu0HzI31Zfz9PpU2pwDvYpZ6cwnpN7D*ogzzkQZjyJ0QoWsaFzAQz5fGhWfolt14S4ufx1ZKn4RdK6gRM9sJglWkmjRnxEwcGv5b5WIsQiGiYtFwSzBGhZn50RVHwh0bjjaP5N2BS3mMVuqdZpdcHn7XA3CtwK*Mfk2-YmHxJLrBXXKpqEdUbIQ4uEuNt3djs8qw3ICu3pyOD645OvoAcccEj6FbjAyAnKEdY2tQ1G4E8ENFzvvkM0wHNdcbx1BoAPAUApZx2OwbWA7*nAUC7QAD8aYamiJ3NkOBsR3A1K9h8NCpM3irQeQCa0PS87RWcwgpSjq-hQqc4ApUC*1DsN-aSKoMkSKuWszt0p6pZbvjdCOXeAw..&server_sdk_env=%7B%22idc%22:%22useast2a%22,%22region%22:%22I18N%22,%22server_type%22:%22business%22%7D&imagex_domain=&subtype=slide&challenge_code=99999&os_name=windows&h5_check_version=3.8.23&region=in&triggered_region=in&cookie_enabled=true&screen_width=1280&screen_height=720&browser_language=fr-FR&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F120.0.6099.141+Safari%2F537.36&msToken=Ci3cE0xDgHKfysSORsnNfFIlK9SfbJVEyK2M6X2gzltiUjIjF6E8hFZHvtdhSF80E5R7RD72GkYQT0fAMDhHmj-OoSyN7kYfqOLs8JTQYnteH-OEyST-OytuQzfR&X-Bogus=DFSzswROGzxANrAjtsCwlhJ92UIo&_signature=_02B4Z6wo00001iA6t5wAAIDAJ5CCO3M3wGogOvMAAO8042
+2024-11-06T11:42:11.612Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:11.628Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:11.959Z - URL : https://p19-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/0dd2be40d4e546968c78604a3b22d0a6~tplv-447w7jt563-2.jpeg
+2024-11-06T11:42:11.959Z - URL : https://p16-rc-captcha-useast2a.tiktokcdn-eu.com/tos-useast2a-i-447w7jt563-euttp/eac05682db5147afb243c046c7c53b59~tplv-447w7jt563-2.jpeg
+2024-11-06T11:42:11.979Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.979Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:11.979Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:11.979Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:11.980Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:11.982Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:12.100Z - URL : https://www.tiktok.com/cloudpush/app_notice_status/
+2024-11-06T11:42:12.119Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:12.159Z - URL : https://mssdk-i18n.tiktok.com/web/resource?eq=u9y94mvjgHqWVrnXGo0mHIWOnpC9GiSteU1piRxbvi4IblU-7iYPb4MTbFmEwm0qc3R17qhCgTRKX//EFBT/XOAym111x-4eqdDj/LIQ7HkYon5mN-sQPDYbGZE=
+2024-11-06T11:42:12.175Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1136/webmssdk_ex.js
+2024-11-06T11:42:12.203Z - URL : https://mcs-sg.tiktokv.com/v1/list
+2024-11-06T11:42:12.206Z - URL : https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?biz_id=tiktok_webapp
+2024-11-06T11:42:12.208Z - URL : https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.12.2.js
+2024-11-06T11:42:12.245Z - URL : https://www.tiktok.com/cloudpush/app_notice_status/
+2024-11-06T11:42:12.530Z - URL : https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=webmssdk&store=1
+2024-11-06T11:42:12.919Z - URL : https://mssdk-i18n.tiktok.com/web/report?msToken=Ci3cE0xDgHKfysSORsnNfFIlK9SfbJVEyK2M6X2gzltiUjIjF6E8hFZHvtdhSF80E5R7RD72GkYQT0fAMDhHmj-OoSyN7kYfqOLs8JTQYnteH-OEyST-OytuQzfR&X-Bogus=DFSzswROGg13hpAjtsCwAxJ92U6z
+2024-11-06T11:42:12.940Z - URL : https://mcs-va-useast2a.tiktokv.com/v1/list
+2024-11-06T11:42:13.758Z - URL : https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=webmssdk
+2024-11-06T11:42:13.979Z - URL : https://www.tiktok.com/api/preload/item_list/?WebIdLastTime=1730893328&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr-FR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.6099.141%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=3&coverFormat=2&data_collection_enabled=false&device_id=7434130152630289953&device_platform=web_pc&focus_state=true&from_page=video&history_len=2&isNonPersonalized=false&is_fullscreen=false&is_page_visible=true&language=fr&odinId=7434130188440847393&os=windows&priority_region=&referer=&region=FR&screen_height=720&screen_width=1280&tz_name=Europe%2FParis&user_is_login=false&verifyFp=verify_m35t754d_7aIm2Nhj_oco3_451w_BLEU_PsieuyAjaTry&vv_count_fyp=0&webcast_language=fr
+2024-11-06T11:42:15.100Z - URL : https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?biz_id=tiktok_webapp
+2024-11-06T11:42:16.402Z - URL : https://mssdk-i18n.tiktok.com/web/report?msToken=nYhxC2xt8I9anbBruLetsOKQZa01TjBlHBQobko-m52LJ3S6ghd8Xj6jNKGb5ADejZ_bHX51TOjs3N3eE5p__6IMBrHVUm9u5cwsEwEcmGxu67g4oXNNRYAmj_k5zXDLPpvNBiXOF-3FfaKi1HBJR38=&X-Bogus=DFSzswROWDVGrpAjtsCwUxJ92U18
+2024-11-06T11:42:19.549Z - URL : https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime
+2024-11-06T11:42:22.372Z - URL : https://mssdk-i18n.tiktok.com/web/report?msToken=9zCbwkypG6YSyCxKvY5mml-0r-EFYm5BELRtTQ7_HyFjpK6hAWC4dzNrxUp3LRJZ8BnDXAMJRFODgyp7VLvIr6-aNUPYLnyatCuPda1VhQXsQDxyJZtayfvpHjm_B_ygEfqYOmPd6HMWISOCsjpEnMQ=&X-Bogus=DFSzswROW-QptpAjtsCwWXJ92U1x
+2024-11-06T11:42:22.435Z - URL : https://mssdk-i18n.tiktok.com/web/report?msToken=9zCbwkypG6YSyCxKvY5mml-0r-EFYm5BELRtTQ7_HyFjpK6hAWC4dzNrxUp3LRJZ8BnDXAMJRFODgyp7VLvIr6-aNUPYLnyatCuPda1VhQXsQDxyJZtayfvpHjm_B_ygEfqYOmPd6HMWISOCsjpEnMQ=&X-Bogus=DFSzswROW-BKB3AjtsCwWXJ92UXq
+2024-11-06T11:42:25.416Z - Scraping terminé avec le résultat : {}
+2024-11-06T11:42:25.417Z - Fermeture du navigateur...
+2024-11-06T11:59:49.079Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:59:49.080Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T11:59:49.668Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:59:49.668Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T11:59:49.668Z - Erreur lors de l'extraction des métriques depuis le HTML: TypeError: page.goto is not a function
+2024-11-06T11:59:49.668Z - Scraping terminé avec le résultat : {}
+2024-11-06T11:59:49.668Z - Fermeture du navigateur...
+2024-11-06T12:00:22.644Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T12:00:22.645Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu/video/7428669917831908641 avec l'action getMetrics...
+2024-11-06T12:00:22.931Z - Action détectée : post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T12:00:22.931Z - Scraping post https://www.tiktok.com/@justt__zizouu/video/7428669917831908641
+2024-11-06T12:00:31.110Z - Scraping terminé avec le résultat : {"id":"7428669917831908641","content":"J’ai hâte de vous voir le mercredi 13 novembre au o’tacos de saint denis de 12 h 14 h pour vous faire gagner pleins de cadeaux et pleins de photos ❤️","createdAt":"1729622008","author":{"uid":"6827460491678761989","nickname":"Justt__zizouu","uniqueId":"justt__zizouu","verified":true,"avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=54998&refresh_token=d7bb01a110f9207650e7bee69bcee772&x-expires=1731067200&x-signature=euvlVIAfrT3tsYFuPmXiH8voRiI%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu"},"stats":{"collectCount":2772,"commentCount":540,"diggCount":26800,"playCount":380400,"shareCount":335},"video":{"VQScore":"76.01","languageCode":"fr","cover":"https://p16-sign-useast2a.tiktokcdn.com/obj/tos-useast2a-p-0037-euttp/oIHfIeQG2DAf3FAZA9F9GjOAAIvgaIiLQqfQvE?lk3s=81f88b70&x-expires=1731067200&x-signature=TLp2wsHEtHPQNSsqlZ%2Bn%2B9jNAJA%3D&shp=81f88b70&shcp=-","definition":"540p","duration":50,"format":"mp4","playAddr":"https://v16-webapp-prime.tiktok.com/video/tos/useast2a/tos-useast2a-ve-0068-euttp/okfCDiQ4diY4AAnEJz2vIFoLviIqvhpBEX8AT2/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=3576&bt=1788&cs=0&ds=6&ft=4fUEKMRh8Zmo0L9zCb4jVEX1upWrKsd.&mime_type=video_mp4&qs=0&rc=NzU0ZTQ7Z2ZmNGU1Mzw5NkBpMzw4anA5cml4djMzZjczM0AuMWFhM140NjQxLy8yMTA0YSNwZW1iMmRrc19gLS1kMWNzcw%3D%3D&btag=e00088000&expire=1730916072&l=2024110612002177B1D09584F4BF10B69D&ply_type=2&policy=2&signature=20d89f1a9e38f903f8ce1dc1b1ded095&tk=tt_chain_token"},"music":{"title":"son original","authorName":"Justt__zizouu","coverThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=54998&refresh_token=d7bb01a110f9207650e7bee69bcee772&x-expires=1731067200&x-signature=euvlVIAfrT3tsYFuPmXiH8voRiI%3D&shp=a5d48078&shcp=81f88b70","duration":50,"id":"7428669980554873633","playUrl":"https://v77.tiktokcdn-eu.com/e2d7fe9dfc977bf7aa733bdaa5ca7cce/672b6898/video/tos/useast2a/tos-useast2a-v-2370-euttp/oUXYEGEFWIsfkTMg4MoLVfM9G187Df0EeAlOcX/?a=1233&bti=ODszNWYuMDE6&ch=0&cr=0&dr=0&er=0&lr=default&cd=0%7C0%7C0%7C0&br=250&bt=125&ft=.NpOcInz7Th5mEVOXq8Zmo&mime_type=audio_mpeg&qs=6&rc=ZmRoaDZoaDg8NDk5OWhlPEBpam93Onk5cnh4djMzZjU8M0BgNGIyMDIxXzYxNDQyYDFfYSNuYC9wMmRzc19gLS1kMWNzcw%3D%3D&vvpl=1&l=2024110612002177B1D09584F4BF10B69D&btag=e00088000"}}
+2024-11-06T12:00:31.110Z - Fermeture du navigateur...
+2024-11-06T14:04:45.662Z - Scraping manuel démarré pour https://www.tiktok.com/@justt__zizouu
+2024-11-06T14:04:45.663Z - Démarrage du scraping pour https://www.tiktok.com/@justt__zizouu avec l'action getMetrics...
+2024-11-06T14:04:46.392Z - Action détectée : profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T14:04:46.393Z - Scraping profile https://www.tiktok.com/@justt__zizouu
+2024-11-06T14:04:54.309Z - Scraping terminé avec le résultat : {"user":{"uid":"6827460491678761989","nickname":"Justt__zizouu","uniqueId":"justt__zizouu","verified":true,"avatarThumb":"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/36bb7a83703c395781c2ffd9d5a11b06~c5_100x100.jpeg?lk3s=a5d48078&nonce=36731&refresh_token=4a3e03fddf765480496a1c286f132679&x-expires=1731074400&x-signature=QICivJ0l2s8O8KVPCGya0TV1ns0%3D&shp=a5d48078&shcp=81f88b70","signature":"👋coucou les gens👋\n📨justtzizouucollabs@gmail.com\n📸justt__zizouu\n👻justtzizouu","bioLink":{"link":"https://linktr.ee/LYDDAPRODUCTION","risk":0},"region":"FR","language":"fr"},"stats":{"followerCount":9800000,"followingCount":230,"heart":602400000,"heartCount":602400000,"videoCount":1868,"friendCount":219}}
+2024-11-06T14:04:54.310Z - Fermeture du navigateur...
+2024-11-06T14:52:40.228Z - Scraping manuel démarré pour https://x.com/TokeNo_Max/status/1853029359768293832
+2024-11-06T14:52:40.228Z - Démarrage de l'agent pour verifyRetweet...
+2024-11-06T14:52:40.695Z - Vérification de la connexion Twitter...
+2024-11-06T14:52:46.864Z - Session déjà active.
+2024-11-06T14:52:46.865Z - Cible détectée : post
+2024-11-06T14:52:46.865Z - Post https://x.com/TokeNo_Max/status/1853029359768293832
+2024-11-06T14:52:46.865Z - Vérification du retweet pour l'utilisateur @KnightsonBase
+2024-11-06T14:52:48.327Z - Analyse TweetDetail...
+2024-11-06T14:52:48.327Z - Found User: TokeNo_Max (1391845110447583232)
+2024-11-06T14:52:51.612Z - Analyse des tweets...
+2024-11-06T14:52:51.612Z - Retweet trouvé pour l'utilisateur @KnightsonBase
+2024-11-06T14:52:52.711Z - Agent terminé avec le résultat : true
+2024-11-06T14:52:52.711Z - Fermeture du navigateur...
+2024-11-06T18:35:10.461Z - Scraping manuel démarré pour https://x.com/TokeNo_Max/status/1853029359768293832
+2024-11-06T18:35:10.462Z - Démarrage de l'agent pour verifyRetweet...
+2024-11-06T18:35:11.185Z - Vérification de la connexion Twitter...
+2024-11-06T18:35:17.305Z - Session déjà active.
+2024-11-06T18:35:17.305Z - Cible détectée : post
+2024-11-06T18:35:17.305Z - Post https://x.com/TokeNo_Max/status/1853029359768293832
+2024-11-06T18:35:17.306Z - Vérification du retweet pour l'utilisateur @KnightsonBase
+2024-11-06T18:35:18.681Z - Analyse TweetDetail...
+2024-11-06T18:35:18.689Z - Found User: TokeNo_Max (1391845110447583232)
+2024-11-06T18:35:21.930Z - Analyse des tweets...
+2024-11-06T18:35:21.930Z - Retweet trouvé pour l'utilisateur @KnightsonBase
+2024-11-06T18:35:23.117Z - Agent terminé avec le résultat : true
+2024-11-06T18:35:23.117Z - Fermeture du navigateur...
