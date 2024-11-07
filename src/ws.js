@@ -24,8 +24,16 @@ function initializeWebSocket(server) {
 
         ws.on('message', async (message) => {
             try {
-                const taskData = JSON.parse(message);
+                const parsedMessage = JSON.parse(message);
                 
+                // Vérifiez le type de message pour garantir qu'il s'agit bien d'un message de scraping
+                if (parsedMessage.type !== 'get-scraping' || !parsedMessage.payload) {
+                    throw new Error("Invalid message type or missing payload");
+                }
+
+                const taskData = parsedMessage.payload;
+                
+                // Vérification de la limite de taux
                 if (!checkRateLimit(ws)) {
                     ws.send(JSON.stringify({
                         type: 'error',
@@ -75,7 +83,7 @@ function initializeWebSocket(server) {
                     payload: {
                         success: false,
                         error: error.message,
-                        taskData: JSON.parse(message)
+                        taskData: parsedMessage.payload
                     }
                 }));
                 logToFile(`Scraping error: ${error.message}`);
