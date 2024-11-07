@@ -57,6 +57,7 @@ app.get('/', (req, res) => {
                     border-radius: 15px;
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
                     min-width: 300px;
+                    max-width: 800px;
                 }
                 code {
                     white-space: pre-wrap;
@@ -80,11 +81,25 @@ app.get('/', (req, res) => {
                 p:hover {
                     transform: translateX(5px);
                 }
-                .log-line {
+                div.logs-container {
+                    max-height: 200px;
+                    overflow-y: auto;
+                }
+                span.log-date {
+                    font-weight: bold;
+                    color: #ff9900;
+                }
+                div.log-line {
                     margin: 0.2rem 0;
                     padding: 0.5rem;
                     background-color: #444;
                     border-radius: 5px;
+                    overflow-x: auto;
+                }
+                div.log-line div {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
                 }
             </style>
         </head>
@@ -95,8 +110,15 @@ app.get('/', (req, res) => {
                 <p>🌐 WebSocket requests count: ${stats.webSocketRequestCount}</p>
                 <p>✅ Successful requests count: ${stats.successCount}</p>
                 <p>❌ Error requests count: ${stats.errorCount}</p>
-                <div>
-                    ${logs.split('\n').map(line => `<div class="log-line">${line}</div>`).join('')}
+                <div class="logs-container">
+                    ${logs.split('\n').map(line => {
+                        // Data inital format: YYYY-MM-DDTHH:MM:SS.000Z - message
+                        const parts = line.split('Z - ');
+                        // Format the date (YYYY-MM-DDTHH:MM:SS.000Z to YYYY-MM-DD HH:MM)
+                        const date = new Date(parts[0]+'Z').toLocaleString('en-US', { hour: '2-digit', minute: '2-digit' });
+                        const message = parts[1];
+                        return `<div class="log-line"><div><span class="log-date">${date}</span> - ${message}</div></div>`;
+                    }).join('')}
                 </div>
             </div>
         </body>
