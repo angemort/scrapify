@@ -34,7 +34,7 @@ async function scrape(platformUrl, action, userTarget=null) {
     try {
         browser = await chromium.launch({ headless: false, slowMo: 5500 });
         const context = await browser.newContext({
-            // proxy: getProxy(),
+            proxy: getProxy(),
             storageState: path.join(__dirname, '../../../data/tiktok-state.json'),
             userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.141 Safari/537.36'
         });

@@ -1,9 +1,9 @@
 module.exports = {
     getProxy: () => {
         const proxy = {
-            server: "p.webshare.io:80",
-            username: "exdtpgzn-rotate",
-            password: "8giz6va0zpee"
+            server: process.env.PROXY_SERVER,
+            username: process.env.PROXY_USERNAME,
+            password: process.env.PROXY_PASSWORD
         };
         return proxy;
     }

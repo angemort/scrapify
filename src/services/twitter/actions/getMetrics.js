@@ -37,68 +37,72 @@ const { userSegment } = require('../segments/user');
 async function getPostMetrics(context, page, platformUrl) {
     let tweetData = null;
 
-    // Configurer l'interception de la requête TweetDetail
-    await context.route('**/TweetDetail*', async route => {
-        const request = route.request();
-        if (request.method() === 'GET') {
-            route.continue();
-            const response = await request.response();
-            if (response.url().includes('TweetDetail')) {
-                const jsonResponse = await response.json();
-                logToFile('Analyse TweetDetail...');
+    try {
+            // Configurer l'interception de la requête TweetDetail
+        await context.route('**/TweetDetail*', async route => {
+            const request = route.request();
+            if (request.method() === 'GET') {
+                route.continue();
+                const response = await request.response();
+                if (response.url().includes('TweetDetail')) {
+                    const jsonResponse = await response.json();
+                    logToFile('Analyse TweetDetail...');
 
-                // Extraction du tweet et de l'utilisateur
-                const tweetEntry = jsonResponse.data.threaded_conversation_with_injections_v2.instructions[0].entries[0].content.itemContent.tweet_results.result;
+                    // Extraction du tweet et de l'utilisateur
+                    const tweetEntry = jsonResponse.data.threaded_conversation_with_injections_v2.instructions[0].entries[0].content.itemContent.tweet_results.result;
 
-                // Informations utilisateur
-                const user = userSegment(tweetEntry);
+                    // Informations utilisateur
+                    const user = userSegment(tweetEntry);
 
-                // Médias du tweet
-                const medias = mediaSegment(tweetEntry);
+                    // Médias du tweet
+                    const medias = mediaSegment(tweetEntry);
 
-                // Informations du post
-                const post = {
-                    content: tweetEntry.legacy.full_text,
-                    lang: tweetEntry.legacy.lang,
-                    created_at: tweetEntry.legacy.created_at,
-                    conversation_id: tweetEntry.legacy.conversation_id_str,
-                    medias: medias,
-                    link: tweetEntry.note_tweet?.note_tweet_results?.result?.entity_set?.urls[0]?.expanded_url || null
-                };
+                    // Informations du post
+                    const post = {
+                        content: tweetEntry.legacy.full_text,
+                        lang: tweetEntry.legacy.lang,
+                        created_at: tweetEntry.legacy.created_at,
+                        conversation_id: tweetEntry.legacy.conversation_id_str,
+                        medias: medias,
+                        link: tweetEntry.note_tweet?.note_tweet_results?.result?.entity_set?.urls[0]?.expanded_url || null
+                    };
 
-                // Extraction des hashtags, mentions, et URLs
-                const hashtags = tweetEntry.legacy.entities?.hashtags.map(tag => tag.text) || [];
-                const user_mentions = tweetEntry.legacy.entities?.user_mentions.map(mention => ({
-                    name: mention.name,
-                    screen_name: mention.screen_name,
-                    id: mention.id_str
-                })) || [];
-                const urls = tweetEntry.legacy.entities?.urls.map(url => url.expanded_url) || [];
+                    // Extraction des hashtags, mentions, et URLs
+                    const hashtags = tweetEntry.legacy.entities?.hashtags.map(tag => tag.text) || [];
+                    const user_mentions = tweetEntry.legacy.entities?.user_mentions.map(mention => ({
+                        name: mention.name,
+                        screen_name: mention.screen_name,
+                        id: mention.id_str
+                    })) || [];
+                    const urls = tweetEntry.legacy.entities?.urls.map(url => url.expanded_url) || [];
 
-                // Structure des métriques
-                const metrics = metricsSegment(tweetEntry);
+                    // Structure des métriques
+                    const metrics = metricsSegment(tweetEntry);
 
-                // Regrouper toutes les données
-                tweetData = {
-                    user,
-                    post,
-                    metrics,
-                    hashtags,
-                    user_mentions,
-                    urls
-                };
+                    // Regrouper toutes les données
+                    tweetData = {
+                        user,
+                        post,
+                        metrics,
+                        hashtags,
+                        user_mentions,
+                        urls
+                    };
 
-                logToFile(`Données extraites : ${JSON.stringify(tweetData)}`);
+                    logToFile(`Données extraites : ${JSON.stringify(tweetData)}`);
+                }
+            } else {
+                route.continue();
             }
-        } else {
-            route.continue();
-        }
-    });
+        });
 
-    // Naviguer à la page du tweet pour déclencher les requêtes réseau
-    await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
-    await page.close();
+        // Naviguer à la page du tweet pour déclencher les requêtes réseau
+        await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
+        await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
+    } catch (error) {
+        logToFile(`Erreur lors de l'extraction des données du post : ${error}`);
+        throw error;
+    }
 
     return tweetData;
 }
@@ -178,7 +182,6 @@ async function getProfileMetrics(context, page, platformUrl) {
     // Naviguer vers la page de profil pour déclencher les requêtes réseau
     await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(2000); // Attendre pour garantir que les requêtes réseau sont terminées
-    await page.close();
 
     return profileData;
 }

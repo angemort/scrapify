@@ -30,6 +30,11 @@ Créez un fichier `.env` à la racine du projet :
 PORT=3000
 ALLOWED_ORIGINS=http://localhost:8080
 
+# Proxy
+PROXY_SERVER=example.com
+PROXY_USERNAME=username
+PROXY_PASSWORD=password
+
 # Twitter
 TWITTER_EMAIL01=example@example.com
 TWITTER_USERNAME01=username

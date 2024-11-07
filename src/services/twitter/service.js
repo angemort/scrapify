@@ -40,7 +40,7 @@ async function scrape(platformUrl, action, userTarget=null) {
     try {
         browser = await chromium.launch({ headless: true, slowMo: 2500 });
         const context = await browser.newContext({
-            // proxy: getProxy(),
+            proxy: getProxy(),
             storageState: path.join(__dirname, '../../../data/twitter-state.json')
         });
         let page = await context.newPage();
