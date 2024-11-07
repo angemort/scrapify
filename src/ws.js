@@ -25,15 +25,16 @@ function initializeWebSocket(server) {
         ws.on('message', async (message) => {
             try {
                 const parsedMessage = JSON.parse(message);
-                
-                // Vérifiez le type de message pour garantir qu'il s'agit bien d'un message de scraping
+                console.log("Received message from client:", parsedMessage);
+
+                // Vérifiez que le message contient le type et le payload attendus
                 if (parsedMessage.type !== 'get-scraping' || !parsedMessage.payload) {
-                    throw new Error("Invalid message type or missing payload");
+                    throw new Error("Invalid message format: Missing type or payload");
                 }
 
                 const taskData = parsedMessage.payload;
-                
-                // Vérification de la limite de taux
+                console.log("Parsed taskData payload:", taskData); // Log de l'objet taskData pour validation
+
                 if (!checkRateLimit(ws)) {
                     ws.send(JSON.stringify({
                         type: 'error',
@@ -46,11 +47,12 @@ function initializeWebSocket(server) {
                     throw new Error('Too many requests. Please try again later.');
                 }
 
+                // Validation des données de la tâche
                 validateWebSocketData(taskData);
 
                 const sanitizedData = {
                     url: encodeURI(taskData.url.trim()),
-                    userTarget: taskData.userTarget?.trim(),
+                    userTarget: taskData.userTarget?.trim() || '',
                     platform: taskData.platform.toLowerCase(),
                     action: taskData.action.toLowerCase()
                 };
@@ -67,23 +69,30 @@ function initializeWebSocket(server) {
                     sanitizedData.action,
                     sanitizedData.userTarget
                 );
-                
-                ws.send(JSON.stringify({
-                    type: 'scraping-completed',
-                    payload: {
-                        success: true,
-                        data: result,
-                        taskData: sanitizedData
-                    }
-                }));
-                incrementSuccessCount();
+
+                console.log("Scraping result received from service:", result); // Vérifiez le résultat
+
+                if (result) {
+                    ws.send(JSON.stringify({
+                        type: 'scraping-completed',
+                        payload: {
+                            success: true,
+                            data: result,
+                            taskData: sanitizedData
+                        }
+                    }));
+                    incrementSuccessCount();
+                } else {
+                    throw new Error('Scraping service did not return any data');
+                }
             } catch (error) {
+                console.error("Scraping error:", error);
                 ws.send(JSON.stringify({
                     type: 'scraping-error',
                     payload: {
                         success: false,
                         error: error.message,
-                        taskData: parsedMessage.payload
+                        taskData: parsedMessage.payload || null
                     }
                 }));
                 logToFile(`Scraping error: ${error.message}`);
