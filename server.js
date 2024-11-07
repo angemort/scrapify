@@ -111,7 +111,7 @@ app.get('/', (req, res) => {
                 <p>✅ Successful requests count: ${stats.successCount}</p>
                 <p>❌ Error requests count: ${stats.errorCount}</p>
                 <div class="logs-container">
-                    ${logs.split('\n').map(line => {
+                    ${logs.split('\n').filter(line => line.trim() !== '').map(line => {
                         // Data inital format: YYYY-MM-DDTHH:MM:SS.000Z - message
                         const parts = line.split('Z - ');
                         // Format the date (YYYY-MM-DDTHH:MM:SS.000Z to YYYY-MM-DD HH:MM)
