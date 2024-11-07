@@ -7,6 +7,9 @@ const { validateRequest } = require('./src/utils/validator');
 const ServiceLoader = require('./src/serviceLoader');
 const { loadStats, saveStats } = require('./src/utils/statsManager');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 const app = express();
 const server = http.createServer(app);
 const PORT = 3000;
