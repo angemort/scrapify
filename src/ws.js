@@ -12,19 +12,19 @@ const ServiceLoader = require('./serviceLoader');
 function initializeWebSocket(server) {
     const io = socketIo(server, {
         cors: {
-            origin: process.env.ALLOWED_ORIGINS?.split(',') || "http://localhost:8080",
+            origin: process.env.ALLOWED_ORIGINS?.split(',') || ["http://localhost:3000"],
             methods: ["GET", "POST"],
             credentials: true
         }
     });
 
     io.on('connection', (socket) => {
-        console.log('Nouveau client connecté');
+        console.log('New client connected');
 
         socket.on('get-scraping', async (taskData) => {
             try {
                 if (!checkRateLimit(socket)) {
-                    throw new Error('Trop de requêtes. Veuillez réessayer plus tard.');
+                    throw new Error('Too many requests. Please try again later.');
                 }
 
                 validateWebSocketData(taskData);
@@ -36,11 +36,11 @@ function initializeWebSocket(server) {
                     action: taskData.action.toLowerCase()
                 };
 
-                logToFile(`Démarrage du scraping pour ${sanitizedData.url}`);
+                logToFile(`Starting scraping for ${sanitizedData.url}`);
                 
                 const service = ServiceLoader.getService(sanitizedData.platform);
                 if (!service) {
-                    throw new Error(`Plateforme non supportée: ${sanitizedData.platform}`);
+                    throw new Error(`Unsupported platform: ${sanitizedData.platform}`);
                 }
         
                 const result = await service.scrape(
@@ -61,12 +61,12 @@ function initializeWebSocket(server) {
                     error: error.message,
                     taskData
                 });
-                logToFile(`Erreur de scraping: ${error.message}`);
+                logToFile(`Scraping error: ${error.message}`);
             }
         });
 
         socket.on('disconnect', () => {
-            console.log('Client déconnecté');
+            console.log('Client disconnected');
         });
     });
 

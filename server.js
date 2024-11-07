@@ -173,6 +173,6 @@ app.post('/scrape', validateRequest, async (req, res) => {
     }
 });
 
-server.listen(PORT, () => {
-    console.log(`API de scraping listening on port ${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`API listening on port ${PORT}`);
 });
