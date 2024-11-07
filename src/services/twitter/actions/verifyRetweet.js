@@ -43,6 +43,7 @@ async function verifyRetweet(context, page, platformUrl, userTarget) {
 
         // Load the tweet page to trigger the first interception
         await page.goto(platformUrl, { waitUntil: 'domcontentloaded' });
+        await page.waitForTimeout(2000); // Wait for the page to load
 
         // If the user ID is not found, stop the verification here
         if (!idUserTarget) {
@@ -96,6 +97,7 @@ async function verifyRetweet(context, page, platformUrl, userTarget) {
         // Load the user profile page to trigger the `UserTweets` interception
         const userProfileUrl = `https://x.com/${userTarget.replace('@', '')}`;
         await page.goto(userProfileUrl, { waitUntil: 'domcontentloaded' });
+        await page.waitForTimeout(2000); // Wait for the page to load
 
         return { has_retweeted: isRetweetFound, retweet_date: dateRetweet };
     } catch (error) {
