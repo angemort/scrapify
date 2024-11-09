@@ -28,7 +28,7 @@ function validateData({ platform, action, url, userTarget }) {
     checkUserComment: ['url', 'userTarget'],
     getMetrics: ['url'],
     getRecentComments: ['url'],
-    getProfileMetrics: ['url'],
+    getPosts: ['url'],
   };
 
   const platformRequirements = {
@@ -36,7 +36,7 @@ function validateData({ platform, action, url, userTarget }) {
     checkUserComment: ['twitter'],
     getMetrics: ['tiktok', 'twitter'],
     getRecentComments: ['twitter'],
-    getProfileMetrics: ['tiktok', 'twitter'],
+    getPosts: ['twitter'],
   };
 
   const allowedPlatforms = platformRequirements[action];

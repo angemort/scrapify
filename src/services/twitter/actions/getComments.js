@@ -3,6 +3,7 @@ const { mediaSegment } = require('../segments/media');
 const { metricsSegment } = require('../segments/metrics');
 const { userSegment } = require('../segments/user');
 
+
 // Fonction principale pour intercepter et obtenir les commentaires récents avec le tri par Recency
 async function interceptAndRetrieveComments(context, page, platformUrl) {
     let comments = [];
@@ -109,7 +110,17 @@ async function interceptAndRetrieveComments(context, page, platformUrl) {
     };
 }
 
-// Fonction pour obtenir uniquement les commentaires d'un utilisateur cible (userTarget) dans l'ordre récent
+/**
+ * @typedef {Object} CheckUserCommentResult
+ * @memberof module:TwitterService
+ * @example
+ * // Vérifier si un utilisateur a commenté un post
+ * // Exemple d'utilisation pour 'checkUserComment'
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'checkUserComment', userTarget:'@KnightsonBase')
+ * @property {boolean} has_commented - Indique si l'utilisateur a commenté le post.
+ * @property {int} comments_count - Nombre de commentaires.
+ * @property {CommentInfo[]} comments - Contenu du commentaire.
+ */
 async function getUserComments(context, page, platformUrl, userTarget) {
     try {
         const targetUser = userTarget.startsWith('@') ? userTarget.slice(1) : userTarget;
@@ -127,7 +138,16 @@ async function getUserComments(context, page, platformUrl, userTarget) {
     }
 }
 
-// Fonction pour obtenir tous les commentaires récents sans filtrage par utilisateur
+/**
+ * @typedef {Object} GetRecentCommentsResult
+ * @memberof module:TwitterService
+ * @example
+ * // Récupérer les commentaires récents d'un post
+ * // Exemple d'utilisation pour 'getRecentComments'
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'getRecentComments')
+ * @property {int} comments_count - Nombre de commentaires.
+ * @property {CommentInfo[]} comments - Contenu du commentaire.
+ */
 async function getRecentComments(context, page, platformUrl) {
     try {
         const comments = await interceptAndRetrieveComments(context, page, platformUrl);

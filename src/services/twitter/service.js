@@ -7,6 +7,7 @@ const { initializeTwitterSession, detectAction } = require('./actions/login');
 const { getPostMetrics, getProfileMetrics } = require('./actions/getMetrics');
 const { getRecentComments, getUserComments } = require('./actions/getComments');
 const { verifyRetweet } = require('./actions/verifyRetweet');
+const { getPosts } = require('./actions/getPosts');
 
 /**
  * @module TwitterService
@@ -21,18 +22,24 @@ const { verifyRetweet } = require('./actions/verifyRetweet');
  * @static
  * 
  * @param {string} platformUrl - URL de la plateforme cible (post ou profil).
- * @param {string} action - Action à effectuer (ex: 'getMetrics', 'verifyRetweet', 'checkUserComment', 'getRecentComments', 'getProfileMetrics').
+ * @param {string} action - Action à effectuer (ex: 'getMetrics', 'verifyRetweet', 'checkUserComment', 'getRecentComments', 'getPosts').
  * @param {string} [userTarget=null] - Nom d'utilisateur cible, requis pour certaines actions (ex: 'verifyRetweet', 'checkUserComment').
- * @returns {Promise<MetricsPostResult|MetricsProfileResult|VerifyRetweetResult|CheckUserCommentResult|GetRecentCommentsResult>} Résultat de l'action de scraping, selon l'action spécifiée.
+ * @returns {Promise<MetricsPostResult|MetricsProfileResult|VerifyRetweetResult|CheckUserCommentResult|GetRecentCommentsResult|PostsProfileResult>} Résultat de l'action de scraping, selon l'action spécifiée.
  *
  * @example
  * // Exemple d'utilisation pour 'verifyRetweet'
- * const result = await scrape('https://x.com/user/status/1234567890', 'verifyRetweet', '@KnightsonBase');
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'verifyRetweet', userTarget:'@KnightsonBase')
  *
  * // Exemple d'utilisation pour 'getMetrics'
- * const result = await scrape('https://x.com/user/status/1234567890', 'getMetrics');
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'getMetrics')
  * -- OR --
- * const result = await scrape('https://x.com/user', 'getMetrics');
+ * POST /scrape/ (url:'https://x.com/user', action:'getMetrics')
+ * 
+ * // Exemple d'utilisation pour 'getRecentComments'
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'getRecentComments')
+ * 
+ * // Exemple d'utilisation pour 'getPosts'
+ * POST /scrape/ (url:'https://x.com/user', action:'getPosts')
  */
 async function scrape(platformUrl, action, userTarget=null) {
     logToFile(`Starting agent for ${action}...`);
@@ -69,6 +76,8 @@ async function scrape(platformUrl, action, userTarget=null) {
             logToFile(`Profile ${platformUrl}`);
             if (action === 'getMetrics') {
                 result = await getProfileMetrics(context, page, platformUrl);
+            } else if (action === 'getPosts') {
+                result = await getPosts(context, page, platformUrl);
             }
         }
 
@@ -86,31 +95,38 @@ async function scrape(platformUrl, action, userTarget=null) {
 
 module.exports = { scrape };
 
-
 /**
- * @typedef {Object} VerifyRetweetResult
+ * @typedef {Object} WebsiteInfo
+ * @description Informations du site web.
  * @memberof module:TwitterService
- * @property {boolean} has_retweeted - Indique si l'utilisateur a retweeté le post.
- * @property {string} retweet_date - Date du retweet.
+ * @property {string} name - Nom du site web.
+ * @property {string} url - URL du site web.
  */
 
 /**
- * @typedef {Object} CheckUserCommentResult
+ * @typedef {Object} PostInfo
+ * @description Informations du post.
  * @memberof module:TwitterService
- * @property {boolean} has_commented - Indique si l'utilisateur a commenté le post.
- * @property {int} comments_count - Nombre de commentaires.
- * @property {CommentInfo[]} comments - Contenu du commentaire.
+ * @property {string} content - Contenu du post.
+ * @property {string} lang - Langue du post.
+ * @property {string} created_at - Date de création du post.
+ * @property {string} conversation_id - Identifiant de la conversation.
+ * @property {MediaInfo[]} medias - Médias du post.
+ * @property {string} link - URL du post.
  */
 
 /**
- * @typedef {Object} GetRecentCommentsResult
+ * @typedef {Object} UserMentionInfo
+ * @description Informations de l'utilisateur mentionné.
  * @memberof module:TwitterService
- * @property {int} comments_count - Nombre de commentaires.
- * @property {CommentInfo[]} comments - Contenu du commentaire.
+ * @property {string} name - Nom de l'utilisateur mentionné.
+ * @property {string} screen_name - Nom d'utilisateur (handle) de l'utilisateur mentionné.
+ * @property {string} id - Identifiant de l'utilisateur mentionné.
  */
 
 /** 
  * @typedef {Object} CommentInfo
+ * @description Informations du commentaire.
  * @memberof module:TwitterService
  * @property {string} id - ID du commentaire.
  * @property {string} content - Contenu du commentaire.

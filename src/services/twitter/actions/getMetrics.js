@@ -6,7 +6,10 @@ const { userSegment } = require('../segments/user');
 /**
  * @typedef {Object} MetricsPostResult
  * @memberof module:TwitterService
- * @description Résultat des métriques d'un post Twitter.
+ * @example
+ * // Résultat des métriques d'un post Twitter.
+ * // Exemple d'utilisation pour 'getMetrics'
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'getMetrics')
  * @property {UserInfo} user - Informations de l'utilisateur.
  * @property {PostInfo} post - Informations du post.
  * @property {MetricsInfo} metrics - Métriques du post.
@@ -16,22 +19,20 @@ const { userSegment } = require('../segments/user');
  */
 
 /**
- * @typedef {Object} PostInfo
+ * @typedef {Object} MetricsProfileResult
  * @memberof module:TwitterService
- * @property {string} content - Contenu du post.
- * @property {string} lang - Langue du post.
- * @property {string} created_at - Date de création du post.
- * @property {string} conversation_id - Identifiant de la conversation.
- * @property {MediaInfo[]} medias - Médias du post.
- * @property {string} link - URL du post.
- */
-
-/**
- * @typedef {Object} UserMentionInfo
- * @memberof module:TwitterService
- * @property {string} name - Nom de l'utilisateur mentionné.
- * @property {string} screen_name - Nom d'utilisateur (handle) de l'utilisateur mentionné.
- * @property {string} id - Identifiant de l'utilisateur mentionné.
+ * @example
+ * // Résultat des métriques d'un profil Twitter.
+ * // Exemple d'utilisation pour 'getMetrics'
+ * POST /scrape/ (url:'https://x.com/user', action:'getMetrics')
+ * @property {UserInfo} user - Informations de l'utilisateur.
+ * @property {WebsiteInfo} website - Informations du site web.
+ * @property {MetricsInfo} metrics - Métriques du profil.
+ * @property {string} professional - Type de professionnel.
+ * @property {string[]} categories - Catégories du profil.
+ * @property {string[]} pinned_tweet_ids - Identifiants des tweets en évidence.
+ * @property {number} highlights - Nombre de tweets en évidence.
+ * @property {boolean} can_highlight_tweets - Indique si le profil peut mettre en évidence des tweets.
  */
 
 async function getPostMetrics(context, page, platformUrl) {

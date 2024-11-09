@@ -1,5 +1,14 @@
 const { logToFile } = require('../../../utils/logger');
 
+/**
+ * @typedef {Object} VerifyRetweetResult
+ * @memberof module:TwitterService
+ * @example
+ * // Exemple d'utilisation pour 'verifyRetweet'
+ * POST /scrape/ (url:'https://x.com/user/status/1234567890', action:'verifyRetweet', userTarget:'@KnightsonBase')
+ * @property {boolean} has_retweeted - Indique si l'utilisateur a retweeté le post.
+ * @property {string} retweet_date - Date du retweet.
+ */
 async function verifyRetweet(context, page, platformUrl, userTarget) { 
     try {
         logToFile(`Verifying retweet for user ${userTarget}`);
